@@ -1,7 +1,7 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
 
 import { styled } from '@mui/system';
-import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box } from '@mui/material';
+import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box, Paper } from '@mui/material';
 
 import { FaBars } from "react-icons/fa";
 
@@ -19,11 +19,13 @@ const TopAppBar = styled(AppBar)(({ theme }) => ({
 
 const StyledContainer = styled(Container)({
 	width: "100%",
-	paddingTop: "20px"
+	paddingTop: "5px",
+	paddingBottom: "5px",
 })
 
-const StyledLogoSection = styled(Box)({
-
+const StyledLogoSection = styled(Paper)({
+	borderRadius: "50%",
+	padding: "0px"
 })
 
 const StyledMenuStack = styled(Stack)({
@@ -105,7 +107,7 @@ const Navigation = () => {
 									<StyledButtonStack direction="row" spacing={3}>
 										<StyledButton variant="contained" color="secondary">
 											<Typography variant="subtitle1" >
-												Login
+												Request a quote
 											</Typography>
 										</StyledButton>
 									</StyledButtonStack>
@@ -119,7 +121,10 @@ const Navigation = () => {
 						<TopAppBar >
 							<Container maxWidth="xl">
 								<Stack direction="row" justifyContent="space-between" alignItems="center">
-									<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
+									<StyledLogoSection>
+										<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
+									</StyledLogoSection>
+
 									<IconButton
 										size="large"
 										aria-label="account of current user"
