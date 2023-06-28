@@ -31,6 +31,7 @@ const LeftRightContainered = ({
 	subtitle,
 	chipText,
 	chipWidth,
+	chipColor,
 	list,
 	paragraphs,
 	imgPosition,
@@ -52,7 +53,7 @@ const LeftRightContainered = ({
 
 	const TextSection = (
 		<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
-			<Stack direction="column" spacing={3}>
+			<Stack direction="column" spacing={2}>
 				<TitleSubtitle
 					title={title}
 					subtitle={subtitle}

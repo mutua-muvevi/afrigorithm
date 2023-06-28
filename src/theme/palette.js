@@ -32,7 +32,7 @@ export const PRIMARY = {
 	halfOpacity: "rgba(19, 102, 255, 0.5)",
 	lighter: '#71a3ff',
 	light: '#4285ff',
-	main: '#1366ff',
+	main: 'rgba(19, 102, 255, 1)',
 	dark: '#0f52cc',
 	darker: '#0d47b3',
 	contrastText: '#fff',
