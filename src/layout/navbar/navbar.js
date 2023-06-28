@@ -14,7 +14,7 @@ const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787934/logo
 
 const TopAppBar = styled(AppBar)(({ theme }) => ({
 	zIndex: 3,
-	backgroundColor: theme.palette.primary.darker,
+	backgroundColor: theme.palette.primary.halfOpacity,
 }))
 
 const StyledContainer = styled(Container)({
@@ -23,7 +23,7 @@ const StyledContainer = styled(Container)({
 	paddingBottom: "5px",
 })
 
-const StyledLogoSection = styled(Paper)({
+const StyledLogoSection = styled(Box)({
 	borderRadius: "50%",
 	padding: "0px"
 })

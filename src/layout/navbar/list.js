@@ -45,7 +45,7 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 				<Divider color="grey"/>
 				{
 					menuItems.map((nav, i) => (
-						<NavLink to={nav.path} style={navlinkStyle} key={i}>
+						<NavLink to={nav.path} style={navlinkStyle} key={i} onClick={() => setMobileNav(false)}>
 							<ListItemButton
 								sx={{
 									minHeight: 48,
