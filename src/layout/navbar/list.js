@@ -5,7 +5,7 @@ import { styled } from "@mui/system";
 
 import { menuItems } from "./info";
 
-const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787933/logos/logotext_zoqx8u.png"
+const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png"
 
 const StyledNavListItem = styled(List)(({theme}) => ({
 

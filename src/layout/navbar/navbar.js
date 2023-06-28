@@ -1,20 +1,21 @@
 import React, { useState, useLayoutEffect, useRef } from 'react';
+import { NavLink } from 'react-router-dom';
 
 import { styled } from '@mui/system';
 import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box, Paper } from '@mui/material';
 
 import { FaBars } from "react-icons/fa";
+import { MdOutlineArrowForwardIos } from "react-icons/md"
 
 import { menuItems } from "./info";
-import { NavLink } from 'react-router-dom';
 
 import SwipeableSideDrawer from './drawer';
 
-const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687787934/logos/logo_alfszk.png"
+const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png"
 
 const TopAppBar = styled(AppBar)(({ theme }) => ({
 	zIndex: 3,
-	backgroundColor: theme.palette.primary.halfOpacity,
+	backgroundColor: theme.palette.primary.main,
 }))
 
 const StyledContainer = styled(Container)({
@@ -49,9 +50,11 @@ const StyledButtonStack = styled(Stack)({
 	
 })
 
-const StyledButton = styled(Button)({
-	minWidth: "200px"
-})
+const StyledButton = styled(Button)(({ theme }) => ({
+	minWidth: "200px",
+	backgroundColor: "#ffffff",
+	color: theme.palette.primary.main 
+}))
 
 const styledLogo = {
 	height: "60px"
