@@ -5,7 +5,7 @@ import { styled } from '@mui/system';
 import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box, Paper } from '@mui/material';
 
 import { FaBars } from "react-icons/fa";
-import { MdOutlineArrowForwardIos } from "react-icons/md"
+
 
 import { menuItems } from "./info";
 

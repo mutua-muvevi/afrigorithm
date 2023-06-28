@@ -57,4 +57,18 @@ export const footerItems = {
 			},
 		]
 	},
+	getInTouch: {
+		title: "Get in touch",
+		items: [
+			{
+				label: "AFRIGORITHM",
+			},
+			{
+				label: "Nairobi, Kenya",
+			},
+			{
+				label: "Address 00100",
+			},
+		]
+	},
 }
