@@ -12,8 +12,8 @@ import { styled } from "@mui/system";
 
 import { footerItems } from "./info";
 
-import { MdOutlineArrowForwardIos } from "react-icons/md"
-import { BsFillEnvelopeFill } from "react-icons/bs"
+import { MdOutlineArrowForwardIos } from "react-icons/md";
+
 
 const StyledFooter = styled(Box)(({ theme }) => ({
 	paddingTop: "30px",
@@ -76,7 +76,7 @@ const Footer = () => {
 								<Typography variant="h3">
 									{footerItems.logoSection.title}
 								</Typography>
-								<Typography variant="body1">
+								<Typography variant="body2">
 									{footerItems.logoSection.text}
 								</Typography>
 							</StyledGridStack>
@@ -104,7 +104,7 @@ const Footer = () => {
 											<Stack direction="column" spacing={1}>
 												<Stack direction="row"  alignItems="center" spacing={2}>
 													<MdOutlineArrowForwardIos style={styledIcons}/>
-													<Typography variant="body1">
+													<Typography variant="body2">
 														{el.label}
 													</Typography>
 												</Stack>
@@ -137,7 +137,7 @@ const Footer = () => {
 											<Stack direction="column" spacing={1}>
 												<Stack direction="row"  alignItems="center" spacing={2}>
 													<MdOutlineArrowForwardIos style={styledIcons}/>
-													<Typography variant="body1">
+													<Typography variant="body2">
 														{el.label}
 													</Typography>
 												</Stack>
@@ -166,19 +166,14 @@ const Footer = () => {
 								</Typography>
 								{
 									footerItems.getInTouch.items.map((el, i) => (
-										<Stack direction="column" spacing={1} key={i}>
-											<Typography variant="body1">
+										<Stack direction="row"  alignItems="center" spacing={2} key={i}>
+											{el.icon}
+											<Typography variant="body2">
 												{el.label}
 											</Typography>
 										</Stack>
 									))
 								}
-								<Stack direction="row"  alignItems="center"  spacing={2}>
-									<BsFillEnvelopeFill style={styledIcons}/>
-									<Typography variant="body2">
-										info@afrigorithm.com
-									</Typography>
-								</Stack>
 
 							</StyledGridStack>
 						</StyledGridItem>

@@ -1,3 +1,11 @@
+import { BsFillEnvelopeFill, BsFillTelephoneFill } from "react-icons/bs";
+import { MdLocationOn } from "react-icons/md";
+
+
+const styledIcons = {
+
+}
+
 export const footerItems = {
 	logoSection : {
 		logo: {
@@ -61,13 +69,24 @@ export const footerItems = {
 		title: "Get in touch",
 		items: [
 			{
-				label: "AFRIGORITHM",
+				label: "info@afrigorithm.com",
+				icon: <BsFillEnvelopeFill style={styledIcons}/>
 			},
 			{
-				label: "Nairobi, Kenya",
+				label: "afrigorithm@gmail.com",
+				icon: <BsFillEnvelopeFill style={styledIcons}/>
 			},
 			{
-				label: "Address 00100",
+				label: "+254 746 432 175",
+				icon: <BsFillTelephoneFill style={styledIcons}/>
+			},
+			{
+				label: "+254 799 756 331",
+				icon: <BsFillTelephoneFill style={styledIcons}/>
+			},
+			{
+				label: "Nairobi Kenya",
+				icon: <MdLocationOn style={styledIcons}/>
 			},
 		]
 	},
