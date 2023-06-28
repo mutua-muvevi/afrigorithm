@@ -2,7 +2,7 @@ import React from 'react';
 import { Outlet } from 'react-router-dom';
 
 import { Box } from '@mui/material';
-import Footer from './footer';
+import Footer from './footer/footer';
 import Navbar from './navbar/navbar';
 
 const LandingLayout = () => {

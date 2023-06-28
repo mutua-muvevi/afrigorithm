@@ -9,12 +9,12 @@ function createGradient(color1, color2) {
 // SETUP COLORS
 const GREY = {
 	0: '#FFFFFF',
-	100: '#ebf0ff',
-	200: '#F4F6F8',
-	300: '#DFE3E8',
-	400: '#C4CDD5',
-	500: '#919EAB',
-	600: '#637381',
+	100: "rgba(247, 250, 255, 1)",
+	200: "rgba(245, 247, 255, 1)",
+	300: "rgba(240, 246, 255, 1)",
+	400: "rgba(239, 245, 255, 1)",
+	500: "rgba(238, 244, 255, 1)",
+	600: "rgba(237, 243, 255, 1)",
 	700: '#454F5B',
 	800: '#212B36',
 	900: '#161C24',
@@ -29,6 +29,7 @@ const GREY = {
 };
 
 export const PRIMARY = {
+	halfOpacity: "rgba(19, 102, 255, 0.5)",
 	lighter: '#71a3ff',
 	light: '#4285ff',
 	main: '#1366ff',
@@ -110,8 +111,8 @@ const palette = {
 	gradients: GRADIENTS,
 	chart: CHART_COLORS,
 	divider: GREY[500_24],
-	text: { primary: GREY[800], secondary: GREY[600], disabled: GREY[500] },
-	background: { paper: "rgba(43,43,43,255)", default: "rgba(30, 31, 31, 1)", neutral: GREY[200] },
+	text: { primary: GREY[400], secondary: GREY[600], disabled: GREY[500] },
+	background: { paper: "rgba(43,43,43,255)", default: "rgba(0, 5, 15, 1)", neutral: GREY[200] },
 	action: {
 		active: GREY[600],
 		hover: GREY[500_8],
