@@ -112,7 +112,7 @@ const palette = {
 	chart: CHART_COLORS,
 	divider: GREY[500_24],
 	text: { primary: GREY[400], secondary: GREY[600], disabled: GREY[500] },
-	background: { paper: "rgba(43,43,43,255)", default: "rgba(0, 5, 15, 1)", neutral: GREY[200] },
+	background: { paper: "rgba(30,33,60,255)", default: "rgba(0, 5, 15, 1)", neutral: GREY[200] },
 	action: {
 		active: GREY[600],
 		hover: GREY[500_8],

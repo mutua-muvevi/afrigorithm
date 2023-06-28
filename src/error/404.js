@@ -1,6 +1,7 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
-import Page from "src/components/Page";
+
+import Page from "src/components/ui/Page";
 
 const StyledNotFound = styled(Box)(({ theme }) => ({
 
