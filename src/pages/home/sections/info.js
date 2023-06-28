@@ -4,7 +4,7 @@ export const bannerCards = [
 		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
 	},
 	{
-		title: "Web Applications",
+		title: "Mobile Applications",
 		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
 	},
 	{
