@@ -7,9 +7,14 @@ import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider
 import { FaBars } from "react-icons/fa";
 
 
-import { menuItems } from "./info";
+import { menuItems, navConfig } from "./info";
 
 import SwipeableSideDrawer from './drawer';
+import useResponsive from 'src/hooks/useResponsive';
+import NavDesktop from './desktop/NavDesktop';
+import useOffSetTop from 'src/hooks/useOffSetTop';
+import { HEADER } from 'src/config';
+import NavMobile from './mobile/NavMobile';
 
 const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png"
 
@@ -70,7 +75,11 @@ const iconButtonSX = {
 
 const Navigation = () => {
 
-	const [mobileNav, setMobileNav] = useState(false)
+	const [mobileNav, setMobileNav] = useState(false);
+
+	const isDesktop = useResponsive("up", "md");
+
+	const isOffset = useOffSetTop(HEADER.H_MAIN_DESKTOP);
 
 	const handleMobileNav = () => {
 		setMobileNav(!mobileNav)
@@ -80,7 +89,7 @@ const Navigation = () => {
 
 	return (
 		<>
-			{
+			{/* {
 				innerWidth >= 1000 ? (
 					<TopAppBar position="scroll">
 						<Toolbar>
@@ -145,9 +154,12 @@ const Navigation = () => {
 					</Box>
 				)
 
-			}
-
-			<SwipeableSideDrawer mobileNav={mobileNav} setMobileNav={setMobileNav} />
+			} */}
+			{isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
+			
+			{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
+			
+			{/* <SwipeableSideDrawer mobileNav={mobileNav} setMobileNav={setMobileNav} /> */}
 		</>
 	);
 };

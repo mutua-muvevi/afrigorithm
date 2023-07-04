@@ -3,9 +3,9 @@ import { NavLink } from "react-router-dom";
 import { Box, Divider,  List, ListItem, ListItemButton, ListItemText, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
-import { menuItems } from "./info";
+// import { menuItems } from "./info";
 
-const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png"
+const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png";
 
 const StyledNavListItem = styled(List)(({theme}) => ({
 
@@ -43,7 +43,7 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 				</LogoParent>
 
 				<Divider color="grey"/>
-				{
+				{/* {
 					menuItems.map((nav, i) => (
 						<NavLink to={nav.path} style={navlinkStyle} key={i} onClick={() => setMobileNav(false)}>
 							<ListItemButton
@@ -57,7 +57,7 @@ const SwipeableDrawerList = ({ mobileNav, setMobileNav }) => {
 							</ListItemButton>
 						</NavLink>
 					))
-				}
+				} */}
 			</StyledNavListItem>
 		</Box>
 	);

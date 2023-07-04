@@ -10,13 +10,15 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 }))
 
 const StyledTextGrid = styled(Grid)(({ theme }) => ({
-	paddingTop: "70px",
-	paddingBottom: "70px",
 	color: "#ffffff",
 	paddingRight: "30px",
 	backgroundImage: `linear-gradient(to bottom, rgba(19, 102, 255, 0.5), rgba(19, 102, 255, 0.6)), url(${textGridBackground})`,
 	backgroundSize: "cover",
 	backgroundPosition: "center",
+	minHeight: "60vh",
+	display: "flex",
+	justifyContent: "flex-start",
+	alignItems: "center"
 }))
 
 const LeftRight = ({

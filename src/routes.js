@@ -10,6 +10,17 @@ import Contact from "./pages/contact/contact";
 import Testimonials from "./pages/testimonials/testimonials";
 import News from "./pages/news/news";
 import NotFound from "./error/404";
+import Products from "./pages/products/products";
+import Quotation from "./pages/quotation/quotation";
+import Careers from "./pages/careers/careers";
+import Research from "./pages/research/research";
+import TermsOfService from "./pages/terms/terms";
+import PrivacyPolicy from "./pages/privacy/privacy";
+import FAQ from "./pages/faq/faq";
+import Domain from "./pages/domain/domain";
+import WIP from "./pages/wip/wip";
+import Legal from "./pages/legal/legal";
+import Blogs from "./pages/blogs/blogs";
 
 //router function
 const Router = () => {
@@ -31,6 +42,26 @@ const Router = () => {
 					element: <Services/>
 				},
 				{
+					path: "/landing/domain",
+					element: <Domain/>
+				},
+				{
+					path: "/landing/products",
+					element: <Products/>
+				},
+				{
+					path: "/landing/wip",
+					element: <WIP/>
+				},
+				{
+					path: "/landing/careers",
+					element: <Careers/>
+				},
+				{
+					path: "/landing/research",
+					element: <Research/>
+				},
+				{
 					path: "/landing/testimonials",
 					element: <Testimonials/>
 				},
@@ -39,8 +70,32 @@ const Router = () => {
 					element: <News/>
 				},
 				{
+					path: "/landing/blogs",
+					element: <Blogs/>
+				},
+				{
+					path: "/landing/faq",
+					element: <FAQ/>
+				},
+				{
 					path: "/landing/contact",
 					element: <Contact/>
+				},
+				{
+					path: "/landing/quotation",
+					element: <Quotation/>
+				},
+				{
+					path: "/landing/terms",
+					element: <TermsOfService/>
+				},
+				{
+					path: "/landing/privacy",
+					element: <PrivacyPolicy/>
+				},
+				{
+					path: "/landing/legal",
+					element: <Legal/>
 				},
 			]
 		},
