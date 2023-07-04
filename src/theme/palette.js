@@ -108,6 +108,7 @@ const COMMON = {
 	warning: WARNING,
 	error: ERROR,
 	grey: GREY,
+	gradients: GRADIENTS,
 	divider: alpha(GREY[500], 0.24),
 	action: {
 		active: GREY[600],

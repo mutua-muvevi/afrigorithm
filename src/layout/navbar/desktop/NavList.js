@@ -55,7 +55,7 @@ export default function NavList({ item, isOffset }) {
 			/>
 
 			{!!children && openMenu && (
-				<Portal>
+				// <Portal>
 					<Fade in={openMenu}>
 						<StyledMenu
 							onMouseEnter={handleOpenMenu}
@@ -72,7 +72,7 @@ export default function NavList({ item, isOffset }) {
 							)): ""}
 						</StyledMenu>
 					</Fade>
-				</Portal>
+				// </Portal>
 			)}
 		</>
 	);
@@ -98,8 +98,7 @@ function NavSubList({ items, isDashboard, subheader, onClose }) {
 			gridColumn={isDashboard ? "span 6" : "span 2"}
 			alignItems="flex-start"
 		>
-			<StyledSubheader disableSticky>{subheader}</StyledSubheader>
-{console.log("items", items)}
+
 			{items.map((item) =>
 				isDashboard ? (
 					<NavItemDashboard

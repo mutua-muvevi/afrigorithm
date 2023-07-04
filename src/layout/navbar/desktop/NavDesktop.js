@@ -17,7 +17,7 @@ export default function NavDesktop({ isOffset, data }) {
 			component="nav"
 			direction="row"
 			spacing={5}
-			sx={{ mr: 5, height: 1 }}
+			sx={{ mr: 5, height: 1, }}
 		>
 			{data.map((link) => (
 				<NavList key={link.title} item={link} isOffset={isOffset} />

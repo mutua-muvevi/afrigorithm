@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useRef } from "react";
 // @mui
 import { useTheme } from "@mui/material/styles";
-import { Box, Button, AppBar, Toolbar, Container, Link } from "@mui/material";
+import { Box, Button, AppBar, Toolbar, Container, Link, Stack, Typography } from "@mui/material";
 // hooks
 import useOffSetTop from "../../hooks/useOffSetTop";
 import useResponsive from "../../hooks/useResponsive";
@@ -45,7 +45,7 @@ export default function Navbar() {
 						duration: theme.transitions.duration.shorter,
 					}),
 					...(isOffset && {
-						...bgBlur({ color: theme.palette.background.default }),
+						...bgBlur({ color: theme.palette.primary.main }),
 						height: {
 							md: HEADER.H_MAIN_DESKTOP - 16,
 						},
@@ -53,7 +53,12 @@ export default function Navbar() {
 				}}
 			>
 				<Container maxWidth="xl" sx={{ height: 1, display: "flex", alignItems: "center" }}>
-					<Logo />
+					<Stack direction="row" spacing={2} justifyContent="left" alignItems="center">
+						<Logo />
+						<Typography variant="h5" sx={{color: "#ffffff"}}>
+							Afrigorithm
+						</Typography>
+					</Stack>
 
 
 					<Box sx={{ flexGrow: 1 }} />
@@ -65,7 +70,7 @@ export default function Navbar() {
 						target="_blank"
 						rel="noopener"
 					>
-						Purchase Now
+						Request Quotation
 					</Button>
 
 					{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
