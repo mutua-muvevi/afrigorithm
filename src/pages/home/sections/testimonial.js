@@ -8,7 +8,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 const HomeTestimonial = () => {
 	return (
 		<StyledWrapper>
-			<div>Our Services</div>
+			<div>Testimonials</div>
 		</StyledWrapper>
 	)
 }

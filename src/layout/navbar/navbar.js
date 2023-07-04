@@ -1,155 +1,110 @@
-import React, { useState, useLayoutEffect, useRef } from 'react';
-import { NavLink } from 'react-router-dom';
+import PropTypes from "prop-types";
+import { useRef } from "react";
+// @mui
+import { useTheme } from "@mui/material/styles";
+import { Box, Button, AppBar, Toolbar, Container, Link, Stack, Typography } from "@mui/material";
+// hooks
+import useOffSetTop from "../../hooks/useOffSetTop";
+import useResponsive from "../../hooks/useResponsive";
+// utils
+import { bgBlur } from "../../utils/cssStyles";
+// config
+import { HEADER } from "../../config-global";
+// routes
+// import { PATH_DOCS, PATH_MINIMAL_ON_STORE } from "../../routes/paths";
+// components
+import Logo from "../../components/logo";
+import Label from "../../components/label";
+//
+import {navConfig} from "./info";
+import NavMobile from "./mobile";
+import NavDesktop from "./desktop";
 
-import { styled } from '@mui/system';
-import { AppBar,Toolbar, IconButton, Typography, Button, Menu, MenuItem, Divider, Container, Stack, Box, Paper } from '@mui/material';
+// ----------------------------------------------------------------------
 
-import { FaBars } from "react-icons/fa";
+export default function Navbar() {
+	const carouselRef = useRef(null);
 
+	const theme = useTheme();
 
-import { menuItems } from "./info";
+	const isDesktop = useResponsive("up", "md");
 
-import SwipeableSideDrawer from './drawer';
-
-const logo = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687960483/logos/logowhite_qirfnd.png"
-
-const TopAppBar = styled(AppBar)(({ theme }) => ({
-	zIndex: 3,
-	backgroundColor: theme.palette.primary.main,
-}))
-
-const StyledContainer = styled(Container)({
-	width: "100%",
-	paddingTop: "5px",
-	paddingBottom: "5px",
-})
-
-const StyledLogoSection = styled(Box)({
-	borderRadius: "50%",
-	padding: "0px"
-})
-
-const StyledMenuStack = styled(Stack)({
-	width: "100%",
-	paddintTop: "20px",
-	paddintBottom: "20px",
-});
-
-const StyledNavButton = styled(Button) ({
-	paddingTop: "20px",
-	paddingBottom: "20px",
-	width:"max-content"
-});
-
-const styledLink = {
-	textDecoration: "none",
-	color: "inherit"
-}
-
-const StyledButtonStack = styled(Stack)({
-	
-})
-
-const StyledButton = styled(Button)(({ theme }) => ({
-	minWidth: "200px",
-	backgroundColor: "#ffffff",
-	color: theme.palette.primary.main 
-}))
-
-const styledLogo = {
-	height: "60px"
-}
-
-const styledMobileLogo = {
-	height: "40px"
-}
-
-const iconButtonSX = {
-
-}
-
-const Navigation = () => {
-
-	const [mobileNav, setMobileNav] = useState(false)
-
-	const handleMobileNav = () => {
-		setMobileNav(!mobileNav)
-	}
-
-	const innerWidth = window.innerWidth
+	const isOffset = useOffSetTop(HEADER.H_MAIN_DESKTOP);
 
 	return (
-		<>
-			{
-				innerWidth >= 1000 ? (
-					<TopAppBar position="scroll">
-						<Toolbar>
-							<StyledContainer maxWidth="xl">
+		<AppBar ref={carouselRef} color="transparent" sx={{ boxShadow: 0 }}>
+			<Toolbar
+				disableGutters
+				sx={{
+					height: {
+						xs: HEADER.H_MOBILE,
+						md: HEADER.H_MAIN_DESKTOP,
+					},
+					transition: theme.transitions.create(["height", "background-color"], {
+						easing: theme.transitions.easing.easeInOut,
+						duration: theme.transitions.duration.shorter,
+					}),
+					...(isOffset && {
+						...bgBlur({ color: theme.palette.primary.main }),
+						height: {
+							md: HEADER.H_MAIN_DESKTOP - 16,
+						},
+					}),
+				}}
+			>
+				<Container maxWidth="xl" sx={{ height: 1, display: "flex", alignItems: "center" }}>
+					<Stack direction="row" spacing={2} justifyContent="left" alignItems="center">
+						<Logo />
+						<Typography variant="h5" sx={{color: "#ffffff"}}>
+							Afrigorithm
+						</Typography>
+					</Stack>
 
-								<StyledMenuStack direction="row" justifyContent="space-between" alignItems="center" spacing={5}>
-									<StyledLogoSection>
-										<img src={logo} alt="Skydive logo" style={styledLogo}/>
-									</StyledLogoSection>
 
-									<Stack direction="row" spacing={3}>
-										{
-											menuItems.map((el, i) => (
-												<StyledNavButton sx={{textAlign: "left"}} variant="text" key={i}>
-													<NavLink to={el.path} style={styledLink}>
-														<Typography variant="subtitle1" style={{textTransform: "uppercase", color: "#fff"}}>
-															{el.label}
-														</Typography>
-													</NavLink>
+					<Box sx={{ flexGrow: 1 }} />
 
-												</StyledNavButton>
-											))
-										}
-									</Stack>
+					{isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
 
+					<Button
+						variant="contained"
+						target="_blank"
+						rel="noopener"
+					>
+						Request Quotation
+					</Button>
 
-									<StyledButtonStack direction="row" spacing={3}>
-										<StyledButton variant="contained" color="secondary">
-											<Typography variant="subtitle1" >
-												Request a quote
-											</Typography>
-										</StyledButton>
-									</StyledButtonStack>
-								</StyledMenuStack>
-							</StyledContainer>
+					{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
+				</Container>
+			</Toolbar>
 
-						</Toolbar>
-					</TopAppBar>
-				) : (
-					<Box sx={{marginBottom: "52px"}}>
-						<TopAppBar >
-							<Container maxWidth="xl">
-								<Stack direction="row" justifyContent="space-between" alignItems="center">
-									<StyledLogoSection>
-										<img src={logo} alt="Henriot mobile logo" style={styledMobileLogo}/>
-									</StyledLogoSection>
-
-									<IconButton
-										size="large"
-										aria-label="account of current user"
-										aria-controls="menu-appbar"
-										aria-haspopup="true"
-										onClick={handleMobileNav}
-										color="inherit"
-										sx={iconButtonSX}
-									>
-										<FaBars/>
-									</IconButton>
-								</Stack>
-							</Container>
-						</TopAppBar>
-					</Box>
-				)
-
-			}
-
-			<SwipeableSideDrawer mobileNav={mobileNav} setMobileNav={setMobileNav} />
-		</>
+			{isOffset && <Shadow />}
+		</AppBar>
 	);
+}
+
+// ----------------------------------------------------------------------
+
+Shadow.propTypes = {
+	sx: PropTypes.object,
 };
 
-export default Navigation;
+function Shadow({ sx, ...other }) {
+	return (
+		<Box
+			sx={{
+				left: 0,
+				right: 0,
+				bottom: 0,
+				height: 24,
+				zIndex: -1,
+				m: "auto",
+				borderRadius: "50%",
+				position: "absolute",
+				width: `calc(100% - 48px)`,
+				boxShadow: (theme) => theme.customShadows.z8,
+				...sx,
+			}}
+			{...other}
+		/>
+	);
+}
