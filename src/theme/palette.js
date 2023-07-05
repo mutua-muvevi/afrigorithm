@@ -170,7 +170,7 @@ export const palette = (themeMode) => {
 		...COMMON,
 		mode: "dark",
 		text: {
-			primary: "#C2DEFF",
+			primary: "#E4F1FF",
 			secondary: "#93A9C2",
 			disabled: GREY[600],
 		},
