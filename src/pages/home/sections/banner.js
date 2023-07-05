@@ -8,7 +8,7 @@ const Image =
 	"https://res.cloudinary.com/dbj0t0zym/image/upload/v1687983038/images/techbackground_f8nfzu.jpg";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
-	minHeight: "60vh",
+	minHeight: "70vh",
 	backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(${Image})`,
 	backgroundSize: "cover",
 	backgroundAttachment: "fixed",
@@ -16,9 +16,9 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({
-	paddingTop: "70px",
+	paddingTop: "100px",
 	paddingBottom: "70px",
-	minHeight: "60vh",
+	minHeight: "70vh",
 	display: "flex",
 	flexDirection: "column",
 	justifyContent: "flex-end",

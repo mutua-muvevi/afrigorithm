@@ -55,24 +55,22 @@ export default function NavList({ item, isOffset }) {
 			/>
 
 			{!!children && openMenu && (
-				// <Portal>
-					<Fade in={openMenu}>
-						<StyledMenu
-							onMouseEnter={handleOpenMenu}
-							onMouseLeave={handleCloseMenu}
-						>
-							{children ? children.map((list, i) => (
-								<NavSubList
-									key={i}
-									subheader={list.subheader}
-									items={list.items}
-									isDashboard={list.subheader === "Dashboard"}
-									onClose={handleCloseMenu}
-								/>
-							)): ""}
-						</StyledMenu>
-					</Fade>
-				// </Portal>
+				<Fade in={openMenu}>
+					<StyledMenu
+						onMouseEnter={handleOpenMenu}
+						onMouseLeave={handleCloseMenu}
+					>
+						{children ? children.map((list, i) => (
+							<NavSubList
+								key={i}
+								subheader={list.subheader}
+								items={list.items}
+								isDashboard={list.subheader === "Dashboard"}
+								onClose={handleCloseMenu}
+							/>
+						)): ""}
+					</StyledMenu>
+				</Fade>
 			)}
 		</>
 	);

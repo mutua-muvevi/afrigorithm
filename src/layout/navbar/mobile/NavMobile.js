@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // @mui
-import { List, Drawer, IconButton } from "@mui/material";
+import { List, Drawer, IconButton, Stack, Typography, Divider, SwipeableDrawer } from "@mui/material";
 // config
 import { NAV } from "../../../config";
 // components
@@ -53,8 +53,9 @@ export default function NavMobile({ isOffset, data }) {
 				<Iconify icon="eva:menu-2-fill" />
 			</IconButton>
 
-			<Drawer
+			<SwipeableDrawer
 				open={open}
+				anchor="right"
 				onClose={handleClose}
 				PaperProps={{
 					sx: {
@@ -64,15 +65,28 @@ export default function NavMobile({ isOffset, data }) {
 				}}
 			>
 				<Scrollbar>
-					{/* <Logo sx={{ mx: 2.5, my: 3 }} /> */}
+					<Stack
+						direction="row"
+						spacing={2}
+						justifyContent="left"
+						sx={{ mx: 2.5 }}
+						alignItems="center"
+					>
+						<Logo sx={{ my: 3 }} />
+						<Typography variant="h5" sx={{ color: "#ffffff" }}>
+							Afrigorithm
+						</Typography>
+					</Stack>
+
+					<Divider/>
 
 					<List component="nav" disablePadding>
 						{data.map((link) => (
 							<NavList key={link.title} item={link} />
-						))}
+							))}
 					</List>
 				</Scrollbar>
-			</Drawer>
+			</SwipeableDrawer>
 		</>
 	);
 }
