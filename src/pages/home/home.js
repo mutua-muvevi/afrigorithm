@@ -11,7 +11,7 @@ import ContactForm from "src/components/sections/contactform";
 import LeftRightContainered from "src/components/sections/leftrightcontainered";
 
 import { leftRightContainerList } from "./info"
-import HomeNews from "./sections/news";
+import ReusableNewsCards from "src/components/sections/newscards";
 
 const image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687988001/images/tablet_ifczul.jpg";
 const subtitle= `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor lobortis gravida. Duis efficitur velit nibh, vel vulputate neque posuere pharetra.`
@@ -57,6 +57,7 @@ const Home = () => {
 					title="Continue to Grow Business."
 					subtitle={subtitle}
 					chipText="Business Type"
+					chipColor="white"
 					list={leftRightContainerList}
 					imgPosition="right"
 					image={image}
@@ -66,7 +67,7 @@ const Home = () => {
 				/>
 				<HomeTestimonial/>
 				<Subscribe/>
-				<HomeNews/>
+				<ReusableNewsCards/>
 				<ContactForm/>
 			</StyledWrapper>
 		</Page>

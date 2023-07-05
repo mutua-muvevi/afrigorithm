@@ -16,16 +16,6 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 
 }));
 
-const StyledListIconBox = styled(Box)(({ theme }) => ({
-	padding: "0",
-	backgroundColor: theme.palette.primary.main,
-	borderRadius: theme.shape.borderRadius,
-	color: "#ffffff",
-	display: "flex",
-	justifyContent: "center",
-	alignItems: "center",
-}));
-
 const LeftRightContainered = ({
 	title,
 	subtitle,
@@ -44,6 +34,16 @@ const LeftRightContainered = ({
 		paddingTop: "70px",
 		paddingBottom: "70px",
 		backgroundColor: backgroundColor ? theme.palette.primary.main : "inherit"
+	}));
+	
+	const StyledListIconBox = styled(Box)(({ theme }) => ({
+		padding: "0",
+		backgroundColor: chipColor && chipColor === "white" ? "#ffffff" : theme.palette.primary.main,
+		color: chipColor && chipColor === "white" ?  theme.palette.primary.main : "#ffffff",
+		borderRadius: theme.shape.borderRadius,
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
 	}));
 
 	const ImageSection = (
@@ -67,6 +67,7 @@ const LeftRightContainered = ({
 					subtitle={subtitle}
 					chipText={chipText}
 					chipWidth={chipWidth}
+					chipColor={chipColor}
 				/>
 				<Stack direction="column" spacing={1.5}>
 					{paragraphs &&

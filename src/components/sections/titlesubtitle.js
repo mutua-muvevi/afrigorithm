@@ -27,7 +27,7 @@ const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignI
 				{title}
 			</Typography>
 
-			<Typography variant="h6">
+			<Typography variant="h6" textAlign={alignItems ? alignItems : "left"}>
 				{subtitle}
 			</Typography>
 
