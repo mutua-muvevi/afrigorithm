@@ -25,7 +25,15 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const Banner = () => {
-	const words = ["Welcome to Afrigorithm", "We have the experience"];
+	const words = [
+		"Saas Web Application",
+		"Mobile Application Both Android and IOS",
+		"Desktop Application",
+		"Machine Learning & AI projects",
+		"Cloud Computing systems",
+		"Database Management Systems",
+		"Strong Network Systems"
+	];
 	const typing = useTypewriter(words);
 
 	return (
@@ -33,7 +41,8 @@ const Banner = () => {
 			<StyledContainer maxWidth="xl">
 				<Stack direction="column" spacing={5}>
 				
-					<Typography variant="h1">{typing}</Typography>
+					<Typography variant="h2" sx={{color: "#ffffff"}}> We develop & maintain : {typing}</Typography>
+
 					<Typography variant="h6">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 						Morbi porttitor lobortis gravida. Duis efficitur velit nibh,

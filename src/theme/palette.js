@@ -156,7 +156,7 @@ export const palette = (themeMode) => {
 			disabled: GREY[500],
 		},
 		background: {
-			paper: "#FFFFFF",
+			paper: "#C2DEFF",
 			default: "#FFFFFF",
 			neutral: GREY[200],
 		},
@@ -170,8 +170,8 @@ export const palette = (themeMode) => {
 		...COMMON,
 		mode: "dark",
 		text: {
-			primary: GREY[400],
-			secondary: GREY[500],
+			primary: "#C2DEFF",
+			secondary: "#93A9C2",
 			disabled: GREY[600],
 		},
 		background: {
