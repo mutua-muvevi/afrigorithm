@@ -65,8 +65,8 @@ const Home = () => {
 					backgroundColor
 				/>
 				<HomeTestimonial/>
-				<HomeNews/>
 				<Subscribe/>
+				<HomeNews/>
 				<ContactForm/>
 			</StyledWrapper>
 		</Page>
