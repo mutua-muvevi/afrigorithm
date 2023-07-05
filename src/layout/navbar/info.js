@@ -1,59 +1,5 @@
 import Iconify from "src/components/iconify/iconify"
 
-// export const menuItems = [
-// 	{
-// 		label: "Home",
-// 		path: "/landing/home"
-// 	},
-// 	{
-// 		label: "About",
-// 		path: "/landing/about"
-// 	},
-// 	{
-// 		label: "Services",
-// 		path: "/landing/services"
-// 	},
-// 	{
-// 		label: "Testimonials",
-// 		path: "/landing/testimonials"
-// 	},
-// 	{
-// 		label: "News",
-// 		path: "/landing/news"
-// 	},
-// 	{
-// 		label: "Contact",
-// 		path: "/landing/contact"
-// 	},
-// ]
-
-// export const drawerMenuItems = [
-// 	{
-// 		label: "Home",
-// 		path: "/landing/home"
-// 	},
-// 	{
-// 		label: "About",
-// 		path: "/landing/about"
-// 	},
-// 	{
-// 		label: "Services",
-// 		path: "/landing/services"
-// 	},
-// 	{
-// 		label: "Testimonials",
-// 		path: "/landing/testimonials"
-// 	},
-// 	{
-// 		label: "News",
-// 		path: "/landing/news"
-// 	},
-// 	{
-// 		label: "Contact",
-// 		path: "/landing/contact"
-// 	},
-// ]
-
 export const navConfig = [
 	{
 		title: "Home",
@@ -126,7 +72,7 @@ export const navConfig = [
 	},
 	{
 		title: "Our Resources",
-		icon: <Iconify icon="gg:website"/>,
+		icon: <Iconify icon="fluent:news-16-filled"/>,
 		path: "/landing/research",
 		children: [
 			{

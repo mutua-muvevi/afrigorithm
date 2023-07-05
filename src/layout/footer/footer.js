@@ -16,8 +16,8 @@ import { MdOutlineArrowForwardIos } from "react-icons/md";
 
 
 const StyledFooter = styled(Box)(({ theme }) => ({
-	paddingTop: "30px",
-	paddingBottom: "30px",
+	paddingTop: "70px",
+	paddingBottom: "70px",
 	backgroundColor: theme.palette.primary.main,
 }));
 

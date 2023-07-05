@@ -11,19 +11,9 @@ import { styled } from "@mui/system";
 
 import TitleSubtitle from "./titlesubtitle";
 
-const StyledWrapper = styled(Container)(({ theme }) => ({
-	paddingTop: "70px",
-	paddingBottom: "70px",
-}));
 
-const StyledListIconBox = styled(Box)(({ theme }) => ({
-	padding: "0",
-	backgroundColor: theme.palette.primary.main,
-	borderRadius: theme.shape.borderRadius,
-	color: "#ffffff",
-	display: "flex",
-	justifyContent: "center",
-	alignItems: "center",
+const StyledContainer = styled(Container)(({ theme }) => ({
+
 }));
 
 const LeftRightContainered = ({
@@ -37,7 +27,25 @@ const LeftRightContainered = ({
 	imgPosition,
 	image,
 	imageHeight,
+	backgroundColor
 }) => {
+	
+	const StyledWrapper = styled(Box)(({ theme }) => ({
+		paddingTop: "70px",
+		paddingBottom: "70px",
+		backgroundColor: backgroundColor ? theme.palette.primary.main : "inherit"
+	}));
+	
+	const StyledListIconBox = styled(Box)(({ theme }) => ({
+		padding: "0",
+		backgroundColor: chipColor && chipColor === "white" ? "#ffffff" : theme.palette.primary.main,
+		color: chipColor && chipColor === "white" ?  theme.palette.primary.main : "#ffffff",
+		borderRadius: theme.shape.borderRadius,
+		display: "flex",
+		justifyContent: "center",
+		alignItems: "center",
+	}));
+
 	const ImageSection = (
 		<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
 			<Card>
@@ -59,6 +67,7 @@ const LeftRightContainered = ({
 					subtitle={subtitle}
 					chipText={chipText}
 					chipWidth={chipWidth}
+					chipColor={chipColor}
 				/>
 				<Stack direction="column" spacing={1.5}>
 					{paragraphs &&
@@ -97,12 +106,14 @@ const LeftRightContainered = ({
 	);
 
 	return (
-		<StyledWrapper maxWidth="xl">
-			<Grid container spacing={3}>
-				{imgPosition === "left"
-					? [ImageSection, TextSection]
-					: [TextSection, ImageSection]}
-			</Grid>
+		<StyledWrapper>
+			<StyledContainer maxWidth="xl">
+				<Grid container spacing={3}>
+					{imgPosition === "left"
+						? [ImageSection, TextSection]
+						: [TextSection, ImageSection]}
+				</Grid>
+			</StyledContainer>
 		</StyledWrapper>
 	);
 };
