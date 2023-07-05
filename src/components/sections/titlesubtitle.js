@@ -5,7 +5,7 @@ const StyledWrapper = styled(Stack)(({ theme }) => ({
 
 }))
 
-const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth }) => {
+const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignItems }) => {
 	
 	const StyledBoxChip = styled(Stack)(({ theme }) => ({
 		backgroundColor: chipColor && chipColor === "white" ? "#ffffff" : theme.palette.primary.main,
@@ -16,9 +16,9 @@ const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth }) => {
 	}));
 
 	return (
-		<StyledWrapper spacing={1.5}>
+		<StyledWrapper spacing={1.5} alignItems={alignItems ? alignItems : "flex-start"}>
 			<StyledBoxChip justifyContent="center" alignItems="center">
-				<Typography variant="h5" sx={{textTransform: "uppercase"}}>
+				<Typography variant="subtitle1" sx={{textTransform: "uppercase"}}>
 					{chipText}
 				</Typography>
 			</StyledBoxChip>

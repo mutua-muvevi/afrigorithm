@@ -1,8 +1,10 @@
-import _ from "lodash";
-
 export function truncateStr(string, length) {
-	const response = _.truncate( string, {
-		length: length
-	})
-	return response;
-  }
+	if (typeof string !== "string") {
+		throw new Error("First argument must be a string");
+	}
+	if (typeof length !== "number") {
+		throw new Error("Second argument must be a number");
+	}
+
+	return string.length > length ? string.substr(0, length) + "..." : string;
+}

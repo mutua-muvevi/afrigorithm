@@ -1,58 +1,68 @@
-import PropTypes from 'prop-types';
-import { Link as RouterLink } from 'react-router-dom';
+import PropTypes from "prop-types";
+import { Link as RouterLink } from "react-router-dom";
 // @mui
-import { Link, ListItemText, ListItemIcon } from '@mui/material';
+import { Link, ListItemText, ListItemIcon } from "@mui/material";
 // components
-import Iconify from '../../../components/iconify';
+import Iconify from "../../../components/iconify";
 //
-import { ListItem } from './styles';
+import { ListItem } from "./styles";
 
 // ----------------------------------------------------------------------
 
 NavItem.propTypes = {
-  open: PropTypes.bool,
-  active: PropTypes.bool,
-  item: PropTypes.object,
-  isExternalLink: PropTypes.bool,
+	open: PropTypes.bool,
+	active: PropTypes.bool,
+	item: PropTypes.object,
+	isExternalLink: PropTypes.bool,
 };
 
-export default function NavItem({ item, open, active, isExternalLink, ...other }) {
-  const { title, path, icon, children } = item;
+export default function NavItem({
+	item,
+	open,
+	active,
+	isExternalLink,
+	...other
+}) {
+	const { title, path, icon, children } = item;
 
-  const renderContent = (
-    <ListItem active={active} {...other}>
-      <ListItemIcon> {icon} </ListItemIcon>
+	const renderContent = (
+		<ListItem active={active} {...other}>
+			<ListItemIcon> {icon} </ListItemIcon>
 
-      <ListItemText disableTypography primary={title} />
+			<ListItemText disableTypography primary={title} />
 
-      {!!children && (
-        <Iconify
-          width={16}
-          icon={open ? 'eva:arrow-ios-downward-fill' : 'eva:arrow-ios-forward-fill'}
-          sx={{ ml: 1 }}
-        />
-      )}
-    </ListItem>
-  );
+			{!!children && (
+				<Iconify
+					width={16}
+					icon={
+						open
+							? "eva:arrow-ios-downward-fill"
+							: "eva:arrow-ios-forward-fill"
+					}
+					sx={{ ml: 1 }}
+				/>
+			)}
+		</ListItem>
+	);
 
-  // ExternalLink
-  if (isExternalLink) {
-    return (
-      <Link href={path} target="_blank" rel="noopener" underline="none">
-        {renderContent}
-      </Link>
-    );
-  }
+	// ExternalLink
+	if (isExternalLink) {
+		return (
+			<Link href={path} target="_blank" rel="noopener" underline="none">
+				{renderContent}
+			</Link>
+		);
+	}
 
-  // Has child
-  if (children) {
-    return renderContent;
-  }
+	// Has child
+	if (children) {
+		return renderContent;
+	}
 
-  // Default
-  return (
-    <Link component={RouterLink} to={path} underline="none">
-      {renderContent}
-    </Link>
-  );
+	// Default
+	return (
+		<Link component={RouterLink} to={path} underline="none">
+			{renderContent}
+		</Link>
+	);
 }

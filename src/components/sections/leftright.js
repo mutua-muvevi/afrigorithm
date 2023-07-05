@@ -28,6 +28,7 @@ const LeftRight = ({
 	chipWidth,
 	chipColor,
 	list,
+	ImageminHeight,
 	paragraphs,
 	imgPosition,
 	image,
@@ -36,7 +37,8 @@ const LeftRight = ({
 		backgroundImage: `url(${image})`,
 		backgroundSize: "cover",
 		backgroundPosition: "center",
-		backgroundRepeat: "no-repeat"
+		backgroundRepeat: "no-repeat",
+		minHeight: ImageminHeight ? ImageminHeight : "50vh"
 	}))
 
 	const ImageSection = (

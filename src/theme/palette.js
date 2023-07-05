@@ -170,13 +170,13 @@ export const palette = (themeMode) => {
 		...COMMON,
 		mode: "dark",
 		text: {
-			primary: "#FFFFFF",
+			primary: GREY[400],
 			secondary: GREY[500],
 			disabled: GREY[600],
 		},
 		background: {
-			paper: GREY[800],
-			default: GREY[900],
+			paper: "rgba(30,33,60,255)",
+			default: "#020a19",
 			neutral: alpha(GREY[500], 0.16),
 		},
 		action: {
