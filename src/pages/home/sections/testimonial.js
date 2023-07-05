@@ -1,4 +1,4 @@
-import { Avatar, Box, Card, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
+import { Avatar, Box, Card, CardContent, Container, Grid, Rating, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import ReusableCarousel from "src/components/sections/carousel";
 
@@ -62,6 +62,7 @@ const HomeTestimonial = () => {
 														<Typography variant="subtitle2">
 															{el.professional}
 														</Typography>
+														<Rating readOnly value={el.rating} precision={0.5} />
 													</Stack>
 												</Stack>
 											</CardContent>
