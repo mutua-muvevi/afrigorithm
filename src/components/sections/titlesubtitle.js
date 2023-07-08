@@ -23,7 +23,7 @@ const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignI
 				</Typography>
 			</StyledBoxChip>
 			
-			<Typography variant="h3">
+			<Typography variant="h3" textAlign={alignItems ? alignItems : "left"}>
 				{title}
 			</Typography>
 

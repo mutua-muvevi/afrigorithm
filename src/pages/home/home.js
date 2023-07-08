@@ -12,6 +12,7 @@ import LeftRightContainered from "src/components/sections/leftrightcontainered";
 
 import { leftRightContainerList } from "./info"
 import ReusableNewsCards from "src/components/sections/newscards";
+import HomeDomain from "./sections/domain";
 
 const image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687988001/images/tablet_ifczul.jpg";
 const subtitle= `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor lobortis gravida. Duis efficitur velit nibh, vel vulputate neque posuere pharetra.`
@@ -65,6 +66,7 @@ const Home = () => {
 					chipWidth="200px"
 					backgroundColor
 				/>
+				<HomeDomain/>
 				<HomeTestimonial/>
 				<Subscribe/>
 				<ReusableNewsCards/>

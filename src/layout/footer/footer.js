@@ -13,6 +13,7 @@ import { styled } from "@mui/system";
 import { footerItems } from "./info";
 
 import { MdOutlineArrowForwardIos } from "react-icons/md";
+import SocialMediaIcons from "src/components/sections/socialmedia";
 
 
 const StyledFooter = styled(Box)(({ theme }) => ({
@@ -79,6 +80,16 @@ const Footer = () => {
 								<Typography variant="body2">
 									{footerItems.logoSection.text}
 								</Typography>
+
+								<Stack direction="row" alignItems="center" justifyContent="left" spacing={2}>
+									{
+										SocialMediaIcons.map((icon, i) => (
+											<a href={icon.link} target="_blank" rel="noreferrer" style={styledLink}>
+												{icon.icon}
+											</a>
+										))
+									}
+								</Stack>
 							</StyledGridStack>
 						</StyledGridItem>
 
