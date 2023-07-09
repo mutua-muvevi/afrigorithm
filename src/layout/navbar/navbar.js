@@ -69,6 +69,10 @@ export default function Navbar() {
 						variant="contained"
 						target="_blank"
 						rel="noopener"
+						sx={{
+							backgroundColor: "#ffffff",
+							color: theme.palette.primary.main
+						}}
 					>
 						Request Quotation
 					</Button>
