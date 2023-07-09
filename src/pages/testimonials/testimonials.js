@@ -3,6 +3,7 @@ import { styled } from "@mui/system";
 import ReusableBanner from "src/components/sections/banner";
 
 import Page from "src/components/ui/Page";
+import TestimonialsCards from "./sections/cards";
 
 
 const image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688897567/teck_background_flkexe.jpg";
@@ -22,6 +23,7 @@ const Testimonials = () => {
 					height="60vh"
 					alignItems="center"
 				/>
+				<TestimonialsCards/>
 			</StyledWrapper>
 		</Page>
 	);

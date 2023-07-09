@@ -47,6 +47,54 @@ const TestimonialsList = [
 		rating: 4.9,
 		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435671/samples/people/smiling-man.jpg",
 	},
+	{
+		fullname: "Robert K.",
+		professional: "CTO",
+		description:
+			"I am truly impressed with this team's technical expertise and problem-solving skills. They have delivered innovative solutions that have transformed our operations and boosted our efficiency. I highly recommend their services for any tech-related projects!",
+		rating: 4.6,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435668/samples/people/kitchen-bar.jpg",
+	},
+	{
+		fullname: "Emma R.",
+		professional: "Marketing Manager",
+		description:
+			"I have witnessed remarkable results after partnering with this team for our marketing campaigns. Their strategic approach, attention to detail, and ability to adapt to changing market trends have helped us achieve outstanding ROI. They are the best in the industry!",
+		rating: 4.9,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg",
+	},
+	{
+		fullname: "Richard H.",
+		professional: "Operations Director",
+		description:
+			"This team's expertise in process optimization and automation has been invaluable to our organization. They have helped us streamline our operations, reduce costs, and improve overall productivity. Their dedication and professionalism are truly commendable!",
+		rating: 4.7,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435671/samples/people/smiling-man.jpg",
+	},
+	{
+		fullname: "Olivia M.",
+		professional: "Business Owner",
+		description:
+			"Partnering with this team has been a game-changer for my business. They have provided strategic guidance, implemented cutting-edge technologies, and delivered exceptional results that have helped us stay ahead of the competition. I highly recommend their services!",
+		rating: 5,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435668/samples/people/kitchen-bar.jpg",
+	},
+	{
+		fullname: "Daniel T.",
+		professional: "IT Manager",
+		description:
+			"This team's expertise in IT infrastructure management and support is unmatched. They have successfully handled complex projects, resolved critical issues, and provided proactive solutions to ensure the smooth functioning of our systems. They are reliable and highly recommended!",
+		rating: 4.8,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435668/samples/people/kitchen-bar.jpg",
+	},
+	{
+		fullname: "Sophia B.",
+		professional: "Operations Manager",
+		description:
+			"I am extremely satisfied with the services provided by this team. Their attention to detail, prompt communication, and commitment to delivering high-quality results have made them an invaluable partner. They have exceeded my expectations, and I highly endorse their services!",
+		rating: 4.9,
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687435671/samples/people/smiling-man.jpg",
+	},
 ];
 
-export default TestimonialsList
+export default TestimonialsList;
