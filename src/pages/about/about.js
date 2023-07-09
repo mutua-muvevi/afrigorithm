@@ -7,6 +7,8 @@ import Page from "src/components/ui/Page";
 import { leftRightList } from "./info";
 import Variety from "./sections/variety";
 import MisionStatements from "./sections/statements";
+import Subscribe from "src/components/sections/subscribe";
+import Founders from "./sections/founder";
 
 const image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688897567/teck_background_flkexe.jpg"
 const subtitle = "Accelerating digital transformation journeys for enterprises worldwide through strategic insights, seamless integration, and advanced technologies. Experience a new era of agility, productivity, and competitive advantage."
@@ -37,6 +39,8 @@ const About = () => {
 				/>
 				<Variety/>
 				<MisionStatements/>
+				<Subscribe/>
+				<Founders/>
 			</StyledWrapper>
 		</Page>
 	)

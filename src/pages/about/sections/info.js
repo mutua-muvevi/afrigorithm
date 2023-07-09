@@ -47,3 +47,21 @@ export const statements = [
 		text: "Our vision is to be the leading technology partner, driving digital transformation across industries. We envision a future where businesses harness the power of technology to solve complex challenges, unlock new opportunities, and achieve sustainable growth."
 	},
 ];
+
+
+export const founders = [
+	{
+		fullname: "John Matara",
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg",
+		role: "Co-Founder",
+		profession: "Chief Executive Officer",
+		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu suscipit eros. Vivamus id aliquam neque, ut porta ante. Maecenas tincidunt dignissim sodales."
+	},
+	{
+		fullname: "Joseph Muvevi",
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg",
+		role: "Co-Founder",
+		profession: "Chief Technology Officer",
+		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu suscipit eros. Vivamus id aliquam neque, ut porta ante. Maecenas tincidunt dignissim sodales."
+	},
+]

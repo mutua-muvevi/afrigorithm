@@ -44,6 +44,10 @@ export const footerItems = {
 		title: "Support",
 		items: [
 			{
+				label: "Job Openings",
+				link: ""
+			},
+			{
 				label: "Privacy Policy",
 				link: ""
 			},
@@ -52,15 +56,11 @@ export const footerItems = {
 				link: ""
 			},
 			{
-				label: "Twitter",
+				label: "Press",
 				link: ""
 			},
 			{
-				label: "Facebook",
-				link: ""
-			},
-			{
-				label: "LinkedIn",
+				label: "Legal",
 				link: ""
 			},
 		]
