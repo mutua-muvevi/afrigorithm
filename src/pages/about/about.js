@@ -5,6 +5,7 @@ import LeftRightList from "src/components/sections/leftrightlist";
 
 import Page from "src/components/ui/Page";
 import { leftRightList } from "./info";
+import Variety from "./sections/variety";
 
 const image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688897567/teck_background_flkexe.jpg"
 const subtitle = "Accelerating digital transformation journeys for enterprises worldwide through strategic insights, seamless integration, and advanced technologies. Experience a new era of agility, productivity, and competitive advantage."
@@ -33,6 +34,7 @@ const About = () => {
 					imageHeight="500"
 					chipWidth="200px"
 				/>
+				<Variety/>
 			</StyledWrapper>
 		</Page>
 	)
