@@ -31,7 +31,7 @@ export const navConfig = [
 		]
 	},
 	{
-		title: "Our Services",
+		title: "Services",
 		icon: <Iconify icon="bi:laptop-fill"/>,
 		path: "/landing/services",
 		children: [
@@ -51,7 +51,7 @@ export const navConfig = [
 		]
 	},
 	{
-		title: "Our Products",
+		title: "Products",
 		icon: <Iconify icon="gg:website"/>,
 		path: "/landing/products",
 		children: [
@@ -71,7 +71,7 @@ export const navConfig = [
 		]
 	},
 	{
-		title: "Our Resources",
+		title: "Resources",
 		icon: <Iconify icon="fluent:news-16-filled"/>,
 		path: "/landing/research",
 		children: [
