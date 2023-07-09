@@ -4,8 +4,8 @@ import { styled } from "@mui/system";
 import useTypewriter from "src/hooks/useTypewriter";
 import { bannerCards } from "./info";
 
-const Image =
-	"https://res.cloudinary.com/dbj0t0zym/image/upload/v1687983038/images/techbackground_f8nfzu.jpg";
+const Image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687983038/images/techbackground_f8nfzu.jpg";
+const subtitle = "At the forefront of technological advancements, we engineer solutions that shape industries, revolutionize processes, and foster innovation. Discover how our expertise and passion drive the digital evolution.";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	minHeight: "70vh",
@@ -41,14 +41,12 @@ const Banner = () => {
 			<StyledContainer maxWidth="xl">
 				<Stack direction="column" spacing={5}>
 				
-					<Typography variant="h2" sx={{color: "#ffffff"}}> We develop & maintain : {typing}</Typography>
+					<Typography variant="h2" sx={{color: "#ffffff"}}>
+						We develop & maintain : {typing}
+					</Typography>
 
-					<Typography variant="h6">
-						Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-						Morbi porttitor lobortis gravida. Duis efficitur velit nibh,
-						vel vulputate neque posuere pharetra. Donec vitae semper
-						elit. In in tortor scelerisque orci dapibus finibus vel
-						interdum est.
+					<Typography variant="h6" sx={{ color: "#ffffff" }}>
+						{subtitle}
 					</Typography>
 
 					<div>
