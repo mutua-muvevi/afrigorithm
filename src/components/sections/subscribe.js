@@ -23,12 +23,18 @@ const FORM_VALIDATION = Yup.object().shape({
 });
 
 const StyledWrapper = styled(Container)(({ theme }) => ({
-	minHeight: "25vh",
-	paddingTop: "50px",
-	paddingBottom: "50px",
 	borderRadius: theme.shape.borderRadius,
 	backgroundImage: `linear-gradient(to bottom, rgba(19, 102, 255, 0.4), rgba(19, 102, 255, 0.5)), url(${Image})`,
 	backgroundSize: "cover"
+}));
+
+const StyledGrid = styled(Grid)(({ theme }) => ({
+	
+}));
+
+const StyledGridItemText = styled(Grid)(({ theme }) => ({
+	paddingTop: "50px",
+	paddingBottom: "50px",
 }));
 
 const StyledButton = styled(Button)(({ theme }) => ({
@@ -39,7 +45,8 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }))
 
 const imageStyle = {
-	width: "350px"
+	width: "350px",
+	position: "relative"
 }
 
 const Subscribe = () => {
@@ -50,8 +57,8 @@ const Subscribe = () => {
 
 	return (
 		<StyledWrapper maxWidth="xl">
-			<Grid container spacing={3}>
-				<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
+			<StyledGrid container spacing={3}>
+				<StyledGridItemText item xs={12} sm={12} md={12} lg={6} xl={6}>
 					<Stack direction="column" justifyContent="center" sx={{ height: "100%"}}>
 						<Formik
 							initialValues={{
@@ -86,7 +93,7 @@ const Subscribe = () => {
 							</Form>
 						</Formik>
 					</Stack>
-				</Grid>
+				</StyledGridItemText>
 
 				<Grid item xs={12} sm={12} md={12} lg={6} xl={6}>
 					<Stack
@@ -96,7 +103,7 @@ const Subscribe = () => {
 						<img src={Person} alt="Subscribe to Afrogorithm Mail List" style={imageStyle}/>
 					</Stack>
 				</Grid>
-			</Grid>
+			</StyledGrid>
 		</StyledWrapper>
 	);
 };
