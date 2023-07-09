@@ -1,13 +1,16 @@
-import { Avatar, Box, Card, CardContent, Container, Grid, Rating, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, Container, Grid, Rating, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import ReusableCarousel from "src/components/sections/carousel";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import TestimonialsList from "src/content/testimonials";
 
-const subtitle=  "Discover what our clients have to say about their experiences with our services. Read these glowing testimonials and see why we're the best choice for your needs.";
+const subtitle="Our valued clients have shared their stories, highlighting the outstanding results, seamless experiences, and the transformative impact of our solutions. From small businesses to industry leaders, their testimonials showcase the value we bring to their organizations. ";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
+	
+}))
+
+const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingTop: "100px",
 	paddingBottom: "100px",
 }));
@@ -30,20 +33,20 @@ const styledImage ={
 	borderRadius: "50%"
 }
 
-const HomeTestimonial = () => {
+const TestimonialsCards = () => {
 	return (
 		<StyledWrapper>
-			<Container maxWidth="xl">
-				<StyledGrid container spacing={3}>
-					<StyledGridItem item xs={12} sm={12} md={12} lg={4} xl={4}>
-						<TitleSubtitle
-							title="Words of Appreciation from our Customers"
-							subtitle={subtitle}
-							chipText="testimonials"
-						/>
-					</StyledGridItem>
-					<StyledGridItem item xs={12} sm={12} md={12} lg={8} xl={8}>
-						<ReusableCarousel speed={2000} visibleItems={2}>
+			<StyledContainer maxWidth="xl">
+				<Stack direction="column" spacing={3}>
+					<TitleSubtitle
+						chipText="testimonials"
+						title="Trusted all around the world"
+						subtitle={subtitle}
+						alignItems="center"
+					/>
+
+					<div>
+						<Grid container spacing={3}>
 							{
 								TestimonialsList.map((el, i) => (
 									<Grid item xs={12} sm={12} md={12} lg={4} xl={3} key={i}>
@@ -70,12 +73,12 @@ const HomeTestimonial = () => {
 									</Grid>
 								))
 							}
-						</ReusableCarousel>
-					</StyledGridItem>
-				</StyledGrid>
-			</Container>
+						</Grid>
+					</div>
+				</Stack>
+			</StyledContainer>
 		</StyledWrapper>
 	)
 }
 
-export default HomeTestimonial;
+export default TestimonialsCards
