@@ -27,7 +27,7 @@ const ReusableBanner = ({ image, height, title, subtitle }) => {
 					<Typography variant="h2" sx={{ color: "#ffffff" }}>
 						{title}
 					</Typography>
-					<Typography variant="h6" >
+					<Typography variant="h6" textAlign="justify">
 						{subtitle}
 					</Typography>
 				</Stack>
