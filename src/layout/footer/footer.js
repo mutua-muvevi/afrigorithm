@@ -84,7 +84,7 @@ const Footer = () => {
 								<Stack direction="row" alignItems="center" justifyContent="left" spacing={2}>
 									{
 										SocialMediaIcons.map((icon, i) => (
-											<a href={icon.link} target="_blank" rel="noreferrer" style={styledLink}>
+											<a href={icon.link} target="_blank" rel="noreferrer" key={i} style={styledLink}>
 												{icon.icon}
 											</a>
 										))

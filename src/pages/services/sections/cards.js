@@ -1,9 +1,11 @@
-import { Box, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
-import Iconify from "src/components/iconify/iconify";
+import { connect } from "react-redux";
 
+import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import ServiceList from "src/content/services";
+import { selectService } from "src/redux/services/action";
 import { truncateStr } from "src/utils/formatStrings";
 
 const subtitle = "Embark on a transformative journey with our comprehensive suite of tech services that are meticulously crafted to drive your business forward. Our team of industry experts harnesses the power of cutting-edge technologies to deliver solutions that revolutionize the way you operate"
@@ -14,9 +16,19 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingTop: "100px",
 	paddingBottom: "100px"
+}));
+
+
+const StyledButton = styled(Button)(({ theme }) => ({
+	padding: "10px"
 }))
 
-const ServicesCards = () => {
+const ServicesCards = ({selectService}) => {
+	
+	const selectServiceHandler = (service) => {
+		selectService(service)
+	}
+
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
@@ -29,25 +41,25 @@ const ServicesCards = () => {
 					<div>
 						<Grid container spacing={3}>
 							{
-								ServiceList.map((el, i) => (
+								ServiceList.map((service, i) => (
 									<Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
 										<Card>
-											<CardActionArea>
+											<CardActionArea onClick={() => selectServiceHandler(service)}>
 												<CardContent>
 													<Stack direction="column" spacing={3}>
 														<Stack direction="row" justifyContent="left" spacing={3}>
-															<Iconify icon={el.icon} width={50}/>
+															<Iconify icon={service.icon} width={50}/>
 															<Stack direction="column">
 																<Typography variant="h5">
-																	{el.title}
+																	{service.title}
 																</Typography>
 																<Typography variant="subtitle2" color="text.secondary">
-																	{el.subtitle}
+																	{service.subtitle}
 																</Typography>
 															</Stack>
 														</Stack>
 														<Typography variant="body1">
-															{truncateStr(el.mainText, 200)}
+															{truncateStr(service.mainText, 200)}
 														</Typography>
 													</Stack>
 												</CardContent>
@@ -56,6 +68,15 @@ const ServicesCards = () => {
 									</Grid>
 								))
 							}
+							<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+								<Stack>
+									<StyledButton variant="contained" color="primary" endIcon={<Iconify icon="bi:chat-right-quote-fill"/>}>
+										<Typography variant="h5">
+											Request Service Now
+										</Typography>
+									</StyledButton>
+								</Stack>
+							</Grid>
 						</Grid>
 					</div>
 				</Stack>
@@ -64,4 +85,9 @@ const ServicesCards = () => {
 	)
 }
 
-export default ServicesCards
+const mapStateToProps = ({}) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+	selectService : (service) => dispatch(selectService(service))
+})
+export default connect(mapStateToProps, mapDispatchToProps)(ServicesCards)
