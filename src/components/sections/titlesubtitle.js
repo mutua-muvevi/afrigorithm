@@ -5,14 +5,15 @@ const StyledWrapper = styled(Stack)(({ theme }) => ({
 
 }))
 
-const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignItems }) => {
+const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignItems, backgroundColor }) => {
 	
 	const StyledBoxChip = styled(Stack)(({ theme }) => ({
 		backgroundColor: chipColor && chipColor === "white" ? "#ffffff" : theme.palette.primary.main,
 		color: chipColor && chipColor === "white" ?  theme.palette.primary.main : "#ffffff",
 		borderRadius: theme.shape.borderRadius,
 		width: chipWidth ? chipWidth : "200px",
-		padding: "10px"
+		padding: "10px",
+		display: chipText ? "block" : "none"
 	}));
 
 	return (
@@ -23,11 +24,11 @@ const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignI
 				</Typography>
 			</StyledBoxChip>
 			
-			<Typography variant="h3" textAlign={alignItems ? alignItems : "left"}>
+			<Typography variant="h3" textAlign={alignItems ? alignItems : "justify"}>
 				{title}
 			</Typography>
 
-			<Typography variant="h6" textAlign={alignItems ? alignItems : "left"}>
+			<Typography variant="h6" textAlign={alignItems ? alignItems : "justify"}>
 				{subtitle}
 			</Typography>
 

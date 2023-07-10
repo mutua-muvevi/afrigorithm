@@ -1,6 +1,7 @@
 import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
@@ -24,9 +25,12 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }))
 
 const ServicesCards = ({selectService}) => {
+
+	const navigate= useNavigate()
 	
 	const selectServiceHandler = (service) => {
 		selectService(service)
+		navigate("/landing/service/single")
 	}
 
 	return (
