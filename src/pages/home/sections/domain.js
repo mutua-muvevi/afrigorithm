@@ -10,11 +10,13 @@ import {
 	Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
+import { connect } from "react-redux";
 import { useNavigate } from "react-router-dom";
 import Iconify from "src/components/iconify/iconify";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import DomainList from "src/content/domain";
+import { selectDomain } from "src/redux/domain/action";
 import { truncateStr } from "src/utils/formatStrings";
 
 const title =
@@ -29,12 +31,19 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const SlicedDomainList = DomainList.slice(0,9)
 
-const HomeDomain = () => {
+const HomeDomain = ({selectDomain}) => {
 	const navigate = useNavigate();
 
 	const goToDomain = () => {
 		navigate("/landing/domain")
 	}
+
+	
+	const selectDomainHandler = (domain) => {
+		selectDomain(domain)
+	}
+
+
 	return (
 		<StyledWrapper>
 			<Container maxWidth="xl">
@@ -48,7 +57,7 @@ const HomeDomain = () => {
 
 					<div>
 						<Grid container spacing={3}>
-							{SlicedDomainList.map((el, i) => (
+							{SlicedDomainList.map((domain, i) => (
 								<Grid
 									item
 									key={i}
@@ -59,7 +68,7 @@ const HomeDomain = () => {
 									xl={4}
 								>
 									<Card>
-										<CardActionArea>
+										<CardActionArea onClick={() => selectDomainHandler(domain)}>
 											<CardContent sx={{minHeight: 240}}>
 												<Stack
 													direction="row"
@@ -67,24 +76,24 @@ const HomeDomain = () => {
 													spacing={3}
 												>
 													<Iconify
-														icon={el.icon}
+														icon={domain.icon}
 														width={50}
 													/>
 													<Stack direction="column">
 														<Typography variant="h5">
-															{el.title}
+															{domain.title}
 														</Typography>
 														<Typography
 															variant="subtitle2"
 															color="text.secondary"
 														>
-															{el.subtitle}
+															{domain.subtitle}
 														</Typography>
 													</Stack>
 												</Stack>
 												<Typography variant="body1">
 													{truncateStr(
-														el.mainText,
+														domain.mainText,
 														200
 													)}
 												</Typography>
@@ -104,4 +113,11 @@ const HomeDomain = () => {
 	);
 };
 
-export default HomeDomain;
+
+const mapStateToProps = ({}) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+	selectDomain : (domain) => dispatch(selectDomain(domain))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(HomeDomain);
