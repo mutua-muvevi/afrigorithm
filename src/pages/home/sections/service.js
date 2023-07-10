@@ -15,6 +15,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod purus a turpis pretium volutpat. Aliquam erat volutpat. In dignissim vitae tortor nec suscipit."
 
+
 const HomeServices = ({selectService}) => {
 
 	const selectServiceHandler = (service) => {
@@ -62,6 +63,7 @@ const HomeServices = ({selectService}) => {
 									</Grid>
 								))
 							}
+							
 						</Grid>
 					</div>
 				</Stack>

@@ -1,4 +1,4 @@
-import { Box, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { connect } from "react-redux";
 
@@ -16,6 +16,11 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingTop: "100px",
 	paddingBottom: "100px"
+}));
+
+
+const StyledButton = styled(Button)(({ theme }) => ({
+	padding: "10px"
 }))
 
 const ServicesCards = ({selectService}) => {
@@ -63,6 +68,15 @@ const ServicesCards = ({selectService}) => {
 									</Grid>
 								))
 							}
+							<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+								<Stack>
+									<StyledButton variant="contained" color="primary" endIcon={<Iconify icon="bi:chat-right-quote-fill"/>}>
+										<Typography variant="h5">
+											Request Service Now
+										</Typography>
+									</StyledButton>
+								</Stack>
+							</Grid>
 						</Grid>
 					</div>
 				</Stack>
