@@ -21,6 +21,7 @@ import Domain from "./pages/domain/domain";
 import WIP from "./pages/wip/wip";
 import Legal from "./pages/legal/legal";
 import Blogs from "./pages/blogs/blogs";
+import SingleService from "./pages/singleService/singleService";
 
 //router function
 const Router = () => {
@@ -40,6 +41,10 @@ const Router = () => {
 				{
 					path: "/landing/services",
 					element: <Services/>
+				},
+				{
+					path: "/landing/service/single",
+					element: <SingleService/>
 				},
 				{
 					path: "/landing/domain",

@@ -1,6 +1,7 @@
 import { Box, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from"@mui/system"
 import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
 import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 
@@ -13,13 +14,15 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingBottom: "100px"
 }))
 
-const subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod purus a turpis pretium volutpat. Aliquam erat volutpat. In dignissim vitae tortor nec suscipit."
+const subtitle="With our comprehensive suite of innovative services, we empower you to thrive in the digital age. Experience the difference of our cutting-edge technologies, expert guidance, and unparalleled customer service. Together, let's embark on a journey of digital transformation and achieve new heights of success."
 
 
 const HomeServices = ({selectService}) => {
+	const navigate = useNavigate()
 
 	const selectServiceHandler = (service) => {
 		selectService(service)
+		navigate("/landing/service/single")
 	}
 
 	return (
