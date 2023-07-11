@@ -41,6 +41,7 @@ const ParagraphList = ({ content, chipColor }) => {
 
 	return (
 		<StyledWrapper direction="column">
+			{console.log("Content", content)}
 			{content
 				? content.map((cont, index) => (
 						<StyledContentWrapper
@@ -89,7 +90,7 @@ const ParagraphList = ({ content, chipColor }) => {
 									>
 										<Stack direction="column" spacing={3}>
 											{cont.list &&
-												cont.list.items.map(
+												cont.list.items ? cont.list.items.map(
 													(item, i) => (
 														<Stack
 															direction="row"
@@ -125,7 +126,8 @@ const ParagraphList = ({ content, chipColor }) => {
 															</Stack>
 														</Stack>
 													)
-												)}
+												) : ""
+											}
 										</Stack>
 									</Grid>
 								</StyledGrid>
