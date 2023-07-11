@@ -22,6 +22,7 @@ import WIP from "./pages/wip/wip";
 import Legal from "./pages/legal/legal";
 import Blogs from "./pages/blogs/blogs";
 import SingleService from "./pages/singleService/singleService";
+import SingleDomain from "./pages/singleDomain/singleDomain";
 
 //router function
 const Router = () => {
@@ -49,6 +50,10 @@ const Router = () => {
 				{
 					path: "/landing/domain",
 					element: <Domain/>
+				},
+				{
+					path: "/landing/domain/single",
+					element: <SingleDomain/>
 				},
 				{
 					path: "/landing/products",

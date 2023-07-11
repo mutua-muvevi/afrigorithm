@@ -20,7 +20,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	marginBottom: "100px",
 }));
 
-const ParagraphList = ({ content, chipColor }) => {
+const ParagraphList = ({ content, chipColor, icon, iconWidth, buttonText }) => {
 	const theme = useTheme();
 
 	const StyledListIconBox = styled(Box)(({ theme }) => ({
@@ -143,12 +143,14 @@ const ParagraphList = ({ content, chipColor }) => {
 						color="primary"
 						endIcon={
 							<Iconify
-								width={25}
-								icon="material-symbols:order-approve-rounded"
+								width={iconWidth ? iconWidth: 25}
+								icon={icon ? icon : "material-symbols:order-approve-rounded"}
 							/>
 						}
 					>
-						<Typography variant="h5">Order Now</Typography>
+						<Typography variant="h5">
+							{ buttonText ? `Capitalize on ${buttonText} Now` : "Request now" }
+						</Typography>
 					</StyledButton>
 				</Stack>
 			</Container>
