@@ -13,13 +13,13 @@ const TitleSubtitle = ({ title, chipText, chipColor, subtitle, chipWidth, alignI
 		borderRadius: theme.shape.borderRadius,
 		width: chipWidth ? chipWidth : "200px",
 		padding: "10px",
-		display: chipText ? "block" : "none"
+		display: chipText ? "block" : "none",
 	}));
 
 	return (
 		<StyledWrapper spacing={1.5} alignItems={alignItems ? alignItems : "flex-start"}>
-			<StyledBoxChip justifyContent="center" alignItems="center">
-				<Typography variant="subtitle1" sx={{textTransform: "uppercase"}}>
+			<StyledBoxChip direction="row" justifyContent="center" alignItems="center">
+				<Typography variant="subtitle1" textAlign="center" sx={{textTransform: "uppercase"}}>
 					{chipText}
 				</Typography>
 			</StyledBoxChip>

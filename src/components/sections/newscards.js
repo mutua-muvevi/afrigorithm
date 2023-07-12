@@ -1,11 +1,8 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Divider, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "./titlesubtitle";
-import BlogList from "src/content/blogs";
 import { truncateStr } from "src/utils/formatStrings";
-
-const subtitle = "Explore a variety of subjects, including tech trends, lifestyle hacks, career advice, and more. Fuel your intellectual growth, one blog at a time, and let your newfound knowledge inspire your personal and professional journey."
 
 const StyledWrapper = styled(Container)(({ theme }) => ({
 	paddingTop: "100px",
@@ -21,20 +18,20 @@ const StyledCardContent = styled(CardActionArea)(({ theme }) => ({
 	height: "100%"
 }))
 
-const ReusableNewsCards = () => {
+const ReusableNewsCards = ({title, subtitle, alignItems, chipText, list}) => {
 	return (
 		<StyledWrapper maxWidth="xl">
 			<Stack direction="column" spacing={5} justifyContent="center">
 				<TitleSubtitle
-					title="Insights Unleashed: Unlocking Knowledge and Inspiration"
+					title={title}
 					subtitle={subtitle}
-					chipText="Blogs and Articles"
-					alignItems="center"
+					chipText={chipText}
+					alignItems={alignItems ? alignItems : "flex-start"}
 				/>
 				<div>
 					<Grid container spacing={3}>
 						{
-							BlogList.map((el, i) => (
+							list.map((el, i) => (
 								<Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={i}>
 									<StyledCard raised>
 										<StyledCardContent>
