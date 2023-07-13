@@ -114,6 +114,10 @@ const Router = () => {
 			element: <NotFound/>
 		},
 		{
+			path: "/",
+			element: <Navigate to="/landing/home" replace/>
+		},
+		{
 			path: "*",
 			element: <Navigate to="/404" replace/>
 		}
