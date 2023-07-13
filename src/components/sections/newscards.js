@@ -5,6 +5,7 @@ import TitleSubtitle from "./titlesubtitle";
 import { truncateStr } from "src/utils/formatStrings";
 import { selectNews } from "src/redux/news/action";
 import { connect } from "react-redux";
+import { useNavigate } from "react-router-dom";
 
 const StyledWrapper = styled(Container)(({ theme }) => ({
 	paddingTop: "100px",
@@ -22,8 +23,11 @@ const StyledCardActionArea = styled(CardActionArea)(({ theme }) => ({
 
 const ReusableNewsCards = ({title, subtitle, alignItems, chipText, list, setNews}) => {
 
+	const navigate = useNavigate()
+
 	const handleSelectNews = (news) => {
 		setNews(news)
+		navigate("/landing/news/single")
 	}
 
 	return (
