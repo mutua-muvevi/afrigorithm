@@ -50,26 +50,26 @@ export const navConfig = [
 			},
 		]
 	},
-	{
-		title: "Products",
-		icon: <Iconify icon="gg:website"/>,
-		path: "/landing/products",
-		children: [
-			{
-				subheader: "",
-				items: [
-					{
-						title: "Our Products",
-						path: "/landing/products"
-					},
-					{
-						title: "Work in Progress",
-						path: "/landing/wip"
-					},
-				]
-			}
-		]
-	},
+	// {
+	// 	title: "Products",
+	// 	icon: <Iconify icon="gg:website"/>,
+	// 	path: "/landing/products",
+	// 	children: [
+	// 		{
+	// 			subheader: "",
+	// 			items: [
+	// 				{
+	// 					title: "Our Products",
+	// 					path: "/landing/products"
+	// 				},
+	// 				{
+	// 					title: "Work in Progress",
+	// 					path: "/landing/wip"
+	// 				},
+	// 			]
+	// 		}
+	// 	]
+	// },
 	{
 		title: "Resources",
 		icon: <Iconify icon="fluent:news-16-filled"/>,
