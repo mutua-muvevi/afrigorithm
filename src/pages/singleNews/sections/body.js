@@ -48,36 +48,38 @@ const SingleNewsBody = ({ news }) => {
 			<ParagraphImageList content={news.content} />
 
 			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={1.5}>
-					<Typography variant="subtitle1">Tags :</Typography>
-					<div>
-						<Grid container spacing={3}>
-							{news.tags
-								? news.tags.map((tag, i) => (
-										<Grid
-											item
-											xs={12}
-											sm={6}
-											md={3}
-											lg={2.4}
-											key={i}
-										>
-											<StyledChipStack
-												justifyContent="center"
-												alignItems="center"
+				<Stack direction="column" spacing={5}>		
+					<Stack direction="column" spacing={1.5}>
+						<Typography variant="subtitle1">Tags :</Typography>
+						<div>
+							<Grid container spacing={3}>
+								{news.tags
+									? news.tags.map((tag, i) => (
+											<Grid
+												item
+												xs={12}
+												sm={6}
+												md={3}
+												lg={2.4}
+												key={i}
 											>
-												<Typography
-													variant="body1"
-													textAlign="center"
+												<StyledChipStack
+													justifyContent="center"
+													alignItems="center"
 												>
-													{tag}
-												</Typography>
-											</StyledChipStack>
-										</Grid>
-								  ))
-								: ""}
-						</Grid>
-					</div>
+													<Typography
+														variant="body1"
+														textAlign="center"
+													>
+														{tag}
+													</Typography>
+												</StyledChipStack>
+											</Grid>
+									))
+									: ""}
+							</Grid>
+						</div>
+					</Stack>
 
 					<Stack direction="column" spacing={1.5}>
 						<Typography variant="subtitle1">Category :</Typography>
