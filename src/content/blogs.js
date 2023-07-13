@@ -105,7 +105,7 @@ const BlogList = [
 					"Africa's infrastructural deficit is a significant hindrance to economic development. However, tech innovations present an avenue to bypass these traditional infrastructure bottlenecks. From mobile money transforming financial services to solar-powered solutions addressing energy deficiencies, technology is being harnessed to improve lives and economies.",
 					"Investing in such tech innovations not only supports economic growth but also builds resilience, as evident in the COVID-19 pandemic, where digital tools played a crucial role in maintaining societal functionality amid lockdowns.",
 				],
-				image: "bridging-infrastructure-gap-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Infrastructure Tech Solutions",
 					items: [
@@ -129,7 +129,7 @@ const BlogList = [
 					"Healthcare remains a significant challenge in many parts of Africa, with inadequate facilities, limited personnel, and logistic challenges. However, healthtech innovations are changing this narrative, bringing healthcare closer to the people. Telemedicine, AI-based diagnostic tools, and e-pharmacy services are improving healthcare delivery and access.",
 					"Investing in healthtech solutions supports the development of robust healthcare systems, an essential aspect of societal development.",
 				],
-				image: "improving-healthcare-access-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Healthtech Innovations in Africa",
 					items: [
@@ -153,7 +153,7 @@ const BlogList = [
 					"Financial inclusion, a key driver of economic growth, remains a challenge in many African nations. Fintech solutions are, however, addressing this, reaching the unbanked and underbanked, providing affordable and accessible financial services, and promoting economic participation.",
 					"Investments in fintech innovations, therefore, contribute significantly to economic growth, reducing poverty and promoting societal development.",
 				],
-				image: "promoting-financial-inclusion-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Fintech Solutions Driving Inclusion",
 					items: [
@@ -195,7 +195,7 @@ const BlogList = [
 					"Geographical barriers and shortages of healthcare professionals often hamper access to healthcare services in Africa. However, telemedicine is proving a game-changer, enabling remote consultations, reducing travel times and costs, and easing the strain on the limited number of healthcare professionals.",
 					"Mobile health (mHealth) applications are also making waves, providing health education, appointment scheduling, remote monitoring, and more, right at users' fingertips.",
 				],
-				image: "tech-driven-accessibility-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Tech Innovations Improving Healthcare Accessibility",
 					items: [
@@ -219,7 +219,7 @@ const BlogList = [
 					"Effective disease surveillance is critical in managing disease outbreaks and shaping public health policies. Technology, particularly Artificial Intelligence (AI) and big data, is proving instrumental in collecting, analyzing, and disseminating health data for better decision-making.",
 					"Research is also being enhanced with tech tools. From AI aiding in drug discovery to virtual reality enabling advanced surgical training, technology is transforming healthcare research and development.",
 				],
-				image: "tech-in-disease-surveillance-and-research-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Tech Innovations Enhancing Surveillance and Research",
 					items: [
@@ -243,7 +243,7 @@ const BlogList = [
 					"The administrative aspect of healthcare can be as crucial as the clinical aspect. Inefficient health management systems can result in poor service delivery, loss of funds, and other challenges. Digital health management systems, however, can streamline operations, improving service delivery, and accountability.",
 					"From electronic medical records (EMRs) improving patient data management to digital supply chain systems ensuring timely delivery of medical supplies, technology is making healthcare management more efficient.",
 				],
-				image: "streamlining-health-management-systems-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Tech Innovations in Health Management",
 					items: [
@@ -285,7 +285,7 @@ const BlogList = [
 					"The importance of digital literacy in the 21st century cannot be overstated. As the world becomes more digitally interconnected, understanding how to use digital tools is becoming as fundamental as reading and writing.",
 					"Many African nations are now integrating digital literacy into their curriculums, preparing students for a digital future. Initiatives to provide students with access to computers and the internet are paving the way for a more inclusive digital revolution."
 				],
-				image: "digital-literacy-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Key Components of Digital Literacy",
 					items: [
@@ -307,7 +307,7 @@ const BlogList = [
 					"E-learning platforms are increasing accessibility to quality education resources, even for those in remote areas. These platforms offer a range of learning materials, including video lectures, interactive quizzes, and discussion forums, providing a flexible learning environment that caters to individual learning styles and paces.",
 					"Additionally, e-learning platforms are democratizing education, making it possible for students to access courses from various sources. This has significant implications for lifelong learning and professional development."
 				],
-				image: "e-learning-platforms-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Popular E-Learning Platforms in Africa",
 					items: [
@@ -329,7 +329,7 @@ const BlogList = [
 					"Virtual reality (VR) technology is being used to create immersive learning experiences that enhance student understanding and retention. For example, VR can be used to take students on virtual field trips to historical sites or inside the human body, providing experiences that would be impossible in a traditional classroom.",
 					"While access to VR technology is still limited in many parts of Africa due to cost, efforts are being made to make this technology more accessible. As VR technology becomes more widespread, it has the potential to transform education in unprecedented ways."
 				],
-				image: "virtual-reality-https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
 				list: {
 					title: "Benefits of Virtual Reality in Education",
 					items: [

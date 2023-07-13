@@ -4,7 +4,6 @@ import { connect } from "react-redux";
 
 const StyledWrapper = styled(Box)(({theme }) => ({
 	paddingTop: "100px",
-	paddingBottom:"100px"
 }));
 
 const StyledContainer = styled(Container)(({theme }) => ({

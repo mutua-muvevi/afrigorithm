@@ -2,7 +2,7 @@ import { Box, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import ParagraphImageList from "src/components/sections/paragraphImageList";
-import { connect } from "react-redux";
+import { connect } from "react-redux"
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
 
@@ -24,14 +24,14 @@ const StyledChipBox = styled(Box)(({ theme }) => ({
 	maxWidth: "300px",
 }));
 
-const SingleNewsBody = ({ news }) => {
+const SingleNewsBody = ({ blog }) => {
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
 				<Stack direction="column" spacing={5}>
 					<Stack direction="column" spacing={3}>
-						{news.mainParagraphs
-							? news.mainParagraphs.map((paragraph, i) => (
+						{blog.mainParagraphs
+							? blog.mainParagraphs.map((paragraph, i) => (
 									<Typography
 										variant="h6"
 										textAlign="justify"
@@ -45,7 +45,7 @@ const SingleNewsBody = ({ news }) => {
 				</Stack>
 			</StyledContainer>
 
-			<ParagraphImageList content={news.content} />
+			<ParagraphImageList content={blog.content} />
 
 			<StyledContainer maxWidth="xl">
 				<Stack direction="column" spacing={5}>		
@@ -53,8 +53,8 @@ const SingleNewsBody = ({ news }) => {
 						<Typography variant="subtitle1">Tags :</Typography>
 						<div>
 							<Grid container spacing={3}>
-								{news.tags
-									? news.tags.map((tag, i) => (
+								{blog.tags
+									? blog.tags.map((tag, i) => (
 											<Grid
 												item
 												xs={12}
@@ -86,7 +86,7 @@ const SingleNewsBody = ({ news }) => {
 
 						<StyledChipBox>
 							<Typography variant="body1" textAlign="center">
-								{news.category}
+								{blog.category}
 							</Typography>
 						</StyledChipBox>
 					</Stack>
@@ -96,8 +96,8 @@ const SingleNewsBody = ({ news }) => {
 	);
 };
 
-const mapStateToProps = ({ news }) => ({
-	news: news.news,
+const mapStateToProps = ({ blog }) => ({
+	blog: blog.blog,
 });
 
 export default connect(mapStateToProps)(SingleNewsBody);

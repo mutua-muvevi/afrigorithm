@@ -6,7 +6,6 @@ import { Link as RouterLink } from "react-router-dom";
 import { Link, CardActionArea, Typography } from "@mui/material";
 // components
 import Iconify from "../../../components/iconify";
-import Image from "../../../components/image";
 //
 import { ListItem } from "./styles";
 

@@ -73,21 +73,17 @@ export const navConfig = [
 	{
 		title: "Resources",
 		icon: <Iconify icon="fluent:news-16-filled"/>,
-		path: "/landing/research",
+		path: "/landing/news",
 		children: [
 			{
 				subheader: "",
 				items: [
 					{
-						title: "Research",
-						path: "/landing/research"
-					},
-					{
-						title: "News",
+						title: "Our News Articles",
 						path: "/landing/news"
 					},
 					{
-						title: "Blogs",
+						title: "Our Blog Articles",
 						path: "/landing/blogs"
 					},
 				]
