@@ -41,7 +41,6 @@ const ParagraphList = ({ content, chipColor, icon, iconWidth, buttonText }) => {
 
 	return (
 		<StyledWrapper direction="column">
-			{console.log("Content", content)}
 			{content
 				? content.map((cont, index) => (
 						<StyledContentWrapper
