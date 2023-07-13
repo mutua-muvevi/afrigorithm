@@ -1,8 +1,12 @@
+import BlogList from 'src/content/blogs';
 import blogTypes from './types';
 
 const initialState = {
 	data: null,
 	isLoading: false,
+
+	allNews: BlogList,
+	allNewsError: null,
 
 	blog:null,
 	blogError: null,

@@ -23,6 +23,7 @@ import Legal from "./pages/legal/legal";
 import Blogs from "./pages/blogs/blogs";
 import SingleService from "./pages/singleService/singleService";
 import SingleDomain from "./pages/singleDomain/singleDomain";
+import SingleNews from "./pages/singleNews/singleNews";
 
 //router function
 const Router = () => {
@@ -78,6 +79,10 @@ const Router = () => {
 				{
 					path: "/landing/news",
 					element: <News/>
+				},
+				{
+					path: "/landing/news/single",
+					element: <SingleNews/>
 				},
 				{
 					path: "/landing/blogs",
