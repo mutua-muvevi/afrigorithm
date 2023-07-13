@@ -50,7 +50,7 @@ export default function NavMobile({ isOffset, data }) {
 					}),
 				}}
 			>
-				<Iconify icon="eva:menu-2-fill" />
+				<Iconify icon="iconamoon:menu-burger-horizontal-bold" width={35} />
 			</IconButton>
 
 			<SwipeableDrawer

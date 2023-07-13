@@ -27,7 +27,7 @@ const ReusableBlogsCards = ({title, subtitle, alignItems, chipText, list, setBlo
 
 	const handleSelectBlogs = (blog) => {
 		setBlogs(blog)
-		// navigate("/landing/blog/single")
+		navigate("/landing/blog/single")
 	}
 
 	return (

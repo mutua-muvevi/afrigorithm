@@ -41,6 +41,7 @@ const HomeDomain = ({selectDomain}) => {
 	
 	const selectDomainHandler = (domain) => {
 		selectDomain(domain)
+		navigate("/landing/domain/single")
 	}
 
 

@@ -5,7 +5,7 @@ const DomainList = [
 		subtitle: "Embracing Digital Transformation in Finance",
 		mainText:
 			"The intersection of finance and technology, known as fintech, is reshaping the financial landscape and revolutionizing how individuals and businesses manage their finances. With the advent of innovative IT solutions, fintech encompasses a wide range of services, including mobile banking, digital payments, blockchain technology, online lending platforms, automated financial advice, and fraud detection systems. By leveraging fintech, we empower individuals and businesses with greater accessibility, efficiency, security, and transparency in their financial transactions.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689266194/fintech_moyohi.jpg",
 		video: "",
 		content: [
 			{
@@ -90,7 +90,7 @@ const DomainList = [
 		mainText:
 			"In today's digital age, information technology has transformed the healthcare industry, offering innovative solutions to improve patient care, streamline administrative tasks, enhance diagnostics, facilitate remote consultations, and enable secure exchange of medical information. With the integration of IT solutions, healthcare providers can revolutionize their practices and unlock a new era of efficiency, accuracy, and patient-centric care.",
 
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264978/health_oe6x08.jpg",
 		video: "",
 		content: [
 			{
@@ -117,7 +117,7 @@ const DomainList = [
 							text: "IT enables secure video conferencing and telemedicine platforms, allowing patients to receive remote consultations and reducing the need for in-person visits, particularly for follow-up appointments or non-emergency cases.",
 						},
 						{
-							icon: "",
+							icon: "medical-icon:i-inpatient",
 							title: "Improved Patient Engagement",
 							text: "IT solutions empower patients with access to their health records, educational resources, and personalized care plans, fostering active participation in their own healthcare journey.",
 						},
@@ -137,7 +137,7 @@ const DomainList = [
 		subtitle: "Streamlining Processes and Enhancing Customer Experience",
 		mainText:
 			"IT solutions are transforming the real estate and property management industry by digitizing operations, automating processes, and enhancing the overall customer experience. Through technologies like cloud-based platforms, IoT devices, and data analytics, businesses can optimize property management, improve tenant satisfaction, and maximize return on investment.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264968/real_estate_syvkmk.jpg",
 		video: "",
 		content: [
 			{
@@ -185,7 +185,7 @@ const DomainList = [
 		subtitle: "Unlocking the Potential of Technology in Education",
 		mainText:
 			"In the digital age, information technology has revolutionized the field of education, opening up new horizons for learners of all ages. Through the power of IT, educational institutions can harness the vast potential of online learning platforms, virtual classrooms, interactive educational content, personalized learning experiences, and sophisticated educational management systems. By embracing these innovations, the education sector can transcend traditional boundaries, democratize access to quality education, and pave the way for a brighter future of learning.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689266066/elearning_cmbnlx.jpg",
 		video: "",
 		content: [
 			{
@@ -269,7 +269,7 @@ const DomainList = [
 		subtitle: "Harnessing the Power of IT in Agriculture",
 		mainText:
 			"In the realm of agriculture, information technology has emerged as a game-changer, revolutionizing farming practices and optimizing crop management. By leveraging IT solutions, farmers and agribusinesses can monitor crop growth, manage irrigation systems, access weather forecasting data, enable precision agriculture techniques, and streamline supply chain management. Through the integration of IT and agriculture, we unlock a new era of smart farming that promotes sustainability, efficiency, and increased productivity.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264978/agriculture_gjslbc.jpg",
 		video: "",
 		content: [
 			{
@@ -354,7 +354,7 @@ const DomainList = [
 		subtitle: "Unlocking Efficiency and Connectivity in Logistics",
 		mainText:
 			"IT solutions have revolutionized the transportation and logistics industry, driving efficiency, connectivity, and streamlined operations. Through advanced technologies, such as GPS tracking, real-time data analytics, and intelligent transportation systems, logistics management has undergone a remarkable transformation. From optimizing route planning to enhancing fleet tracking and real-time package tracking, IT solutions provide the tools necessary to deliver goods and services seamlessly.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264983/delivery_i4im4j.jpg",
 		video: "",
 		content: [
 			{
@@ -401,7 +401,7 @@ const DomainList = [
 		subtitle: "Building the Cities of Tomorrow with IT",
 		mainText:
 			"Smart cities and urban planning are revolutionizing the way we live, work, and interact with our environment. IT plays a pivotal role in creating sustainable and connected communities by leveraging technologies such as IoT sensors, smart grids, intelligent traffic management, waste management systems, and digital citizen services.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689266752/city_ouhv8d.jpg",
 		video: "",
 		content: [
 			{
@@ -448,7 +448,7 @@ const DomainList = [
 		subtitle: "Optimizing Energy Management and Promoting Sustainability",
 		mainText:
 			"The energy and utilities sector is undergoing a significant transformation with the help of IT innovations. Technology plays a crucial role in improving energy management, enabling smart metering, optimizing energy distribution, facilitating renewable energy integration, and supporting grid monitoring and control.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264965/energy_mahmzv.jpg",
 		video: "",
 		content: [
 			{
@@ -495,7 +495,7 @@ const DomainList = [
 		subtitle: "Unlocking Seamless Shopping Experiences and Business Growth",
 		mainText:
 			"The retail and e-commerce industry has witnessed a rapid digital transformation driven by IT solutions. Technology powers online shopping platforms, inventory management systems, personalized marketing, customer relationship management, supply chain automation, and data analytics for better decision-making.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264976/shop_hzrd1f.jpg",
 		video: "",
 		content: [
 			{
@@ -543,7 +543,7 @@ const DomainList = [
 			"Enabling Efficient, Transparent, and Citizen-Centric Services",
 		mainText:
 			"IT solutions are revolutionizing the way governments deliver services and engage with citizens. By embracing digital governance, e-governance platforms, online citizen services, secure data management, digital identification systems, and smart city initiatives, governments can provide efficient, transparent, and citizen-centric services.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264965/law_r7skkr.jpg",
 		video: "",
 		content: [
 			{
@@ -590,7 +590,7 @@ const DomainList = [
 		subtitle: "Unlocking the Potential of Automation and Robotics",
 		mainText:
 			"In the fast-paced world of manufacturing and industrial processes, IT solutions are revolutionizing operations by streamlining processes, boosting efficiency, and maximizing productivity. Through the power of automation, robotics, and advanced data analytics, businesses can overcome challenges and capitalize on opportunities.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689265899/industry_njh48l.jpg",
 		video: "",
 		content: [
 			{
@@ -638,7 +638,7 @@ const DomainList = [
 		subtitle: "Protecting Businesses and Individuals from Online Threats",
 		mainText:
 			"In today's interconnected world, cybersecurity has become a critical concern for businesses and individuals alike. IT solutions play a vital role in safeguarding digital assets, preventing data breaches, and protecting against evolving cyber threats. By implementing robust cybersecurity measures, businesses can ensure the confidentiality, integrity, and availability of their digital resources.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689024291/cybersecurity_zsa5uq.jpg",
 		video: "",
 		content: [
 			{
@@ -665,7 +665,7 @@ const DomainList = [
 							text: "Secure protocols and encryption techniques safeguard sensitive data from unauthorized access.",
 						},
 						{
-							icon: "",
+							icon: "mdi:server-security",
 							title: "Proactive Security Measures",
 							text: "Regular audits, vulnerability assessments, and employee training ensure proactive cybersecurity practices.",
 						},
@@ -686,7 +686,7 @@ const DomainList = [
 		subtitle: "Delivering Personalized Services and Streamlined Operations",
 		mainText:
 			"IT solutions have revolutionized the tourism and hospitality industry, enhancing guest experiences and optimizing operations. By leveraging technology, businesses can provide personalized services, streamline booking processes, and gain valuable insights to improve customer satisfaction and loyalty.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689265897/traveller_ahhlz3.jpg",
 		video: "",
 		content: [
 			{
@@ -736,7 +736,7 @@ const DomainList = [
 			"Accelerating Scientific Discoveries and Technological Advancements",
 		mainText:
 			"Research and Development (R&D) play a crucial role in driving innovation and technological advancements. IT solutions enable businesses and research institutions to optimize their R&D processes, enhance collaboration, and leverage data-driven insights to achieve breakthrough discoveries.",
-		thumbnail: "",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689265894/scientist_scmuk0.jpg",
 		video: "",
 		content: [
 			{

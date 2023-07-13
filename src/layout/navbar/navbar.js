@@ -65,17 +65,34 @@ export default function Navbar() {
 
 					{isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
 
-					<Button
-						variant="contained"
-						target="_blank"
-						rel="noopener"
-						sx={{
-							backgroundColor: "#ffffff",
-							color: theme.palette.primary.main
-						}}
-					>
-						Request Quotation
-					</Button>
+					{
+						isDesktop ? (
+							<Button
+								variant="contained"
+								target="_blank"
+								rel="noopener"
+								sx={{
+									backgroundColor: "#ffffff",
+									color: theme.palette.primary.main
+								}}
+							>
+								Request Quotation
+							</Button>
+
+						) : (
+							<Button
+								variant="contained"
+								target="_blank"
+								rel="noopener"
+								sx={{
+									backgroundColor: "#ffffff",
+									color: theme.palette.primary.main
+								}}
+							>
+								Quote
+							</Button>
+						)
+					}
 
 					{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
 				</Container>

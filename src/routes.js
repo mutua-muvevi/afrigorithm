@@ -24,6 +24,7 @@ import Blogs from "./pages/blogs/blogs";
 import SingleService from "./pages/singleService/singleService";
 import SingleDomain from "./pages/singleDomain/singleDomain";
 import SingleNews from "./pages/singleNews/singleNews";
+import SingleBlog from "./pages/singeBlog/singleBlog";
 
 //router function
 const Router = () => {
@@ -69,10 +70,6 @@ const Router = () => {
 					element: <Careers/>
 				},
 				{
-					path: "/landing/research",
-					element: <Research/>
-				},
-				{
 					path: "/landing/testimonials",
 					element: <Testimonials/>
 				},
@@ -87,6 +84,10 @@ const Router = () => {
 				{
 					path: "/landing/blogs",
 					element: <Blogs/>
+				},
+				{
+					path: "/landing/blog/single",
+					element: <SingleBlog/>
 				},
 				{
 					path: "/landing/faq",

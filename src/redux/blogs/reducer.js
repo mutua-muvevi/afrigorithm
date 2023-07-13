@@ -5,8 +5,8 @@ const initialState = {
 	data: null,
 	isLoading: false,
 
-	allNews: BlogList,
-	allNewsError: null,
+	allBlogs: BlogList,
+	allBlogsError: null,
 
 	blog:null,
 	blogError: null,
