@@ -3,14 +3,14 @@ import PropTypes from "prop-types";
 
 import { sentenceCase } from "change-case"
 
-import { Box, IconButton, Modal, Stack, Typography } from "@mui/material";
+import { Box, Container, IconButton, Modal, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { BsXLg } from "react-icons/bs";
 import { FaExclamationTriangle } from 'react-icons/fa';
 import { useTheme } from '@emotion/react';
 
-const StyledModalHeader = styled(Box)(({ theme }) => ({
+const StyledModalHeader = styled(Container)(({ theme }) => ({
 	display: "flex",
 	justifyContent: "space-between",
 	alignItems: "center",
@@ -60,7 +60,7 @@ const ModalComponent = ({header, open, close, width, children, type}) => {
 			aria-labelledby={`${header} + modal`}
 		>
 			<Box sx={style}>
-				<StyledModalHeader>
+				<StyledModalHeader maxWidth="xl">
 					<Stack direction="row" alignItems="center">
 						{
 							type === "delete" ? (

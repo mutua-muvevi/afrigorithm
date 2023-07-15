@@ -1,8 +1,11 @@
-import { Box, Container, Stack } from "@mui/material";
+import { Box, Button, Container, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
+
+import TextfieldWrapper from "../formui/textfield/textfield";
+import Iconify from "../iconify/iconify";
 
 const INITIAL_FORM_STATE = {
 	fullname: "",
@@ -32,6 +35,11 @@ const FORM_VALIDATION = Yup.object().shape({
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
 
+
+const StyledButton = styled(Button)(({ theme }) => ({
+	width:"250px"
+}));
+
 const QuotationForm = () => {
 	
 	const submitHandler = (values, { resetForm }) => {
@@ -50,7 +58,13 @@ const QuotationForm = () => {
 						validationSchema={FORM_VALIDATION}
 						onSubmit={submitHandler}
 					>
-						
+						<Stack direction="column" alignItems="center" spacing={4}>
+							<TextfieldWrapper name="fullname" label="Your name"  variant="filled" />
+							<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
+							<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />
+							<TextfieldWrapper name="service" label="Service"  variant="filled"/>
+							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Message</StyledButton>
+						</Stack>
 					</Formik>
 				</Stack>
 			</Container>
