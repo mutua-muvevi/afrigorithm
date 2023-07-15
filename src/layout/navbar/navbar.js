@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 // @mui
 import { useTheme } from "@mui/material/styles";
 import { Box, Button, AppBar, Toolbar, Container, Link, Stack, Typography } from "@mui/material";
@@ -19,89 +19,9 @@ import Label from "../../components/label";
 import {navConfig} from "./info";
 import NavMobile from "./mobile";
 import NavDesktop from "./desktop";
+import ModalComponent from "src/components/ui/Modal";
+import QuotationForm from "src/components/sections/quotationform";
 
-// ----------------------------------------------------------------------
-
-export default function Navbar() {
-	const carouselRef = useRef(null);
-
-	const theme = useTheme();
-
-	const isDesktop = useResponsive("up", "md");
-
-	const isOffset = useOffSetTop(HEADER.H_MAIN_DESKTOP);
-
-	return (
-		<AppBar ref={carouselRef} color="transparent" sx={{ boxShadow: 0 }}>
-			<Toolbar
-				disableGutters
-				sx={{
-					height: {
-						xs: HEADER.H_MOBILE,
-						md: HEADER.H_MAIN_DESKTOP,
-					},
-					transition: theme.transitions.create(["height", "background-color"], {
-						easing: theme.transitions.easing.easeInOut,
-						duration: theme.transitions.duration.shorter,
-					}),
-					...(isOffset && {
-						...bgBlur({ color: theme.palette.primary.main }),
-						height: {
-							md: HEADER.H_MAIN_DESKTOP - 16,
-						},
-					}),
-				}}
-			>
-				<Container maxWidth="xl" sx={{ height: 1, display: "flex", alignItems: "center" }}>
-					<Stack direction="row" spacing={2} justifyContent="left" alignItems="center">
-						<Logo />
-						<Typography variant="h5" sx={{color: "#ffffff"}}>
-							Afrigorithm
-						</Typography>
-					</Stack>
-
-
-					<Box sx={{ flexGrow: 1 }} />
-
-					{isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
-
-					{
-						isDesktop ? (
-							<Button
-								variant="contained"
-								target="_blank"
-								rel="noopener"
-								sx={{
-									backgroundColor: "#ffffff",
-									color: theme.palette.primary.main
-								}}
-							>
-								Request Quotation
-							</Button>
-
-						) : (
-							<Button
-								variant="contained"
-								target="_blank"
-								rel="noopener"
-								sx={{
-									backgroundColor: "#ffffff",
-									color: theme.palette.primary.main
-								}}
-							>
-								Quote
-							</Button>
-						)
-					}
-
-					{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
-				</Container>
-			</Toolbar>
-
-			{isOffset && <Shadow />}
-		</AppBar>
-	);
-}
 
 // ----------------------------------------------------------------------
 
@@ -129,3 +49,82 @@ function Shadow({ sx, ...other }) {
 		/>
 	);
 }
+
+const Navbar = () => {
+	const [ open, setOpen ] = useState(false)
+	const carouselRef = useRef(null);
+
+	const theme = useTheme();
+
+	const isDesktop = useResponsive("up", "md");
+
+	const isOffset = useOffSetTop(HEADER.H_MAIN_DESKTOP);
+
+	return (
+		<>
+			<AppBar ref={carouselRef} color="transparent" sx={{ boxShadow: 0 }}>
+				<Toolbar
+					disableGutters
+					sx={{
+						height: {
+							xs: HEADER.H_MOBILE,
+							md: HEADER.H_MAIN_DESKTOP,
+						},
+						transition: theme.transitions.create(["height", "background-color"], {
+							easing: theme.transitions.easing.easeInOut,
+							duration: theme.transitions.duration.shorter,
+						}),
+						...(isOffset && {
+							...bgBlur({ color: theme.palette.primary.main }),
+							height: {
+								md: HEADER.H_MAIN_DESKTOP - 16,
+							},
+						}),
+					}}
+				>
+					<Container maxWidth="xl" sx={{ height: 1, display: "flex", alignItems: "center" }}>
+						<Stack direction="row" spacing={2} justifyContent="left" alignItems="center">
+							<Logo />
+							<Typography variant="h5" sx={{color: "#ffffff"}}>
+								Afrigorithm
+							</Typography>
+						</Stack>
+
+
+						<Box sx={{ flexGrow: 1 }} />
+
+						{isDesktop && <NavDesktop isOffset={isOffset} data={navConfig} />}
+
+						<Button
+							variant="contained"
+							target="_blank"
+							rel="noopener"
+							onClick={() => setOpen(true)}
+							sx={{
+								backgroundColor: "#ffffff",
+								color: theme.palette.primary.main
+							}}
+						>
+							Request Quotation
+						</Button>
+
+						{!isDesktop && <NavMobile isOffset={isOffset} data={navConfig} />}
+					</Container>
+				</Toolbar>
+
+				{isOffset && <Shadow />}
+			</AppBar>
+			<ModalComponent
+				header="Quotation"
+				open={open}
+				close={() => setOpen(false)}
+				width="75vw"
+				children={<QuotationForm/>}
+			/>
+		</>
+	);
+}
+
+
+
+export default Navbar

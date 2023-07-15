@@ -8,7 +8,7 @@ const ReusableBanner = ({ image, height, title, subtitle }) => {
 		backgroundImage: `linear-gradient(to bottom, rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url(${image})`,
 		backgroundSize: "cover",
 		backgroundAttachment: "fixed",
-		backgroundPosition: "center",
+		backgroundPosition: "bottom",
 	}));
 	
 	const StyledContainer = styled(Container)(({ theme }) => ({
