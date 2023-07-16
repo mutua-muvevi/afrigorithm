@@ -25,6 +25,7 @@ import SingleService from "./pages/singleService/singleService";
 import SingleDomain from "./pages/singleDomain/singleDomain";
 import SingleNews from "./pages/singleNews/singleNews";
 import SingleBlog from "./pages/singeBlog/singleBlog";
+import CookiePolicy from "./pages/cookie/cookie";
 
 //router function
 const Router = () => {
@@ -108,6 +109,10 @@ const Router = () => {
 				{
 					path: "/landing/privacy",
 					element: <PrivacyPolicy/>
+				},
+				{
+					path: "/landing/cookie",
+					element: <CookiePolicy/>
 				},
 				{
 					path: "/landing/legal",

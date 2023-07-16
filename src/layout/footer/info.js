@@ -56,12 +56,12 @@ export const footerItems = {
 				link: "/landing/terms"
 			},
 			{
-				label: "Press",
-				link: ""
+				label: "Cookie Policy",
+				link: "/landing/cookie"
 			},
 			{
-				label: "Legal",
-				link: "/landing/legal"
+				label: "Refunds Policy",
+				link: "/landing/refunds"
 			},
 		]
 	},
