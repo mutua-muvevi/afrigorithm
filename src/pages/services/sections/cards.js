@@ -1,11 +1,17 @@
-import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography} from "@mui/material";
 import { styled } from "@mui/system";
 import { connect } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
 import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import ServiceList from "src/content/services";
+
+import ModalComponent from "src/components/ui/Modal";
+import QuotationForm from "src/components/sections/quotationform";
+
 import { selectService } from "src/redux/services/action";
 import { truncateStr } from "src/utils/formatStrings";
 
@@ -25,7 +31,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }))
 
 const ServicesCards = ({selectService}) => {
-
+	const [ open, setOpen ] = useState(false)
 	const navigate= useNavigate()
 	
 	const selectServiceHandler = (service) => {
@@ -34,58 +40,67 @@ const ServicesCards = ({selectService}) => {
 	}
 
 	return (
-		<StyledWrapper>
-			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={5}>
-					<TitleSubtitle
-						chipText="Our services"
-						title="Accelerating Your Digital Transformation"
-						subtitle={subtitle}
-					/>
-					<div>
-						<Grid container spacing={3}>
-							{
-								ServiceList.map((service, i) => (
-									<Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
-										<Card>
-											<CardActionArea onClick={() => selectServiceHandler(service)}>
-												<CardContent>
-													<Stack direction="column" spacing={3}>
-														<Stack direction="row" justifyContent="left" spacing={3}>
-															<Iconify icon={service.icon} width={50}/>
-															<Stack direction="column">
-																<Typography variant="h5">
-																	{service.title}
-																</Typography>
-																<Typography variant="subtitle2" color="text.secondary">
-																	{service.subtitle}
-																</Typography>
+		<>
+			<StyledWrapper>
+				<StyledContainer maxWidth="xl">
+					<Stack direction="column" spacing={5}>
+						<TitleSubtitle
+							chipText="Our services"
+							title="Accelerating Your Digital Transformation"
+							subtitle={subtitle}
+						/>
+						<div>
+							<Grid container spacing={3}>
+								{
+									ServiceList.map((service, i) => (
+										<Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
+											<Card>
+												<CardActionArea onClick={() => selectServiceHandler(service)}>
+													<CardContent>
+														<Stack direction="column" spacing={3}>
+															<Stack direction="row" justifyContent="left" spacing={3}>
+																<Iconify icon={service.icon} width={50}/>
+																<Stack direction="column">
+																	<Typography variant="h5">
+																		{service.title}
+																	</Typography>
+																	<Typography variant="subtitle2" color="text.secondary">
+																		{service.subtitle}
+																	</Typography>
+																</Stack>
 															</Stack>
+															<Typography variant="body1">
+																{truncateStr(service.mainText, 200)}
+															</Typography>
 														</Stack>
-														<Typography variant="body1">
-															{truncateStr(service.mainText, 200)}
-														</Typography>
-													</Stack>
-												</CardContent>
-											</CardActionArea>
-										</Card>
-									</Grid>
-								))
-							}
-							<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-								<Stack>
-									<StyledButton variant="contained" color="primary" endIcon={<Iconify icon="bi:chat-right-quote-fill"/>}>
-										<Typography variant="h5">
-											Request Service Now
-										</Typography>
-									</StyledButton>
-								</Stack>
+													</CardContent>
+												</CardActionArea>
+											</Card>
+										</Grid>
+									))
+								}
+								<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+									<Stack>
+										<StyledButton variant="contained" onClick={() => setOpen(true)} color="primary" endIcon={<Iconify icon="bi:chat-right-quote-fill"/>}>
+											<Typography variant="h5">
+												Request Service Now
+											</Typography>
+										</StyledButton>
+									</Stack>
+								</Grid>
 							</Grid>
-						</Grid>
-					</div>
-				</Stack>
-			</StyledContainer>
-		</StyledWrapper>
+						</div>
+					</Stack>
+				</StyledContainer>
+			</StyledWrapper>
+			<ModalComponent
+				header="Quotation"
+				open={open}
+				close={() => setOpen(false)}
+				width="75vw"
+				children={<QuotationForm/>}
+			/>
+		</>
 	)
 }
 
