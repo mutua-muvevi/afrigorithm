@@ -50,7 +50,6 @@ const Home = () => {
 					title={whyChooseUs.title}
 					subtitle={whyChooseUs.subtitle}
 					chipText="Best of the Best"
-					chipColor="white"
 					imgPosition="left"
 					image={whyChooseUs.image}
 					ImageminHeight="50vh"
