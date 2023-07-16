@@ -19,13 +19,13 @@ import PrivacyPolicy from "./pages/privacy/privacy";
 import FAQ from "./pages/faq/faq";
 import Domain from "./pages/domain/domain";
 import WIP from "./pages/wip/wip";
-import Legal from "./pages/legal/legal";
 import Blogs from "./pages/blogs/blogs";
 import SingleService from "./pages/singleService/singleService";
 import SingleDomain from "./pages/singleDomain/singleDomain";
 import SingleNews from "./pages/singleNews/singleNews";
 import SingleBlog from "./pages/singeBlog/singleBlog";
 import CookiePolicy from "./pages/cookie/cookie";
+import RefundsPolicy from "./pages/refunds/refunds";
 
 //router function
 const Router = () => {
@@ -115,8 +115,8 @@ const Router = () => {
 					element: <CookiePolicy/>
 				},
 				{
-					path: "/landing/legal",
-					element: <Legal/>
+					path: "/landing/refunds",
+					element: <RefundsPolicy/>
 				},
 			]
 		},
