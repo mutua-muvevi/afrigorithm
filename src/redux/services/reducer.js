@@ -1,3 +1,4 @@
+import ServiceList from 'src/content/services';
 import serviceTypes from './types';
 
 const initialState = {
@@ -6,6 +7,9 @@ const initialState = {
 
 	service:null,
 	serviceError: null,
+
+	allServices: ServiceList,
+	allServiceError: null
 };
 
 const serviceReducer = (state = initialState, { type, payload }) => {

@@ -14,8 +14,10 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 }))
 
 const SingleDomain = ({domain}) => {
+	
+
 	return (
-		<Page title={domain.title + " || Afrigorithm Domain"}>
+		<Page title={domain.title + " || Afrigorithm Technology Company"}>
 			<StyledWrapper>
 				<ReusableBanner
 					title={domain.title}
@@ -29,7 +31,8 @@ const SingleDomain = ({domain}) => {
 					content={domain.content}
 					icon="game-icons:cash"
 					iconWidth={35}
-					buttonText={domain.title}
+					buttonText={`Capitalize on ${domain.title} Now`}
+					modalTitle={domain.title}
 				/>
 			</StyledWrapper>
 		</Page>

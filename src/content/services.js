@@ -701,7 +701,7 @@ const ServiceList = [
 		mainText:
 			"Cloud computing offers scalable, flexible, and cost-effective solutions for businesses of all sizes. Our services range from cloud migration and management to building cloud-native applications, all designed to boost your business agility and innovation.",
 		thumbnail:
-			"https://res.cloudinary.com/dbj0t0zym/image/upload/v1689024262/cloudComp_bawhkf.jpg",
+			"https://res.cloudinary.com/dbj0t0zym/image/upload/v1689110625/resources_l5xtza.jpg",
 		video: "",
 		content: [
 			{

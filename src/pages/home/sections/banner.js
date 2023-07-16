@@ -53,7 +53,7 @@ const Banner = () => {
 						<Grid container spacing={3}>
 							{
 								bannerCards.map((el, i) => (
-									<Grid item xs={6} sm={6} md={6} lg={3} xl={3} key={i}>
+									<Grid item xs={12} sm={6} md={6} lg={3} xl={3} key={i}>
 										<Card>
 											<CardContent>
 												<Stack direction="column" spacing={1.5}>
@@ -65,7 +65,7 @@ const Banner = () => {
 														{el.title}
 													</Typography>
 
-													<Typography variant="body1">
+													<Typography variant="body1" textAlign="justify">
 														{el.text}
 													</Typography>
 												</Stack>
