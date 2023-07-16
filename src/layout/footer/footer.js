@@ -111,7 +111,7 @@ const Footer = () => {
 								</Typography>
 								{
 									footerItems.pages.items.map((el, i) => (
-										<Link style={styledLink} key={i}>
+										<Link style={styledLink} key={i} to={el.link}>
 											<Stack direction="column" spacing={1}>
 												<Stack direction="row"  alignItems="center" spacing={2}>
 													<MdOutlineArrowForwardIos style={styledIcons}/>
@@ -144,7 +144,7 @@ const Footer = () => {
 								</Typography>
 								{
 									footerItems.support.items.map((el, i) => (
-										<Link style={styledLink} key={i}>
+										<Link style={styledLink} to={el.link} key={i}>
 											<Stack direction="column" spacing={1}>
 												<Stack direction="row"  alignItems="center" spacing={2}>
 													<MdOutlineArrowForwardIos style={styledIcons}/>

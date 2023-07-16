@@ -45,15 +45,15 @@ export const footerItems = {
 		items: [
 			{
 				label: "Job Openings",
-				link: ""
+				link: "/landing/careers"
 			},
 			{
 				label: "Privacy Policy",
-				link: ""
+				link: "/landing/privacy"
 			},
 			{
 				label: "Terms of Service",
-				link: ""
+				link: "/landing/terms"
 			},
 			{
 				label: "Press",
@@ -61,7 +61,7 @@ export const footerItems = {
 			},
 			{
 				label: "Legal",
-				link: ""
+				link: "/landing/legal"
 			},
 		]
 	},

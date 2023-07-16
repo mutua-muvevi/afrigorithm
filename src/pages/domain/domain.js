@@ -1,5 +1,6 @@
 import { Box } from "@mui/material";
 import { styled } from "@mui/system";
+
 import ReusableBanner from "src/components/sections/banner";
 
 import Page from "src/components/ui/Page";
@@ -14,7 +15,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const Domain = () => {
 	return (
-		<Page title="Our Domain">
+		<Page title="Our Domain || Afrigorithm Technology Company">
 			<StyledWrapper>
 				<ReusableBanner
 					title="Our Domain"
