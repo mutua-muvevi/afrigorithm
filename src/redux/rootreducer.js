@@ -8,6 +8,7 @@ import domainReducer from './domain/reducer';
 import blogReducer from './blogs/reducer';
 import researchReducer from './research/reducer';
 import newsReducer from './news/reducer';
+import varietyReducer from './variety/reducer';
 
 
 const config = {
@@ -18,7 +19,8 @@ const config = {
 		"domain",
 		"news",
 		"blog",
-		"research"
+		"research",
+		"variety"
 	],
 };
 
@@ -28,6 +30,7 @@ const rootReducer = combineReducers({
 	blog: blogReducer,
 	research: researchReducer,
 	news: newsReducer,
+	variety: varietyReducer
 });
 
 const persistedReducer = persistReducer(config, rootReducer);
