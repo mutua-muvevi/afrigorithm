@@ -66,10 +66,6 @@ const Router = () => {
 					element: <WIP/>
 				},
 				{
-					path: "/landing/careers",
-					element: <Careers/>
-				},
-				{
 					path: "/landing/testimonials",
 					element: <Testimonials/>
 				},
@@ -100,6 +96,10 @@ const Router = () => {
 				{
 					path: "/landing/quotation",
 					element: <Quotation/>
+				},
+				{
+					path: "/landing/careers",
+					element: <Careers/>
 				},
 				{
 					path: "/landing/terms",
