@@ -5,7 +5,7 @@ import useTypewriter from "src/hooks/useTypewriter";
 import { bannerCards } from "./info";
 
 const Image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687983038/images/techbackground_f8nfzu.jpg";
-const subtitle = "At the forefront of technological advancements, we engineer solutions that shape industries, revolutionize processes, and foster innovation. Discover how our expertise and passion drive the digital evolution.";
+const subtitle = "Discover the edge of innovation with our comprehensive digital solutions, expertly designed to propel your business forward. Our seasoned team harnesses the power of the latest technologies, delivering bespoke applications tailored to your specific needs, and ensuring data security at every step. With us, you're not just choosing a service, you're embracing a partnership committed to your growth and success. Let us help you navigate the digital landscape, turning challenges into opportunities, and driving your vision to reality with unmatched precision and excellence.";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	minHeight: "70vh",
