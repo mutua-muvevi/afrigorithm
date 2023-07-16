@@ -28,9 +28,9 @@ const FORM_VALIDATION = Yup.object().shape({
 		.max(80, "Too long email")
 		.required("Please add an email"),
 	service: Yup.string()
-		.min(5, "Too short name")
-		.max(100, "Too long name")
-		.required("Please add your name"),
+		.min(5, "Too short service")
+		.max(100, "Too long service")
+		.required("Please add the service"),
 });
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
@@ -59,7 +59,7 @@ const QuotationForm = () => {
 					onSubmit={submitHandler}
 				>
 					<Form>
-						<Stack direction="column" alignItems="center" spacing={4}>
+						<Stack direction="column" alignItems="center" spacing={4} sx={{paddingTop: 4, paddingBottom: 4}}>
 							<TextfieldWrapper name="fullname" label="Your name"  variant="filled" />
 							<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
 							<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />

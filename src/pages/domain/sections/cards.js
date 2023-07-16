@@ -1,11 +1,17 @@
+import { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
 import { Box, Button, Card, CardActionArea, CardContent, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import { connect } from "react-redux";
-import { useNavigate } from "react-router-dom";
 
 import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import DomainList from "src/content/domain";
+
+import ModalComponent from "src/components/ui/Modal";
+import QuotationForm from "src/components/sections/quotationform";
+
 import { selectDomain } from "src/redux/domain/action";
 import { truncateStr } from "src/utils/formatStrings";
 
@@ -25,7 +31,7 @@ const StyledButton = styled(Button)(({ theme }) => ({
 }))
 
 const DomainCards = ({selectDomain}) => {
-
+	const [ open, setOpen ] = useState(false)
 	const navigate= useNavigate()
 	
 	const selectDomainHandler = (domain) => {
@@ -34,58 +40,67 @@ const DomainCards = ({selectDomain}) => {
 	}
 
 	return (
-		<StyledWrapper>
-			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={5}>
-					<TitleSubtitle
-						chipText="Our domain"
-						title="Crafting the Digital Rhythm of Africa"
-						subtitle={subtitle}
-					/>
-					<div>
-						<Grid container spacing={3}>
-							{
-								DomainList.map((domain, i) => (
-									<Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
-										<Card>
-											<CardActionArea onClick={() => selectDomainHandler(domain)}>
-												<CardContent>
-													<Stack direction="column" spacing={3}>
-														<Stack direction="row" justifyContent="left" spacing={3}>
-															<Iconify icon={domain.icon} width={50}/>
-															<Stack direction="column">
-																<Typography variant="h5">
-																	{domain.title}
-																</Typography>
-																<Typography variant="subtitle2" color="text.secondary">
-																	{domain.subtitle}
-																</Typography>
+		<>
+			<StyledWrapper>
+				<StyledContainer maxWidth="xl">
+					<Stack direction="column" spacing={5}>
+						<TitleSubtitle
+							chipText="Our domain"
+							title="Crafting the Digital Rhythm of Africa"
+							subtitle={subtitle}
+						/>
+						<div>
+							<Grid container spacing={3}>
+								{
+									DomainList.map((domain, i) => (
+										<Grid item key={i} xs={12} sm={6} md={6} lg={4} xl={4}>
+											<Card>
+												<CardActionArea onClick={() => selectDomainHandler(domain)}>
+													<CardContent>
+														<Stack direction="column" spacing={3}>
+															<Stack direction="row" justifyContent="left" spacing={3}>
+																<Iconify icon={domain.icon} width={50}/>
+																<Stack direction="column">
+																	<Typography variant="h5">
+																		{domain.title}
+																	</Typography>
+																	<Typography variant="subtitle2" color="text.secondary">
+																		{domain.subtitle}
+																	</Typography>
+																</Stack>
 															</Stack>
+															<Typography variant="body1">
+																{truncateStr(domain.mainText, 200)}
+															</Typography>
 														</Stack>
-														<Typography variant="body1">
-															{truncateStr(domain.mainText, 200)}
-														</Typography>
-													</Stack>
-												</CardContent>
-											</CardActionArea>
-										</Card>
-									</Grid>
-								))
-							}
-							<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-								<Stack>
-									<StyledButton variant="contained" color="primary" endIcon={<Iconify width={35} icon="game-icons:cash"/>}>
-										<Typography variant="h5">
-											Capitalize Now
-										</Typography>
-									</StyledButton>
-								</Stack>
+													</CardContent>
+												</CardActionArea>
+											</Card>
+										</Grid>
+									))
+								}
+								<Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
+									<Stack>
+										<StyledButton variant="contained" color="primary" onClick={() => setOpen(true)} endIcon={<Iconify width={35} icon="game-icons:cash"/>}>
+											<Typography variant="h5">
+												Capitalize Now
+											</Typography>
+										</StyledButton>
+									</Stack>
+								</Grid>
 							</Grid>
-						</Grid>
-					</div>
-				</Stack>
-			</StyledContainer>
-		</StyledWrapper>
+						</div>
+					</Stack>
+				</StyledContainer>
+			</StyledWrapper>
+			<ModalComponent
+				header="Quotation"
+				open={open}
+				close={() => setOpen(false)}
+				width="75vw"
+				children={<QuotationForm/>}
+			/>
+		</>
 	)
 }
 
