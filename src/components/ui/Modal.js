@@ -9,6 +9,7 @@ import { styled } from "@mui/system";
 import { BsXLg } from "react-icons/bs";
 import { FaExclamationTriangle } from 'react-icons/fa';
 import { useTheme } from '@emotion/react';
+import Iconify from '../iconify/iconify';
 
 const StyledModalHeader = styled(Container)(({ theme }) => ({
 	display: "flex",
@@ -21,7 +22,6 @@ const StyledModalHeader = styled(Container)(({ theme }) => ({
 }))
 
 const StyledModalBody = styled(Box)(({ theme }) => ({
-	padding: "20px",
 	minHeight: 200
 }))
 
@@ -29,7 +29,7 @@ const IconStyle={
 	fontSize: "inherit"
 }
 
-const ModalComponent = ({header, open, close, width, children, type}) => {
+const ModalComponent = ({header, open, close, width, children, type, icon, iconWidth}) => {
 	
 	const theme = useTheme()
 	
@@ -61,14 +61,19 @@ const ModalComponent = ({header, open, close, width, children, type}) => {
 		>
 			<Box sx={style}>
 				<StyledModalHeader maxWidth="xl">
-					<Stack direction="row" alignItems="center">
+					<Stack direction="row" alignItems="center" spacing={3}>
 						{
 							type === "delete" ? (
 								<FaExclamationTriangle style={styledExclamationIcon}/>
 							) : null
 						}
-						<Typography id={`${header} + modal`} variant="h4" color={type === "delete" ? "error" : "primary" }>
-							{ sentenceCase(header) }
+						{
+							icon ? (
+								<Iconify icon={icon} width={iconWidth}/>
+							) : null
+						}
+						<Typography id={`${header} + modal`} variant="h4">
+							{ header ? sentenceCase(header) : "" }
 						</Typography>
 					</Stack>
 

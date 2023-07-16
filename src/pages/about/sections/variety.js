@@ -1,3 +1,4 @@
+import { useState } from "react";
 import {
 	Box,
 	Card,
@@ -11,16 +12,18 @@ import {
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
-import { varietyInfo } from "./info";
 import Iconify from "src/components/iconify/iconify";
-import { truncateStr } from "src/utils/formatStrings";
-import { useState } from "react";
 import ModalComponent from "src/components/ui/Modal";
-import { connect } from "react-redux";
+
+import { truncateStr } from "src/utils/formatStrings";
 import { selectVariety } from "src/redux/variety/action";
 
-const subtitle =
-	"Harness the Power of Innovative Software Solutions. From Building to Maintenance, Debugging to Enhancement, Optimization to Innovation - We Drive Your Success. Experience Growth, Efficiency, and Transformation with Tailor-Made Technologies. Count on Our Expertise in Resolving Complex Issues and Unleashing Performance Potential. Stay Ahead of the Competition and Embrace Digital Transformation with Our Forward-Thinking Approach.";
+import Varietychildren from "./varietychildren";
+
+import { connect } from "react-redux";
+
+
+const subtitle = "Harness the Power of Innovative Software Solutions. From Building to Maintenance, Debugging to Enhancement, Optimization to Innovation - We Drive Your Success. Experience Growth, Efficiency, and Transformation with Tailor-Made Technologies. Count on Our Expertise in Resolving Complex Issues and Unleashing Performance Potential. Stay Ahead of the Competition and Embrace Digital Transformation with Our Forward-Thinking Approach.";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
 
@@ -29,7 +32,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingBottom: "70px",
 }));
 
-const Variety = ({setVariety}) => {
+const Variety = ({ varieties, variety, setVariety }) => {
 	const [ open, setOpen ] = useState(false)
 
 	const handleClick = (variety) => {
@@ -51,7 +54,7 @@ const Variety = ({setVariety}) => {
 
 						<div>
 							<Grid container spacing={3}>
-								{varietyInfo.map((variety, i) => (
+								{varieties.map((variety, i) => (
 									<Grid
 										item
 										key={i}
@@ -110,14 +113,21 @@ const Variety = ({setVariety}) => {
 			</StyledWrapper>
 
 			<ModalComponent
-				header=""
+				header={ variety ? variety.title : ""}
+				open={open}
+				close={() => setOpen(false)}
+				width="75vw"
+				children={<Varietychildren/>}
+				icon={ variety ? variety.icon : "" }
+				iconWidth={30}
 			/>
 		</>
 	);
 };
 
 const mapStateToProps = ({variety}) => ({
-	variety: variety.variety
+	variety: variety.variety,
+	varieties: variety.allVarieties
 })
 
 const mapDispatchToProps = (dispatch) => ({

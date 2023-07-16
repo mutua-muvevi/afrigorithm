@@ -15,18 +15,18 @@ const initialState = {
 
 const varietyReducer = (state = initialState, { type, payload }) => {
 	switch (type) {
-		case varietyTypes.START_SELECT_BLOG:
+		case varietyTypes.START_SELECT_VARIETY:
 			return { 
 				...state,
 				loading: true,
 			};
-		case varietyTypes.SUCCESS_SELECT_BLOG:
+		case varietyTypes.SUCCESS_SELECT_VARIETY:
 			return {
 				...state,
 				loading: false,
 				variety: payload
 			};
-		case varietyTypes.FAIL_SELECT_BLOG:
+		case varietyTypes.FAIL_SELECT_VARIETY:
 			return {
 				...state,
 				loading: false,
