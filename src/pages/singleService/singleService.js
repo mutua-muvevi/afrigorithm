@@ -27,6 +27,10 @@ const Services = ({service}) => {
 				<SingleServiceEntry/>
 				<ParagraphList
 					content={service.content}
+					modalTitle={service.title}
+					buttonText="Make a move now"
+					icon="game-icons:chess-knight"
+					iconWidth={35}
 				/>
 			</StyledWrapper>
 		</Page>

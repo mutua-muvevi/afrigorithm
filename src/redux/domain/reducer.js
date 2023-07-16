@@ -1,3 +1,4 @@
+import DomainList from 'src/content/domain';
 import domainTypes from './types';
 
 const initialState = {
@@ -6,6 +7,9 @@ const initialState = {
 
 	domain:null,
 	domainError: null,
+
+	allDomains: DomainList,
+	allDomainError: null
 };
 
 const domainReducer = (state = initialState, { type, payload }) => {
