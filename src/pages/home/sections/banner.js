@@ -61,11 +61,11 @@ const Banner = () => {
 														0{1 + i}
 													</Typography>
 
-													<Typography vartiant="h5">
+													<Typography variant="h5">
 														{el.title}
 													</Typography>
 
-													<Typography vartiant="body2">
+													<Typography variant="body1">
 														{el.text}
 													</Typography>
 												</Stack>

@@ -1,3 +1,5 @@
+import { useNavigate } from "react-router-dom";
+
 import {
 	Box,
 	Button,
@@ -10,19 +12,19 @@ import {
 	Typography,
 } from "@mui/material";
 import { styled } from "@mui/system";
-import { connect } from "react-redux";
-import { useNavigate } from "react-router-dom";
-import Iconify from "src/components/iconify/iconify";
 
+import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import DomainList from "src/content/domain";
+
 import { selectDomain } from "src/redux/domain/action";
 import { truncateStr } from "src/utils/formatStrings";
 
-const title =
-	"Revolutionizing Multiple Industries: Pioneering IT Solutions for Growth and Success";
-const subtitle =
-	"Seize New Opportunities, Enhance Efficiency, and Drive Exponential Growth through our State-of-the-Art IT Solutions Crafted for Your Success";
+import { connect } from "react-redux";
+
+
+const title = "Revolutionizing Multiple Industries: Pioneering IT Solutions for Growth and Success";
+const subtitle = "Seize New Opportunities, Enhance Efficiency, and Drive Exponential Growth through our State-of-the-Art IT Solutions Crafted for Your Success";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "100px",
@@ -105,8 +107,10 @@ const HomeDomain = ({selectDomain}) => {
 							))}
 						</Grid>
 					</div>
-					<Button variant="contained" color="primary" sx={{p:2}} onClick={goToDomain}>
-						Wait! There is more!!
+					<Button variant="contained" color="primary" sx={{p:2}} onClick={goToDomain} endIcon={<Iconify icon="icomoon-free:eye-plus" width={25}/>}>
+						<Typography variant="subtitle1">
+							Wait! There is more!!
+						</Typography>
 					</Button>
 				</Stack>
 			</Container>
