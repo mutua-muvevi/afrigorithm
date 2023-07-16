@@ -73,33 +73,36 @@ const HomeDomain = ({selectDomain}) => {
 									<Card>
 										<CardActionArea onClick={() => selectDomainHandler(domain)}>
 											<CardContent sx={{minHeight: 240}}>
-												<Stack
-													direction="row"
-													justifyContent="left"
-													spacing={3}
-												>
-													<Iconify
-														icon={domain.icon}
-														width={50}
-													/>
-													<Stack direction="column">
-														<Typography variant="h5">
-															{domain.title}
-														</Typography>
-														<Typography
-															variant="subtitle2"
-															color="text.secondary"
-														>
-															{domain.subtitle}
-														</Typography>
+												<Stack direction="column" spacing={3}>
+													<Stack
+														direction="row"
+														justifyContent="left"
+														spacing={3}
+													>
+														<Iconify
+															icon={domain.icon}
+															width={50}
+														/>
+														<Stack direction="column">
+															<Typography variant="h5">
+																{domain.title}
+															</Typography>
+															<Typography
+																variant="subtitle2"
+																color="text.secondary"
+															>
+																{domain.subtitle}
+															</Typography>
+														</Stack>
 													</Stack>
+
+													<Typography variant="body1">
+														{truncateStr(
+															domain.mainText,
+															200
+														)}
+													</Typography>
 												</Stack>
-												<Typography variant="body1">
-													{truncateStr(
-														domain.mainText,
-														200
-													)}
-												</Typography>
 											</CardContent>
 										</CardActionArea>
 									</Card>

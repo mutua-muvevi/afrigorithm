@@ -1,11 +1,9 @@
-import React, { useEffect, useRef, useState } from "react";
 import { Box, Container, Grid, Accordion, AccordionSummary, AccordionDetails, Typography, useTheme, useMediaQuery, Stack } from "@mui/material";
 import { styled } from "@mui/system";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import { m } from "framer-motion";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
-import { questionAnswer } from "./info";
+import FAQList from "src/content/faq";
 
 const subtitle = "Our FAQ section is your go-to resource for finding answers to the most commonly asked questions. We believe in providing exceptional support and ensuring that you have the information you need at your fingertips";
 
@@ -19,32 +17,12 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const StyledAccordion = styled(Accordion)(({ theme }) => ({
-	backgroundColor: theme.palette.primary.main
+	backgroundColor: theme.palette.background.paper
 }))
 
 const QuestionAnswer = () => {
 	const theme = useTheme();
 	const isDesktop = useMediaQuery(theme.breakpoints.up('lg'));
-
-	const [inView, setInView] = useState(false);
-	const ref = useRef();
-
-	useEffect(() => {
-		const observer = new IntersectionObserver(
-			([entry]) => setInView(entry.isIntersecting),
-			{ threshold: 0.1 }
-		);
-
-		if (ref.current) {
-			observer.observe(ref.current);
-		}
-
-		return () => {
-			if (ref.current) {
-				observer.unobserve(ref.current);
-			}
-		};
-	}, []);
 
 	return (
 		<StyledWrapper>
@@ -60,31 +38,25 @@ const QuestionAnswer = () => {
 
 					<div>
 						<Grid container spacing={2}>
-							{questionAnswer.map((qa, index) => (
+							{FAQList.map((qa, index) => (
 								<Grid item xs={12} md={isDesktop ? 6 : 12} key={index}>
-									<m.div
-										ref={ref}
-										animate={{ opacity: inView ? 1 : 0.5 }}
-										transition={{ duration: 1 }}
-									>
-										<StyledAccordion>
-											<AccordionSummary
-												expandIcon={<ExpandMoreIcon />}
-												aria-controls={`panel${index}-content`}
-												id={`panel${index}-header`}
-											>
-												<Typography variant="h5">
-													{qa.question}
-												</Typography>
-											</AccordionSummary>
+									<StyledAccordion>
+										<AccordionSummary
+											expandIcon={<ExpandMoreIcon />}
+											aria-controls={`panel${index}-content`}
+											id={`panel${index}-header`}
+										>
+											<Typography variant="h5">
+												{qa.question}
+											</Typography>
+										</AccordionSummary>
 
-											<AccordionDetails>
-												<Typography variant="body1" textAlign="justify">
-													{qa.answer}
-												</Typography>
-											</AccordionDetails>
-										</StyledAccordion>
-									</m.div>
+										<AccordionDetails>
+											<Typography variant="subtitle1" textAlign="justify">
+												{qa.answer}
+											</Typography>
+										</AccordionDetails>
+									</StyledAccordion>
 								</Grid>
 							))}
 						</Grid>
