@@ -1,3 +1,5 @@
+import moment from 'moment';
+
 import { Link } from "react-router-dom";
 import {
 	Box,
@@ -15,6 +17,7 @@ import { footerItems } from "./info";
 import { MdOutlineArrowForwardIos } from "react-icons/md";
 import SocialMediaIcons from "src/components/sections/socialmedia";
 
+const currentYear = moment().format('YYYY');
 
 const StyledFooter = styled(Box)(({ theme }) => ({
 	paddingTop: "70px",
@@ -197,7 +200,7 @@ const Footer = () => {
 				justifyContent="center"
 			>
 				<Typography variant="subtitle1">
-					Afrigorithm Ltd © 2022 All rights reserved
+					Afrigorithm Ltd © {currentYear} All rights reserved
 				</Typography>
 			</StyledBottomFooter>
 		</div>
