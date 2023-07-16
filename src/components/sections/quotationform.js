@@ -44,20 +44,21 @@ const QuotationForm = () => {
 	
 	const submitHandler = (values, { resetForm }) => {
 		alert(JSON.stringify(values));
+		console.log("Values", values)
 		resetForm();
 	};
 
 	return (
 		<StyledWrapper>
 			<Container maxWidth="xl">
-				<Stack direction="column" spacing={4}>
-					<Formik
-						initialValues={{
-							...INITIAL_FORM_STATE,
-						}}
-						validationSchema={FORM_VALIDATION}
-						onSubmit={submitHandler}
-					>
+				<Formik
+					initialValues={{
+						...INITIAL_FORM_STATE,
+					}}
+					validationSchema={FORM_VALIDATION}
+					onSubmit={submitHandler}
+				>
+					<Form>
 						<Stack direction="column" alignItems="center" spacing={4}>
 							<TextfieldWrapper name="fullname" label="Your name"  variant="filled" />
 							<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
@@ -65,8 +66,8 @@ const QuotationForm = () => {
 							<TextfieldWrapper name="service" label="Service"  variant="filled"/>
 							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Message</StyledButton>
 						</Stack>
-					</Formik>
-				</Stack>
+					</Form>
+				</Formik>
 			</Container>
 		</StyledWrapper>
 	);

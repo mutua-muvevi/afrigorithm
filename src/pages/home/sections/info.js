@@ -1,18 +1,18 @@
 export const bannerCards = [
 	{
-		title: "Web Applications",
-		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
+		title: "Expertise & Excellence",
+		text: "Our team comprises industry veterans with vast experience in diverse domains, enabling us to deliver solutions that align with market trends and business needs.",
 	},
 	{
-		title: "Mobile Applications",
-		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
+		title: "Innovation & Technology",
+		text: "We leverage the latest technologies and AI solutions to craft unique, efficient, and futuristic applications that give your business a competitive edge.",
 	},
 	{
-		title: "Desktop Applications",
-		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
+		title: "Security & Trust",
+		text: "With our stringent cybersecurity measures and robust data management, we ensure the security of your business data, earning trust through uncompromised safety.",
 	},
 	{
-		title: "Backend development",
-		text: "Mi ipsum faucibus vitae aliquet nec ullamcorper. Quam id leo in vitae turpis  faucibus purus."
+		title: "Customized & Scalable Solutions",
+		text: "We understand each business is unique. Our solutions are tailored to your needs, ensuring scalability to support your growth and changes in the future.",
 	},
-]
+];

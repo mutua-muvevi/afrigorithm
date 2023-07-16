@@ -9,18 +9,6 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 }))
 
-const StyledTextGrid = styled(Grid)(({ theme }) => ({
-	color: "#ffffff",
-	paddingRight: "30px",
-	backgroundImage: `linear-gradient(to bottom, rgba(19, 102, 255, 0.5), rgba(19, 102, 255, 0.6)), url(${textGridBackground})`,
-	backgroundSize: "cover",
-	backgroundPosition: "center",
-	minHeight: "60vh",
-	display: "flex",
-	justifyContent: "flex-start",
-	alignItems: "center"
-}))
-
 const LeftRight = ({
 	title,
 	subtitle,
@@ -33,6 +21,19 @@ const LeftRight = ({
 	imgPosition,
 	image,
 }) => {
+	
+	const StyledTextGrid = styled(Grid)(({ theme }) => ({
+		color: "#ffffff",
+		paddingRight: "30px",
+		backgroundImage: `linear-gradient(to bottom, rgba(2, 10, 25, 0.7), rgba(2, 10, 25, 0.9)), url(${textGridBackground})`,
+		backgroundSize: "cover",
+		backgroundPosition: "center",
+		minHeight: "60vh",
+		display: "flex",
+		justifyContent: "flex-start",
+		alignItems: "center"
+	}))
+
 	const StyledImageGrid = styled(Grid)(({ theme }) => ({
 		backgroundImage: `url(${image})`,
 		backgroundSize: "cover",
@@ -49,7 +50,7 @@ const LeftRight = ({
 
 	const TextSection = (
 		<StyledTextGrid item xs={12} sm={12} md={12} lg={6} xl={6}>
-			<Stack direction="column" spacing={2}>
+			<Stack direction="column" spacing={2} sx={{pl:2}}>
 				<TitleSubtitle
 					title={title}
 					subtitle={subtitle}
@@ -59,7 +60,7 @@ const LeftRight = ({
 				/>
 				{
 					paragraphs ? paragraphs.map((par, i) => (
-						<Typography variant="body2" key={i}>
+						<Typography variant="body1" key={i} textAlign="justify">
 							{par}
 						</Typography>
 					)) : ""

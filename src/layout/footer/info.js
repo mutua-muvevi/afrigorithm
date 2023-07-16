@@ -13,7 +13,7 @@ export const footerItems = {
 			alt:"Afrigorithm logo"
 		},
 		title: "Afrigorithm Ltd",
-		text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi porttitor lobortis gravida. Duis efficitur velit nibh, vel vulputate neque posuere pharetra"
+		text: "Experience technology crafted with precision, passion, and your business in mind. Propel forward with us, where innovation meets ambition, and visions become reality."
 	},
 	pages: {
 		title: "Company",

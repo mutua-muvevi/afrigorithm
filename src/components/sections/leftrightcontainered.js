@@ -10,6 +10,7 @@ import {
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "./titlesubtitle";
+import Iconify from "../iconify/iconify";
 
 
 const StyledContainer = styled(Container)(({ theme }) => ({
@@ -33,7 +34,7 @@ const LeftRightContainered = ({
 	const StyledWrapper = styled(Box)(({ theme }) => ({
 		paddingTop: "70px",
 		paddingBottom: "70px",
-		backgroundColor: backgroundColor ? theme.palette.primary.main : "inherit"
+		backgroundColor: backgroundColor ? theme.palette.background.paper : "inherit"
 	}));
 	
 	const StyledListIconBox = styled(Box)(({ theme }) => ({
@@ -86,15 +87,15 @@ const LeftRightContainered = ({
 						list.items.map((el, i) => (
 							<Stack direction="row" spacing={2} key={i}>
 								{el.icon && (
-									<StyledListIconBox sx={{ width: "70px" }}>
-										{el.icon}
+									<StyledListIconBox>
+										<Iconify icon={el.icon} width="35px"/>
 									</StyledListIconBox>
 								)}
 								<Stack direction="column" spacing={1}>
-									<Typography variant="h5">
+									<Typography variant="h5"  textAlign="justify">
 										{el.title}
 									</Typography>
-									<Typography variant="body2">
+									<Typography variant="body1"  textAlign="justify">
 										{el.text}
 									</Typography>
 								</Stack>
