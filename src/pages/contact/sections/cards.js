@@ -13,6 +13,7 @@ import { contactItems, helpList } from "./info";
 
 import Iconify from "src/components/iconify/iconify";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
+import HelpList from "src/content/help";
 
 const subtitle =
 	"Our dedicated team stands ready to assist you, responsive and resolute, whether it's an email query or a phone call discussion. Your success is our mission, and we strive to ensure your journey with us is smooth and rewarding.";
@@ -71,7 +72,7 @@ const ContactCards = () => {
 																	variant="subtitle"
 																	color="text.secondary"
 																>
-																	{el.title}
+																	{el.subtitle}
 																</Typography>
 															</Stack>
 														</Stack>
@@ -85,7 +86,7 @@ const ContactCards = () => {
 								  ))
 								: ""}
 
-							{helpList.map((el, i) => (
+							{HelpList.classification.map((el, i) => (
 								<Grid
 									item
 									xs={12}

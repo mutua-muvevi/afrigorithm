@@ -8,7 +8,7 @@ export const contactItems = [
 	{
 		icon: "game-icons:old-microphone",
 		title: "Call us",
-		subtitle: "+254 799 756 331",
+		subtitle: "+254 799 756 331, +254 746 432 175",
 		text:  "A call away from orchestrating your unique symphony of success."
 	},
 	{
@@ -18,66 +18,3 @@ export const contactItems = [
 		text: "Visit us in Nairobi - witness the harmonious blend of tech and ambition."
 	},
 ]
-
-export const helpList = [
-	{
-		icon: "fluent:document-text-20-filled",
-		title: "Documentation",
-		mainText:
-			"Elit at imperdiet dui accumsan sit. Sem nulla pharetra diam sit amet nisl.",
-		items: [
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-		],
-	},
-	{
-		icon: "clarity:flow-chart-solid",
-		title: "Work flow",
-		mainText:
-			"Elit at imperdiet dui accumsan sit. Sem nulla pharetra diam sit amet nisl.",
-		items: [
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-		],
-	},
-	{
-		icon: "ri:admin-fill",
-		title: "For Clients",
-		mainText:
-			"Elit at imperdiet dui accumsan sit. Sem nulla pharetra diam sit amet nisl.",
-		items: [
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-			{
-				icon: "fa-solid:file-pdf",
-				text: "Download PDF Documents",
-			},
-		],
-	},
-];
