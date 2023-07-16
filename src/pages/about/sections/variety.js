@@ -14,6 +14,10 @@ import TitleSubtitle from "src/components/sections/titlesubtitle";
 import { varietyInfo } from "./info";
 import Iconify from "src/components/iconify/iconify";
 import { truncateStr } from "src/utils/formatStrings";
+import { useState } from "react";
+import ModalComponent from "src/components/ui/Modal";
+import { connect } from "react-redux";
+import { selectVariety } from "src/redux/variety/action";
 
 const subtitle =
 	"Harness the Power of Innovative Software Solutions. From Building to Maintenance, Debugging to Enhancement, Optimization to Innovation - We Drive Your Success. Experience Growth, Efficiency, and Transformation with Tailor-Made Technologies. Count on Our Expertise in Resolving Complex Issues and Unleashing Performance Potential. Stay Ahead of the Competition and Embrace Digital Transformation with Our Forward-Thinking Approach.";
@@ -25,78 +29,99 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 	paddingBottom: "70px",
 }));
 
-const Variety = () => {
-	return (
-		<StyledWrapper>
-			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={5}>
-					<TitleSubtitle
-						title="Empowering Business Success through Comprehensive Software Solutions"
-						subtitle={subtitle}
-						chipText="In a nutshell"
-						alignItems="center"
-					/>
+const Variety = ({setVariety}) => {
+	const [ open, setOpen ] = useState(false)
 
-					<div>
-						<Grid container spacing={3}>
-							{varietyInfo.map((el, i) => (
-								<Grid
-									item
-									key={i}
-									xs={12}
-									sm={6}
-									md={6}
-									lg={4}
-									xl={4}
-								>
-									<Card>
-										<CardActionArea>
-											<CardContent
-												sx={{ minHeight: 240 }}
-											>
-												<Stack
-													direction="column"
-													spacing={3}
+	const handleClick = (variety) => {
+		setVariety(variety)
+		setOpen(true)
+	}
+
+	return (
+		<>
+			<StyledWrapper>
+				<StyledContainer maxWidth="xl">
+					<Stack direction="column" spacing={5}>
+						<TitleSubtitle
+							title="Empowering Business Success through Comprehensive Software Solutions"
+							subtitle={subtitle}
+							chipText="In a nutshell"
+							alignItems="center"
+						/>
+
+						<div>
+							<Grid container spacing={3}>
+								{varietyInfo.map((variety, i) => (
+									<Grid
+										item
+										key={i}
+										xs={12}
+										sm={6}
+										md={6}
+										lg={4}
+										xl={4}
+									>
+										<Card>
+											<CardActionArea onClick={() => handleClick(variety)}>
+												<CardContent
+													sx={{ minHeight: 240 }}
 												>
 													<Stack
-														direction="row"
-														justifyContent="left"
+														direction="column"
 														spacing={3}
 													>
-														<Iconify
-															icon={el.icon}
-															width={50}
-														/>
-														<Stack direction="column">
-															<Typography variant="h5">
-																{el.title}
-															</Typography>
-															<Typography
-																variant="subtitle2"
-																color="text.secondary"
-															>
-																{el.subtitle}
-															</Typography>
+														<Stack
+															direction="row"
+															justifyContent="left"
+															spacing={3}
+														>
+															<Iconify
+																icon={variety.icon}
+																width={50}
+															/>
+															<Stack direction="column">
+																<Typography variant="h5">
+																	{variety.title}
+																</Typography>
+																<Typography
+																	variant="subtitle2"
+																	color="text.secondary"
+																>
+																	{variety.subtitle}
+																</Typography>
+															</Stack>
 														</Stack>
+														<Typography variant="body1">
+															{truncateStr(
+																variety.mainText,
+																190
+															)}
+														</Typography>
 													</Stack>
-													<Typography variant="body1">
-														{truncateStr(
-															el.mainText,
-															190
-														)}
-													</Typography>
-												</Stack>
-											</CardContent>
-										</CardActionArea>
-									</Card>
-								</Grid>
-							))}
-						</Grid>
-					</div>
-				</Stack>
-			</StyledContainer>
-		</StyledWrapper>
+												</CardContent>
+											</CardActionArea>
+										</Card>
+									</Grid>
+								))}
+							</Grid>
+						</div>
+					</Stack>
+				</StyledContainer>
+			</StyledWrapper>
+
+			<ModalComponent
+				header=""
+			/>
+		</>
 	);
 };
 
-export default Variety;
+const mapStateToProps = ({variety}) => ({
+	variety: variety.variety
+})
+
+const mapDispatchToProps = (dispatch) => ({
+	setVariety : (variety) => dispatch(selectVariety(variety))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Variety);
