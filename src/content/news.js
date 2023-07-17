@@ -544,7 +544,7 @@ const NewsList = [
 					"Virtual healthcare assistants and chatbots offer round-the-clock support, answering medical queries and providing initial diagnoses. AI-driven predictive analytics help healthcare providers identify high-risk patients and intervene proactively.",
 					"In medical research, AI algorithms analyze vast amounts of genomic data to identify potential drug targets and accelerate the development of new treatments. AI-powered precision medicine is paving the way for more effective and tailored healthcare approaches.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689264978/health_oe6x08.jpg",
 				list: {
 					title: "Key Applications of AI in Healthcare",
 					items: [
@@ -580,7 +580,7 @@ const NewsList = [
 					"Ethical AI development involves ensuring fairness and avoiding algorithmic bias in decision-making processes. Transparency and interpretability of AI models are essential for building trust and understanding how decisions are made.",
 					"Responsible data management and protection are also critical to safeguard user privacy and prevent misuse of personal information. Collaboration among stakeholders, including policymakers, researchers, and industry experts, is essential to establish guidelines and frameworks for responsible AI development.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689621878/ai_btxys4.jpg",
 				list: {
 					title: "Key Aspects of Ethical AI Development",
 					items: [
