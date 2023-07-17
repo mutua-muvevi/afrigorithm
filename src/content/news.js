@@ -618,7 +618,7 @@ const NewsList = [
 		title: "Cybersecurity in the Digital Age",
 		subtitle:
 			"Examining the evolving landscape of cybersecurity and the importance of safeguarding digital assets.",
-		category: "Technology",
+		category: "Cyber security",
 		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619934/cybersecurity_k6j1r4.jpg",
 		mainParagraphs: [
 			"In today's interconnected world, cybersecurity plays a crucial role in protecting individuals, businesses, and nations from cyber threats. With the increasing reliance on digital technologies and the rise of cybercrime, safeguarding digital assets and maintaining data privacy has become paramount.",
@@ -768,7 +768,7 @@ const NewsList = [
 					"Video conferencing platforms enable face-to-face virtual meetings, fostering real-time communication and connection. Project management software helps remote teams stay organized, track progress, and collaborate on tasks and projects. Team communication tools provide a centralized platform for instant messaging, file sharing, and team updates.",
 					"Choosing the right digital collaboration tools and ensuring their seamless integration is essential for maintaining productivity and fostering collaboration in a remote work environment.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625665/elearning1_rbcl08.jpg",
 				list: {
 					title: "Essential Collaboration Tools for Remote Work",
 					items: [
@@ -799,7 +799,7 @@ const NewsList = [
 					"To overcome these challenges, establishing a dedicated workspace, setting clear boundaries between work and personal life, and maintaining regular communication with colleagues are essential. Adapting to flexible schedules, practicing self-discipline, and prioritizing well-being are also key factors for remote work success.",
 					"Organizations can support remote workers by fostering a culture of trust, providing the necessary tools and resources, and promoting work-life balance and employee well-being.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625654/elearning_sbtlz5.jpg",
 				list: {
 					title: "Best Practices for Remote Work Success",
 					items: [
