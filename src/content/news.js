@@ -355,7 +355,7 @@ const NewsList = [
 					"This transparency enhances accountability, reduces fraud, and ensures compliance with regulatory standards. Blockchain-powered supply chains can enable real-time tracking, authentication of products, and efficient management of inventory and logistics.",
 					"From verifying the authenticity of luxury goods to ensuring fair trade practices in agricultural products, blockchain is transforming supply chain management by fostering trust, efficiency, and sustainability.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619934/cybersecurity_k6j1r4.jpg",
 				list: {
 					title: "Key Benefits of Blockchain in Supply Chain",
 					items: [
