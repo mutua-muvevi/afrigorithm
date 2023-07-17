@@ -195,7 +195,7 @@ const BlogList = [
 					"Geographical barriers and shortages of healthcare professionals often hamper access to healthcare services in Africa. However, telemedicine is proving a game-changer, enabling remote consultations, reducing travel times and costs, and easing the strain on the limited number of healthcare professionals.",
 					"Mobile health (mHealth) applications are also making waves, providing health education, appointment scheduling, remote monitoring, and more, right at users' fingertips.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626904/aihealth_vyjod7.jpg",
 				list: {
 					title: "Tech Innovations Improving Healthcare Accessibility",
 					items: [
@@ -219,7 +219,7 @@ const BlogList = [
 					"Effective disease surveillance is critical in managing disease outbreaks and shaping public health policies. Technology, particularly Artificial Intelligence (AI) and big data, is proving instrumental in collecting, analyzing, and disseminating health data for better decision-making.",
 					"Research is also being enhanced with tech tools. From AI aiding in drug discovery to virtual reality enabling advanced surgical training, technology is transforming healthcare research and development.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689265894/scientist_scmuk0.jpg",
 				list: {
 					title: "Tech Innovations Enhancing Surveillance and Research",
 					items: [
@@ -243,7 +243,7 @@ const BlogList = [
 					"The administrative aspect of healthcare can be as crucial as the clinical aspect. Inefficient health management systems can result in poor service delivery, loss of funds, and other challenges. Digital health management systems, however, can streamline operations, improving service delivery, and accountability.",
 					"From electronic medical records (EMRs) improving patient data management to digital supply chain systems ensuring timely delivery of medical supplies, technology is making healthcare management more efficient.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628507/health_km6wag.jpg",
 				list: {
 					title: "Tech Innovations in Health Management",
 					items: [
@@ -285,7 +285,7 @@ const BlogList = [
 					"The importance of digital literacy in the 21st century cannot be overstated. As the world becomes more digitally interconnected, understanding how to use digital tools is becoming as fundamental as reading and writing.",
 					"Many African nations are now integrating digital literacy into their curriculums, preparing students for a digital future. Initiatives to provide students with access to computers and the internet are paving the way for a more inclusive digital revolution."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689632062/students_mxjnpq.jpg",
 				list: {
 					title: "Key Components of Digital Literacy",
 					items: [
@@ -307,7 +307,7 @@ const BlogList = [
 					"E-learning platforms are increasing accessibility to quality education resources, even for those in remote areas. These platforms offer a range of learning materials, including video lectures, interactive quizzes, and discussion forums, providing a flexible learning environment that caters to individual learning styles and paces.",
 					"Additionally, e-learning platforms are democratizing education, making it possible for students to access courses from various sources. This has significant implications for lifelong learning and professional development."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689632061/elearninglaptop_hgs8qm.jpg",
 				list: {
 					title: "Popular E-Learning Platforms in Africa",
 					items: [
@@ -329,7 +329,7 @@ const BlogList = [
 					"Virtual reality (VR) technology is being used to create immersive learning experiences that enhance student understanding and retention. For example, VR can be used to take students on virtual field trips to historical sites or inside the human body, providing experiences that would be impossible in a traditional classroom.",
 					"While access to VR technology is still limited in many parts of Africa due to cost, efforts are being made to make this technology more accessible. As VR technology becomes more widespread, it has the potential to transform education in unprecedented ways."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689632062/vr_zryekr.jpg",
 				list: {
 					title: "Benefits of Virtual Reality in Education",
 					items: [
@@ -351,7 +351,6 @@ const BlogList = [
 			bio: "A tech enthusiast and educator who is passionate about leveraging technology to transform education in Africa."
 		}
 	},
-
 	{
 		title: "The Internet of Things (IoT): Connecting the World Around Us",
 		subtitle: "Understanding the Impact of IoT on Daily Life",
@@ -369,7 +368,7 @@ const BlogList = [
 					"Smart homes epitomize the capabilities of IoT, turning regular households into hubs of connected devices. From thermostats that learn your preferred temperature settings to refrigerators that can restock themselves, smart home devices enhance convenience and efficiency.",
 					"With advancements in technology, we can expect the proliferation of smart homes to continue, driven by the growing demand for automation and energy efficiency."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689630514/smarthome_dwg0kh.jpg",
 				list: {
 					title: "Innovative Smart Home Devices",
 					items: [
@@ -393,7 +392,7 @@ const BlogList = [
 					"Smart cities are another testament to the power of IoT. By embedding sensors and devices throughout urban areas, city authorities can gather data on various parameters like traffic, pollution, and energy use, which can be analyzed to improve urban life.",
 					"As urban populations continue to grow, smart cities will play an increasingly important role in managing resources and infrastructure, making cities more sustainable and livable."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689630514/smartcity_gfcau9.jpg",
 				list: {
 					title: "Notable Smart City Initiatives",
 					items: [
@@ -434,7 +433,7 @@ const BlogList = [
 					"Home automation systems are the backbone of smart homes, seamlessly integrating various appliances and systems to create a connected ecosystem. Be it controlling lights with a smartphone or programming your HVAC system for optimal energy usage, home automation simplifies daily routines.",
 					"As technologies evolve, expect even more intelligent automation systems capable of learning user preferences, making smart homes more personalized and efficient."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689630977/homeautomation_yeisli.jpg",
 				list: {
 					title: "Leading Home Automation Systems",
 					items: [
@@ -458,7 +457,7 @@ const BlogList = [
 					"Smart home technology is revolutionizing energy management in homes. From smart thermostats that adjust settings based on your patterns to smart plugs that cut power to idle devices, smart homes can significantly reduce energy consumption and costs.",
 					"As climate change continues to pose global challenges, energy-efficient smart homes will be at the forefront of sustainable living practices."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689630978/homesmartsolar_sohvxt.jpg",
 				list: {
 					title: "Efficient Energy Management Devices",
 					items: [
@@ -499,7 +498,7 @@ const BlogList = [
 					"AI applications are profoundly enhancing diagnosis and treatment. Machine learning algorithms can analyze vast amounts of data, recognize patterns, and make accurate predictions, facilitating early detection of diseases and personalized treatment plans.",
 					"The integration of AI in imaging diagnostics, genetic testing, and drug discovery signifies a shift towards precision medicine, promising improved patient outcomes."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629560/hospital_wnk5zh.jpg",
 				list: {
 					title: "Key Players in AI for Healthcare",
 					items: [
@@ -523,7 +522,7 @@ const BlogList = [
 					"AI-powered wearables and remote monitoring tools are transforming patient care outside the hospital. These technologies enable real-time monitoring, alert healthcare providers about potential health risks, and facilitate timely intervention, moving towards proactive rather than reactive healthcare.",
 					"With a growing focus on preventive care and chronic disease management, AI in patient monitoring represents a promising direction for healthcare evolution."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629565/hospital1_ybxeda.jpg",
 				list: {
 					title: "Innovative AI Tools for Patient Monitoring",
 					items: [
@@ -564,7 +563,7 @@ const BlogList = [
 					"Drones are transforming delivery and logistics, offering faster, safer, and more efficient delivery solutions. They not only reach remote or inaccessible areas but also reduce traffic congestion and pollution in urban environments.",
 					"From delivering critical medical supplies to your doorstep package deliveries, drone technology is set to redefine the future of logistics."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689631512/dronedelivery_jopwio.jpg",
 				list: {
 					title: "Key Players in Drone Delivery",
 					items: [
@@ -588,7 +587,7 @@ const BlogList = [
 					"Drones are revolutionizing the entertainment industry, providing filmmakers and event organizers with innovative ways to capture and create content. From shooting stunning aerial footage to drone light shows, drones are adding a new dimension to visual storytelling.",
 					"The role of drones extends beyond filmmaking to live sports, concerts, and public events, where they can create immersive experiences and offer unique perspectives."
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689631512/drrone_z4co9e.jpg",
 				list: {
 					title: "Innovative Uses of Drones in Entertainment",
 					items: [
