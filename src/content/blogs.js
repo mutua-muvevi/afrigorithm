@@ -16,7 +16,7 @@ const BlogList = [
 					"Fintech in Africa has witnessed tremendous growth in the last decade, and this trend is expected to continue over the next three years. Mobile money services have brought financial inclusion to millions of Africans, revolutionizing the way transactions are carried out.",
 					"The emergence of digital banks and insurtech companies are other examples of how technology is shaping the financial landscape in Africa. These platforms offer efficient, cost-effective services that are easily accessible, particularly for individuals and businesses previously underserved by traditional banks.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629566/oldwomanfintech_kr3rah.jpg",
 				list: {
 					title: "Noteworthy Fintech Startups in Africa",
 					items: [
@@ -40,7 +40,7 @@ const BlogList = [
 					"HealthTech in Africa is leveraging technology to improve access to healthcare services, particularly in rural areas where healthcare infrastructure is often lacking. Mobile health (mHealth) applications provide health information, appointment booking services, telemedicine consultations, and remote patient monitoring.",
 					"Over the next three years, the adoption of HealthTech solutions is expected to grow, driven by the ongoing Covid-19 pandemic and the need for remote healthcare services. These digital health solutions have the potential to bridge the gap in healthcare access across the continent.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629560/hospital_wnk5zh.jpg",
 				list: {
 					title: "Prominent HealthTech Platforms in Africa",
 					items: [
@@ -64,7 +64,7 @@ const BlogList = [
 					"The role of technology in education cannot be overstated. EdTech in Africa is driving an education revolution by making learning more accessible and engaging. From digital learning platforms to educational apps, technology is providing innovative solutions to education challenges on the continent.",
 					"In the next three years, as internet connectivity and device ownership improve across the continent, the adoption of digital learning tools isexpected to increase. This transformation opens up opportunities for personalized learning, equipping Africa's young population with the skills required for the digital age.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629113/elearning_jrrrfo.jpg",
 				list: {
 					title: "Pioneering EdTech Platforms in Africa",
 					items: [
@@ -105,7 +105,7 @@ const BlogList = [
 					"Africa's infrastructural deficit is a significant hindrance to economic development. However, tech innovations present an avenue to bypass these traditional infrastructure bottlenecks. From mobile money transforming financial services to solar-powered solutions addressing energy deficiencies, technology is being harnessed to improve lives and economies.",
 					"Investing in such tech innovations not only supports economic growth but also builds resilience, as evident in the COVID-19 pandemic, where digital tools played a crucial role in maintaining societal functionality amid lockdowns.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629875/infrastructure_vam9ra.jpg",
 				list: {
 					title: "Infrastructure Tech Solutions",
 					items: [
@@ -129,7 +129,7 @@ const BlogList = [
 					"Healthcare remains a significant challenge in many parts of Africa, with inadequate facilities, limited personnel, and logistic challenges. However, healthtech innovations are changing this narrative, bringing healthcare closer to the people. Telemedicine, AI-based diagnostic tools, and e-pharmacy services are improving healthcare delivery and access.",
 					"Investing in healthtech solutions supports the development of robust healthcare systems, an essential aspect of societal development.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629565/hospital1_ybxeda.jpg",
 				list: {
 					title: "Healthtech Innovations in Africa",
 					items: [
@@ -153,7 +153,7 @@ const BlogList = [
 					"Financial inclusion, a key driver of economic growth, remains a challenge in many African nations. Fintech solutions are, however, addressing this, reaching the unbanked and underbanked, providing affordable and accessible financial services, and promoting economic participation.",
 					"Investments in fintech innovations, therefore, contribute significantly to economic growth, reducing poverty and promoting societal development.",
 				],
-				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587409/blogarticle2_f6lnyw.jpg",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689629561/fintech1_p4xd29.jpg",
 				list: {
 					title: "Fintech Solutions Driving Inclusion",
 					items: [
