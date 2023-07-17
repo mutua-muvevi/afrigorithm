@@ -4,8 +4,8 @@ const NewsList = [
 		subtitle:
 			"Exploring the transformative impact of e-learning in modern education.",
 		category: "Education",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689266066/elearning_cmbnlx.jpg",
+		mainParagraphs: [
 			"E-Learning has emerged as a powerful tool in revolutionizing education, breaking down geographical barriers, and providing flexible learning opportunities. With advancements in technology, e-learning platforms have become increasingly accessible, offering a wide range of courses and educational resources.",
 			"Through e-learning, learners can access quality education anytime, anywhere, and at their own pace. It offers personalized learning experiences, interactive content, and the ability to connect with instructors and peers from around the world. E-learning is reshaping traditional education models and fostering a lifelong learning culture.",
 			"The COVID-19 pandemic further accelerated the adoption of e-learning, as educational institutions quickly transitioned to online platforms to ensure continuity of education. This shift highlighted the importance and potential of e-learning in delivering education remotely and bridging the digital divide.",
@@ -22,7 +22,7 @@ const NewsList = [
 					"Engaging Learning Experience: Interactive multimedia content, gamification, and virtual simulations create engaging and immersive learning experiences.",
 					"Cost-Effectiveness: E-Learning reduces costs associated with travel, textbooks, and physical infrastructure, making education more affordable and sustainable.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619594/remote_spqkoo.jpg",
 				list: {
 					title: "Key Features of E-Learning Platforms",
 					items: [
@@ -55,7 +55,7 @@ const NewsList = [
 					"Mobile Learning (m-Learning): Mobile apps and responsive web platforms facilitate learning on smartphones and tablets, enabling learning anytime, anywhere.",
 					"Artificial Intelligence (AI) in E-Learning: AI-powered technologies personalize learning experiences, provide adaptive assessments, and offer intelligent tutoring systems.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625665/elearning1_rbcl08.jpg",
 				list: {
 					title: "Emerging Trends in E-Learning",
 					items: [
@@ -86,7 +86,7 @@ const NewsList = [
 					"Through e-learning, professionals can access industry-specific training, certifications, and skill development programs. The flexibility of online learning allows employees to learn at their own pace, fitting education around their work commitments.",
 					"E-Learning in the workplace also fosters a culture of continuous learning, promoting innovation and adaptability. Organizations benefit from upskilled employees, improved performance, and enhanced competitiveness in the digital age.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625654/elearning_sbtlz5.jpg",
 				list: {
 					title: "Benefits of E-Learning in the Workplace",
 					items: [
@@ -109,15 +109,19 @@ const NewsList = [
 				},
 			},
 		],
+		tags: ["E-Learning", "Education Technology", "Online Learning", "Digital Education", "Professional Development"],
+		author: {
+			name: "Dr. Jane Thompson",
+			bio: "Dr. Jane Thompson is an experienced educator and technology enthusiast with over 15 years of experience in the field of e-learning. She holds a Ph.D. in Educational Technology and is passionate about digital innovation in education and lifelong learning."
+		}
 	},
-
 	{
 		title: "Agritech Developments Revolutionizing the Agriculture Industry",
 		subtitle:
 			"Exploring the latest advancements in agritech and their transformative impact on the agriculture sector.",
-		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		category: "Agriculture",
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626287/agriculture_xwltuy.jpg",
+		mainParagraphs: [
 			"The agriculture industry is undergoing a technological revolution with the emergence of innovative solutions collectively known as agritech. These advancements are revolutionizing traditional farming practices, increasing productivity, and addressing sustainability challenges.",
 			"Agritech leverages technologies such as precision agriculture, Internet of Things (IoT), artificial intelligence, and data analytics to optimize farming operations, improve resource efficiency, and enhance crop yield. From smart sensors and automated machinery to data-driven decision-making, agritech offers transformative opportunities for farmers and the entire agricultural value chain.",
 			"By harnessing real-time data, farmers can make informed decisions regarding irrigation, fertilization, pest control, and crop management. These technologies enable the monitoring of soil conditions, weather patterns, and crop health, leading to better resource allocation and reduced environmental impact.",
@@ -132,7 +136,7 @@ const NewsList = [
 					"Smart farming encompasses the integration of IoT devices, robotics, and automation to streamline agricultural processes. These technologies enable remote monitoring, automated irrigation systems, precision spraying, and autonomous harvesting, resulting in increased productivity and reduced labor requirements.",
 					"The adoption of precision agriculture and smart farming techniques offers numerous benefits, including reduced input costs, improved crop quality, and minimized environmental impact. It empowers farmers to make data-driven decisions and implement sustainable farming practices for long-term viability.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619921/agritech_drymfj.jpg",
 				list: {
 					title: "Key Agritech Solutions",
 					items: [
@@ -163,7 +167,7 @@ const NewsList = [
 					"By leveraging data analytics algorithms and machine learning models, farmers can gain valuable insights into crop health, disease detection, and yield prediction. This enables proactive decision-making and targeted interventions, leading to optimized resource allocation and improved crop yield.",
 					"Furthermore, data-driven crop management allows farmers to implement precision irrigation techniques, adjust fertilizer application rates based on crop needs, and monitor pest and disease outbreaks in real-time. These practices contribute to sustainable agriculture practices and help minimize environmental impact.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626176/smartagri_js5uvp.jpg",
 				list: {
 					title: "Benefits of Data-Driven Crop Management",
 					items: [
@@ -195,7 +199,7 @@ const NewsList = [
 					"The decentralized and immutable nature of blockchain ensures transparency and trust, enabling consumers to verify the authenticity and integrity of agricultural products. This technology provides a means to tackle issues such as food fraud, counterfeit products, and supply chain inefficiencies.",
 					"Additionally, blockchain can facilitate efficient payment systems, reduce transaction costs, and enable fairer compensation for farmers by eliminating intermediaries and ensuring faster, more secure transactions.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626000/agriculture_m1jxze.jpg",
 				list: {
 					title: "Advantages of Blockchain in Agriculture",
 					items: [
@@ -227,7 +231,7 @@ const NewsList = [
 					"Furthermore, agritech solutions facilitate the integration of renewable energy sources, such as solar-powered irrigation systems and energy-efficient equipment, reducing dependence on non-renewable resources.",
 					"By embracing sustainable farming practices with the help of agritech, farmers can contribute to biodiversity conservation, mitigate climate change, and ensure the long-term viability of agricultural systems.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626180/smartagri1_ks5sya.jpg",
 				list: {
 					title: "Benefits of Sustainable Farming with Agritech",
 					items: [
@@ -250,16 +254,15 @@ const NewsList = [
 				},
 			},
 		],
+		tags: ["Agritech", "Sustainable Farming", "Precision Agriculture",],
 	},
-	// Additional news items can be added here
-
 	{
 		title: "Artificial Intelligence Advancements",
 		subtitle:
 			"Unveiling the latest breakthroughs in AI and their far-reaching impact on industries worldwide.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689621878/ai_btxys4.jpg",
+		mainParagraphs: [
 			"Artificial Intelligence (AI) is rapidly evolving, revolutionizing industries and redefining what is possible. With advancements in machine learning and deep learning algorithms, AI is making significant strides across various sectors, including healthcare, finance, and transportation.",
 			"From predictive analytics to natural language processing, AI-powered solutions are enhancing operational efficiency, enabling personalized experiences, and fueling data-driven decision-making processes. With AI-powered chatbots, businesses can provide round-the-clock customer support, and sophisticated AI algorithms are automating intricate tasks, boosting productivity and driving business growth.",
 			"However, discussions around ethical considerations and responsible AI implementation are vital. Striking a balance between innovation and ethical guidelines is essential to ensure unbiased algorithms, privacy protection, and transparency in AI applications.",
@@ -329,14 +332,15 @@ const NewsList = [
 			},
 			// Add more news items here
 		],
+		tags: ["Artificial Intelligence", "AI in Healthcare", "Data Analytics", "Machine Learning"]
 	},
 	{
 		title: "Blockchain Technology Revolutionizing Industries",
 		subtitle:
 			"Exploring the transformative power of blockchain technology and its potential impact on various sectors.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619842/blockchain_s3m733.jpg",
+		mainParagraphs: [
 			"Blockchain technology is revolutionizing industries by providing decentralized, secure, and transparent systems for recording transactions and storing data. With its inherent immutability and cryptographic security, blockchain has the potential to reshape sectors such as finance, supply chain, healthcare, and more.",
 			"By eliminating intermediaries and enabling peer-to-peer transactions, blockchain can streamline processes, reduce costs, and enhance trust and transparency. Smart contracts powered by blockchain can automate and enforce agreements without the need for intermediaries, ensuring efficiency and reducing the risk of fraud.",
 			"The adoption of blockchain technology is expanding, with initiatives for cross-border payments, digital identity management, and decentralized finance (DeFi) gaining traction. However, challenges such as scalability, regulatory frameworks, and interoperability need to be addressed for widespread implementation.",
@@ -385,14 +389,19 @@ const NewsList = [
 			},
 			// Add more news items here
 		],
+		tags: ['Blockchain', 'Technology', 'Decentralization', 'Finance', 'Supply Chain'],
+	author: {
+		name: "John Doe",
+		bio: "John Doe is a technology enthusiast with a keen interest in emerging technologies like blockchain and artificial intelligence."
+	},
 	},
 	{
 		title: "Rise of E-commerce in the Digital Era",
 		subtitle:
 			"Exploring the exponential growth and impact of e-commerce in the digital landscape.",
 		category: "Business",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689622026/ecommerce_eiwwx0.jpg",
+		mainParagraphs: [
 			"E-commerce has experienced unprecedented growth in the digital era, revolutionizing the way businesses and consumers engage in transactions. The convenience of online shopping, coupled with secure payment systems and efficient logistics, has fueled the rise of e-commerce across various industries.",
 			"The global COVID-19 pandemic further accelerated the adoption of e-commerce, with more businesses shifting their operations online and consumers embracing digital shopping experiences. From retail giants to small businesses, e-commerce has provided opportunities for entrepreneurs and enhanced customer reach.",
 			"Advancements in technology, such as mobile commerce and personalized recommendations, have transformed the e-commerce landscape. With seamless user experiences, convenient delivery options, and hassle-free returns, e-commerce continues to reshape the retail landscape.",
@@ -508,14 +517,19 @@ const NewsList = [
 			},
 			// Add more news items here
 		],
+		tags: ['E-commerce', 'Digital Era', 'Business', 'Online Shopping', 'Marketplace'],
+	author: {
+		name: "Jane Smith",
+		bio: "Jane Smith is a business strategist who specializes in e-commerce and digital transformation strategies."
+	},
 	},
 	{
 		title: "Emerging Trends in Artificial Intelligence",
 		subtitle:
 			"Exploring the latest advancements and applications of artificial intelligence (AI) technology.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689622865/ai_nuprkq.jpg",
+		mainParagraphs: [
 			"Artificial intelligence (AI) continues to be at the forefront of technological innovation, driving breakthroughs in various industries. From machine learning algorithms to natural language processing, AI has the potential to transform the way we live and work.",
 			"The adoption of AI is accelerating across sectors such as healthcare, finance, transportation, and customer service. Intelligent virtual assistants, automated decision-making systems, and predictive analytics are just a few examples of AI applications making an impact.",
 			"With the exponential growth of data and computing power, AI systems are becoming more sophisticated and capable. However, ethical considerations and responsible AI development are crucial to ensure the benefits of AI are harnessed ethically and for the betterment of society.",
@@ -593,16 +607,20 @@ const NewsList = [
 					],
 				},
 			},
-			// Add more news items here
 		],
+		tags: ["Artificial Intelligence", "Emerging Trends", "AI Healthcare", "AI Ethics", "Technology Trends"],
+		author: {
+			name: "John Doe",
+			bio: "John Doe is an expert in Artificial Intelligence and its applications in various industries.",
+		},
 	},
 	{
 		title: "Cybersecurity in the Digital Age",
 		subtitle:
 			"Examining the evolving landscape of cybersecurity and the importance of safeguarding digital assets.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619934/cybersecurity_k6j1r4.jpg",
+		mainParagraphs: [
 			"In today's interconnected world, cybersecurity plays a crucial role in protecting individuals, businesses, and nations from cyber threats. With the increasing reliance on digital technologies and the rise of cybercrime, safeguarding digital assets and maintaining data privacy has become paramount.",
 			"Cybersecurity encompasses a range of practices and technologies aimed at preventing unauthorized access, detecting threats, and responding to security incidents. From robust encryption protocols to advanced threat intelligence systems, cybersecurity measures are evolving to keep pace with sophisticated attacks.",
 			"As technology advances, so do the techniques employed by cybercriminals. This constant battle between security professionals and malicious actors highlights the need for proactive security measures, user awareness, and collaboration among stakeholders to ensure a secure digital environment.",
@@ -723,14 +741,19 @@ const NewsList = [
 				},
 			},
 		],
+		tags: ["Cybersecurity", "Digital Age", "Advanced Threats", "Data Privacy", "Digital Asset Protection"],
+	author: {
+		name: "Jane Doe",
+		bio: "Jane Doe is a leading authority on Cybersecurity and the challenges of the digital age.",
+	},
 	},
 	{
 		title: "The Rise of Remote Work",
 		subtitle:
 			"Exploring the transformation of work culture and the growing trend of remote work.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619594/remote_spqkoo.jpg",
+		mainParagraphs: [
 			"The way we work is undergoing a significant shift, with remote work becoming more prevalent than ever before. Enabled by advancements in technology and changing attitudes towards work-life balance, remote work offers numerous benefits for both employees and employers.",
 			"Remote work allows individuals to work from anywhere, eliminating the need for a physical office and enabling flexible schedules. It offers increased autonomy, reduced commuting time, and improved work-life integration.",
 			"In response to the COVID-19 pandemic, many organizations had to quickly adapt to remote work setups, accelerating the adoption of digital collaboration tools and remote work policies. This shift has reshaped work culture and opened up new opportunities for talent acquisition and global collaboration.",
@@ -805,14 +828,15 @@ const NewsList = [
 			},
 			// Add more news items here
 		],
+		tags: ["Remote Work", "Digital Collaboration Tools", "Remote Work Challenges", "Work-Life Balance"],
 	},
 	{
 		title: "Emerging Technologies in Healthcare",
 		subtitle:
 			"Exploring the innovative technologies shaping the future of healthcare and improving patient outcomes.",
 		category: "Technology",
-		thumbnail: "thumbnail-url",
-		mainParagraph: [
+		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689621869/health_azjbgt.jpg",
+		mainParagraphs: [
 			"Advancements in technology are revolutionizing the healthcare industry, leading to improved diagnostics, treatments, and patient care. From artificial intelligence and robotics to telemedicine and wearable devices, emerging technologies are reshaping the way healthcare services are delivered.",
 			"Artificial intelligence is being utilized for medical imaging analysis, disease diagnosis, and personalized treatment recommendations. Robotics and automation are streamlining surgical procedures and enhancing precision. Telemedicine enables remote consultations and brings healthcare access to underserved areas.",
 			"The integration of wearable devices and Internet of Things (IoT) in healthcare is providing valuable health data for proactive monitoring and personalized interventions. From smartwatches tracking vital signs to implantable devices transmitting real-time data, these technologies are empowering individuals to take control of their health.",
@@ -882,8 +906,8 @@ const NewsList = [
 			},
 			// Add more news items here
 		],
+		tags: ["Healthcare Technology", "Artificial Intelligence", "Telemedicine", "Remote Healthcare"],
 	},
-	// Additional news items can be added here
 ];
 
 export default NewsList;
