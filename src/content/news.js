@@ -416,7 +416,7 @@ const NewsList = [
 					"These marketplaces provide a robust infrastructure, trusted payment systems, and logistics support, enabling sellers to expand their reach and access a global customer base. Customers benefit from a vast selection of products, competitive pricing, and reliable customer reviews.",
 					"The success of online marketplaces has also led to the emergence of niche marketplaces catering to specific industries or consumer segments. As e-commerce continues to evolve, online marketplaces are expected to play a pivotal role in shaping the future of retail.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625627/ecommerce1_nvjb8d.jpg",
 				list: {
 					title: "Key Aspects of Online Marketplaces",
 					items: [
@@ -452,7 +452,7 @@ const NewsList = [
 					"M-commerce offers a seamless and personalized shopping experience through mobile apps and optimized websites. Features such as mobile payments, location-based services, and push notifications enhance user engagement and convenience.",
 					"Retailers are leveraging m-commerce to reach a larger audience, capitalize on impulse buying, and provide targeted offers and discounts. The convenience and accessibility of m-commerce are driving its popularity and shaping the future of e-commerce.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689266194/fintech_moyohi.jpg",
 				list: {
 					title: "Key Features of Mobile Commerce",
 					items: [
@@ -488,7 +488,7 @@ const NewsList = [
 					"With features like shoppable posts, live shopping events, and integrated checkout options, social media platforms such as Instagram, Facebook, and Pinterest have become popular destinations for discovering and purchasing products.",
 					"Influencer marketing and user-generated content further amplify the reach and credibility of social commerce, as consumers trust recommendations from peers and influencers they follow. The convergence of social media and e-commerce has reshaped the way brands engage with their audience and sell products.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689489839/growth_w0phnw.jpg",
 				list: {
 					title: "Key Elements of Social Commerce",
 					items: [
