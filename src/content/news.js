@@ -277,7 +277,7 @@ const NewsList = [
 					"AI-powered robotic surgical systems are enhancing precision, reducing invasiveness, and shortening recovery times. Virtual healthcare assistants powered by natural language processing are providing real-time support, answering medical queries, and helping patients access healthcare resources.",
 					"With AI, the healthcare industry is witnessing advancements in telemedicine, remote patient monitoring, and personalized medicine, empowering individuals to take control of their health and well-being.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689626904/aihealth_vyjod7.jpg",
 				list: {
 					title: "Key Benefits of AI in Healthcare",
 					items: [
@@ -308,7 +308,7 @@ const NewsList = [
 					"To combat these threats, businesses are implementing robust cybersecurity measures, including encryption protocols, multi-factor authentication, and proactive monitoring systems. Regular security audits, employee training programs, and incident response plans are crucial to maintaining a strong defense against cyberattacks.",
 					"Collaboration between public and private sectors is essential to address emerging cyber threats and establish effective cybersecurity frameworks. By staying informed about the latest threats and adopting comprehensive security practices, organizations can protect their digital assets and maintain customer trust.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689627047/cyber_security_edzbd7.jpg",
 				list: {
 					title: "Key Elements of a Robust Cybersecurity Strategy",
 					items: [
