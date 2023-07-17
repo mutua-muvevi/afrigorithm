@@ -3,7 +3,7 @@ import Iconify from "../iconify/iconify"
 const SocialMediaIcons = [
 	{
 		icon: <Iconify icon="ic:outline-facebook"/>,
-		link: ""
+		link: "https://www.facebook.com/afrigorithm"
 	},
 	{
 		icon: <Iconify icon="bi:twitter"/>,
