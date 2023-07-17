@@ -635,7 +635,7 @@ const NewsList = [
 					"APTs often target government agencies, critical infrastructure, and large organizations, aiming to steal intellectual property, financial data, or disrupt operations. They employ stealthy tactics, such as social engineering, zero-day exploits, and multi-stage attacks, making them difficult to detect and mitigate.",
 					"Addressing emerging threats and APTs requires a multi-layered approach to cybersecurity, including strong access controls, network segmentation, regular vulnerability assessments, and user awareness training. Collaborative efforts among cybersecurity professionals and information sharing forums are essential to stay one step ahead of cybercriminals.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628077/ai_thief_fngtgx.jpg",
 				list: {
 					title: "Key Strategies Against APTs",
 					items: [
@@ -671,7 +671,7 @@ const NewsList = [
 					"Regulatory frameworks such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) aim to ensure data privacy and provide individuals with control over their personal data. Organizations must adhere to these regulations and implement robust data protection measures.",
 					"Data privacy encompasses practices such as encryption, anonymization, and secure data storage. Privacy-by-design principles and privacy impact assessments help embed privacy considerations into the development of systems and processes.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689627047/cyber_security_edzbd7.jpg",
 				list: {
 					title: "Key Aspects of Data Privacy",
 					items: [
@@ -708,7 +708,7 @@ const NewsList = [
 					"Employee education and awareness programs are essential to combat social engineering attacks and promote a culture of cybersecurity within organizations. Regular training sessions and simulated phishing exercises can help employees identify and respond to potential threats.",
 					"Collaboration with cybersecurity experts and leveraging advanced threat intelligence tools can enhance detection and response capabilities. Establishing incident response plans and conducting regular audits and penetration testing can identify vulnerabilities and ensure readiness for potential attacks.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628078/cyber_security_qmzd9h.jpg",
 				list: {
 					title: "Best Practices for Cybersecurity",
 					items: [
