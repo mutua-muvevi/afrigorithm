@@ -826,7 +826,6 @@ const NewsList = [
 					],
 				},
 			},
-			// Add more news items here
 		],
 		tags: ["Remote Work", "Digital Collaboration Tools", "Remote Work Challenges", "Work-Life Balance"],
 	},
@@ -851,7 +850,7 @@ const NewsList = [
 					"In medical imaging, AI algorithms can identify anomalies and assist in the detection of diseases such as cancer. Natural language processing enables the extraction of valuable information from medical records, enhancing clinical decision-making. AI-powered chatbots and virtual assistants improve patient engagement and provide round-the-clock support.",
 					"However, ethical considerations, data privacy, and ensuring transparency and accountability in AI systems are important challenges that need to be addressed to maximize the benefits of AI in healthcare.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587285/blogarticle1_r1r0po.jpg",
 				list: {
 					title: "Applications of AI in Healthcare",
 					items: [
@@ -882,7 +881,7 @@ const NewsList = [
 					"Remote healthcare technologies such as wearable devices, remote patient monitoring systems, and telehealth platforms enable the collection and transmission of real-time health data, facilitating remote diagnostics and personalized care plans.",
 					"However, ensuring the security and privacy of patient data, addressing connectivity issues in remote areas, and maintaining the human touch in healthcare interactions are critical considerations in the widespread adoption of telemedicine.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628507/health_km6wag.jpg",
 				list: {
 					title: "Benefits of Telemedicine and Remote Healthcare",
 					items: [
