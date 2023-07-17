@@ -618,7 +618,7 @@ const NewsList = [
 		title: "Cybersecurity in the Digital Age",
 		subtitle:
 			"Examining the evolving landscape of cybersecurity and the importance of safeguarding digital assets.",
-		category: "Technology",
+		category: "Cyber security",
 		thumbnail: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689619934/cybersecurity_k6j1r4.jpg",
 		mainParagraphs: [
 			"In today's interconnected world, cybersecurity plays a crucial role in protecting individuals, businesses, and nations from cyber threats. With the increasing reliance on digital technologies and the rise of cybercrime, safeguarding digital assets and maintaining data privacy has become paramount.",
@@ -635,7 +635,7 @@ const NewsList = [
 					"APTs often target government agencies, critical infrastructure, and large organizations, aiming to steal intellectual property, financial data, or disrupt operations. They employ stealthy tactics, such as social engineering, zero-day exploits, and multi-stage attacks, making them difficult to detect and mitigate.",
 					"Addressing emerging threats and APTs requires a multi-layered approach to cybersecurity, including strong access controls, network segmentation, regular vulnerability assessments, and user awareness training. Collaborative efforts among cybersecurity professionals and information sharing forums are essential to stay one step ahead of cybercriminals.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628077/ai_thief_fngtgx.jpg",
 				list: {
 					title: "Key Strategies Against APTs",
 					items: [
@@ -671,7 +671,7 @@ const NewsList = [
 					"Regulatory frameworks such as the General Data Protection Regulation (GDPR) and the California Consumer Privacy Act (CCPA) aim to ensure data privacy and provide individuals with control over their personal data. Organizations must adhere to these regulations and implement robust data protection measures.",
 					"Data privacy encompasses practices such as encryption, anonymization, and secure data storage. Privacy-by-design principles and privacy impact assessments help embed privacy considerations into the development of systems and processes.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689627047/cyber_security_edzbd7.jpg",
 				list: {
 					title: "Key Aspects of Data Privacy",
 					items: [
@@ -708,7 +708,7 @@ const NewsList = [
 					"Employee education and awareness programs are essential to combat social engineering attacks and promote a culture of cybersecurity within organizations. Regular training sessions and simulated phishing exercises can help employees identify and respond to potential threats.",
 					"Collaboration with cybersecurity experts and leveraging advanced threat intelligence tools can enhance detection and response capabilities. Establishing incident response plans and conducting regular audits and penetration testing can identify vulnerabilities and ensure readiness for potential attacks.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628078/cyber_security_qmzd9h.jpg",
 				list: {
 					title: "Best Practices for Cybersecurity",
 					items: [
@@ -768,7 +768,7 @@ const NewsList = [
 					"Video conferencing platforms enable face-to-face virtual meetings, fostering real-time communication and connection. Project management software helps remote teams stay organized, track progress, and collaborate on tasks and projects. Team communication tools provide a centralized platform for instant messaging, file sharing, and team updates.",
 					"Choosing the right digital collaboration tools and ensuring their seamless integration is essential for maintaining productivity and fostering collaboration in a remote work environment.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625665/elearning1_rbcl08.jpg",
 				list: {
 					title: "Essential Collaboration Tools for Remote Work",
 					items: [
@@ -799,7 +799,7 @@ const NewsList = [
 					"To overcome these challenges, establishing a dedicated workspace, setting clear boundaries between work and personal life, and maintaining regular communication with colleagues are essential. Adapting to flexible schedules, practicing self-discipline, and prioritizing well-being are also key factors for remote work success.",
 					"Organizations can support remote workers by fostering a culture of trust, providing the necessary tools and resources, and promoting work-life balance and employee well-being.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689625654/elearning_sbtlz5.jpg",
 				list: {
 					title: "Best Practices for Remote Work Success",
 					items: [
@@ -826,7 +826,6 @@ const NewsList = [
 					],
 				},
 			},
-			// Add more news items here
 		],
 		tags: ["Remote Work", "Digital Collaboration Tools", "Remote Work Challenges", "Work-Life Balance"],
 	},
@@ -851,7 +850,7 @@ const NewsList = [
 					"In medical imaging, AI algorithms can identify anomalies and assist in the detection of diseases such as cancer. Natural language processing enables the extraction of valuable information from medical records, enhancing clinical decision-making. AI-powered chatbots and virtual assistants improve patient engagement and provide round-the-clock support.",
 					"However, ethical considerations, data privacy, and ensuring transparency and accountability in AI systems are important challenges that need to be addressed to maximize the benefits of AI in healthcare.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1688587285/blogarticle1_r1r0po.jpg",
 				list: {
 					title: "Applications of AI in Healthcare",
 					items: [
@@ -882,7 +881,7 @@ const NewsList = [
 					"Remote healthcare technologies such as wearable devices, remote patient monitoring systems, and telehealth platforms enable the collection and transmission of real-time health data, facilitating remote diagnostics and personalized care plans.",
 					"However, ensuring the security and privacy of patient data, addressing connectivity issues in remote areas, and maintaining the human touch in healthcare interactions are critical considerations in the widespread adoption of telemedicine.",
 				],
-				image: "image-url",
+				image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689628507/health_km6wag.jpg",
 				list: {
 					title: "Benefits of Telemedicine and Remote Healthcare",
 					items: [
