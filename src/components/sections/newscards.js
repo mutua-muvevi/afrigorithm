@@ -58,7 +58,7 @@ const ReusableNewsCards = ({title, subtitle, alignItems, chipText, list, setNews
 														{ truncateStr(news.title, 55) }
 													</Typography>
 													<Typography variant="body1" textAlign="justify">
-														{truncateStr(news.mainParagraphs[0], 100)}
+														{truncateStr(news.mainParagraph[0], 100)}
 													</Typography>
 												</Stack>
 											</CardContent>
