@@ -13,7 +13,7 @@ import NotFound from "./error/404";
 import Products from "./pages/products/products";
 import Quotation from "./pages/quotation/quotation";
 import Careers from "./pages/careers/careers";
-import Research from "./pages/research/research";
+// import Research from "./pages/research/research";
 import TermsOfService from "./pages/terms/terms";
 import PrivacyPolicy from "./pages/privacy/privacy";
 import FAQ from "./pages/faq/faq";
@@ -126,6 +126,10 @@ const Router = () => {
 		},
 		{
 			path: "/",
+			element: <Navigate to="/landing/home" replace/>
+		},
+		{
+			path: "/landing/",
 			element: <Navigate to="/landing/home" replace/>
 		},
 		{
