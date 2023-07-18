@@ -28,9 +28,9 @@ export const sendMessage = (values) => {
 				}
 			);
 			dispatch(sendMessageStart())
-			dispatch(sendMessageSuccess(res));
+			dispatch(sendMessageSuccess(res.data));
 		} catch (error) {
-			dispatch(sendMessageFail(error));
+			dispatch(sendMessageFail(error.response));
 		}
 	};
 };

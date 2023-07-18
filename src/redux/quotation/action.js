@@ -28,9 +28,9 @@ export const postQuotation = (values) => {
 				}
 			);
 			dispatch(postQuotationStart())
-			dispatch(postQuotationSuccess(res));
+			dispatch(postQuotationSuccess(res.data));
 		} catch (error) {
-			dispatch(postQuotationFail(error));
+			dispatch(postQuotationFail(error.response));
 		}
 	};
 };

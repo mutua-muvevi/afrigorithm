@@ -72,7 +72,7 @@ const QuotationForm = ({sendQuotation}) => {
 							<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />
 							<TextfieldWrapper name="service" label="Service"  variant="filled"/>
 							<TextfieldWrapper name="description" label="Description" multiline rows={4} variant="filled"/>
-							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Message</StyledButton>
+							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Post Quotation</StyledButton>
 						</Stack>
 					</Form>
 				</Formik>
