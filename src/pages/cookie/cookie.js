@@ -14,7 +14,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const CookiePolicy = () => {
 	return (
-		<Page title="Cookie Policy || Afrigorithm Technology Company">
+		<Page title="Cookie Policy || Afrigorithm | Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<ReusableBanner
 					title="Our Cookie Policy"

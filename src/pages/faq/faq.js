@@ -17,7 +17,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const FAQ = () => {
 	return (
-		<Page title="FAQ">
+		<Page title="FAQ || Afrigorithm | Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<ReusableBanner
 					title="Support & Help Center"

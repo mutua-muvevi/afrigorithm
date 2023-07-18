@@ -21,7 +21,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const About = () => {
 	return (
-		<Page title="About us">
+		<Page title="About us || Afrigorithm the Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<ReusableBanner
 					title="About Us"

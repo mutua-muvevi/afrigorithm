@@ -9,7 +9,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const Products = () => {
 	return (
-		<Page title="Products Articles">
+		<Page title="Products Articles || Afrigorithm | Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<div>Products Articles</div>
 			</StyledWrapper>

@@ -14,7 +14,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({}));
 
 const Testimonials = () => {
 	return (
-		<Page title="Testimonials">
+		<Page title="Testimonials || Afrigorithm | Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<ReusableBanner
 					title="Our Testimonials"
