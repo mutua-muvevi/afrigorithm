@@ -19,7 +19,7 @@ export const sendMessage = (values) => {
 	return async (dispatch) => {
 		try {console.log("values from action", values)
 			const res = axios.post(
-				`http://localhost:8555/api/contact/send`,
+				`https://afrigorithm-baur.onrender.com/api/contact/send`,
 				values,
 				{
 					headers: {

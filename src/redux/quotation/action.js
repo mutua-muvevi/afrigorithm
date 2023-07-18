@@ -19,7 +19,7 @@ export const postQuotation = (values) => {
 	return async (dispatch) => {
 		try {
 			const res = axios.post(
-				`http://localhost:8555/api/quotation/post`,
+				`https://afrigorithm-baur.onrender.com/api/quotation/post`,
 				values,
 				{
 					headers: {
