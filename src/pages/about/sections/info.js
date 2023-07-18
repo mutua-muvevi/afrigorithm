@@ -52,16 +52,16 @@ export const statements = [
 export const founders = [
 	{
 		fullname: "John Matara",
-		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg",
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689699038/monk_nnrjft.jpg",
 		role: "Co-Founder",
 		profession: "Chief Executive Officer",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu suscipit eros. Vivamus id aliquam neque, ut porta ante. Maecenas tincidunt dignissim sodales."
+		bio: "Meet our C.E.O the strategic mind steering our technological voyage. Blending astute business acumen with tech-savvy insights, he navigates the company towards exponential growth, empowering businesses to transcend traditional boundaries and lead in a dynamic digital world."
 	},
 	{
 		fullname: "Joseph Muvevi",
-		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg",
+		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689699046/joseph_fidoms.jpg",
 		role: "Co-Founder",
 		profession: "Chief Technology Officer",
-		bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu suscipit eros. Vivamus id aliquam neque, ut porta ante. Maecenas tincidunt dignissim sodales."
+		bio: "Meet our C.T.O the technological cornerstone of our operations, transforming business challenges into profitable opportunities. With an astute mastery of technological landscapes, he orchestrates effective solutions, enabling businesses to thrive in a digitally charged economy."
 	},
 ]

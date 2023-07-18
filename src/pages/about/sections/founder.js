@@ -4,7 +4,7 @@ import { styled } from "@mui/system";
 import TitleSubtitle from "src/components/sections/titlesubtitle";
 import { founders } from "./info";
 
-const subtitle = "Meet our Visionaries, the Driving Force Behind our Tech Revolution. With a shared passion for innovation and a relentless pursuit of excellence, our founders are redefining the possibilities of technology.";
+const subtitle = "Meet our Visionaries, the Driving Force Behind our Tech Revolution. With a shared passion for innovation and a relentless pursuit of excellence, our founders are redefining the possibilities of technology. Embracing the uncharted realms of technological advancements, our founders bring more than just expertise. Their vision transcends traditional boundaries, weaving a digital tapestry where every thread signifies growth and resilience. Their leadership, fostering a culture of innovation, positions our clients at the forefront of their industries, championing a future where technology isn't just a tool, but the catalyst of their triumph";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 
@@ -38,7 +38,7 @@ const Founders = () => {
 											component="img"
 											src={el.image}
 											alt={el.fullname}
-											height={350}
+											height={400}
 										/>
 
 
@@ -52,7 +52,7 @@ const Founders = () => {
 														{el.profession}
 													</Typography>
 												</Stack>
-												<Typography variant="body1">
+												<Typography variant="body1" textAlign="justify" >
 													{el.bio}
 												</Typography>
 											</Stack>
