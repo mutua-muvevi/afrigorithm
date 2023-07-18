@@ -7,11 +7,15 @@ import * as Yup from "yup";
 import TextfieldWrapper from "../formui/textfield/textfield";
 import Iconify from "../iconify/iconify";
 
+import { postQuotation } from "src/redux/quotation/action";
+import { connect } from "react-redux";
+
 const INITIAL_FORM_STATE = {
 	fullname: "",
 	telephone: "",
 	email: "",
 	service: "",
+	description: "",
 };
 
 const FORM_VALIDATION = Yup.object().shape({
@@ -31,6 +35,10 @@ const FORM_VALIDATION = Yup.object().shape({
 		.min(5, "Too short service")
 		.max(100, "Too long service")
 		.required("Please add the service"),
+	description: Yup.string()
+		.min(20, "Too short description")
+		.max(800, "Too long description")
+		.required("Please add the description"),
 });
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
@@ -40,11 +48,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	width:"250px"
 }));
 
-const QuotationForm = () => {
+const QuotationForm = ({sendQuotation}) => {
 	
 	const submitHandler = (values, { resetForm }) => {
-		alert(JSON.stringify(values));
-		console.log("Values", values)
+		sendQuotation(values)
 		resetForm();
 	};
 
@@ -64,7 +71,8 @@ const QuotationForm = () => {
 							<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
 							<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />
 							<TextfieldWrapper name="service" label="Service"  variant="filled"/>
-							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Message</StyledButton>
+							<TextfieldWrapper name="description" label="Description" multiline rows={4} variant="filled"/>
+							<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Post Quotation</StyledButton>
 						</Stack>
 					</Form>
 				</Formik>
@@ -73,4 +81,10 @@ const QuotationForm = () => {
 	);
 };
 
-export default QuotationForm;
+const mapStateToProps = ({}) => ({});
+
+const mapDispatchToProps = (dispatch) => ({
+	sendQuotation: (values) => dispatch(postQuotation(values))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(QuotationForm);
