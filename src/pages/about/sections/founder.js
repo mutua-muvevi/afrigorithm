@@ -38,7 +38,7 @@ const Founders = () => {
 											component="img"
 											src={el.image}
 											alt={el.fullname}
-											height={350}
+											height={400}
 										/>
 
 
@@ -52,7 +52,7 @@ const Founders = () => {
 														{el.profession}
 													</Typography>
 												</Stack>
-												<Typography variant="body1">
+												<Typography variant="body1" textAlign="justify" >
 													{el.bio}
 												</Typography>
 											</Stack>

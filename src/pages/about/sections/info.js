@@ -55,13 +55,13 @@ export const founders = [
 		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689699038/monk_nnrjft.jpg",
 		role: "Co-Founder",
 		profession: "Chief Executive Officer",
-		bio: "John Matara, our CEO, ignites technological transformation by envisioning digital solutions that leapfrog over boundaries, crafting a canvas where ambition meets innovation, driving unparalleled growth."
+		bio: "Meet our C.E.O the strategic mind steering our technological voyage. Blending astute business acumen with tech-savvy insights, he navigates the company towards exponential growth, empowering businesses to transcend traditional boundaries and lead in a dynamic digital world."
 	},
 	{
 		fullname: "Joseph Muvevi",
 		image: "https://res.cloudinary.com/dbj0t0zym/image/upload/v1689699046/joseph_fidoms.jpg",
 		role: "Co-Founder",
 		profession: "Chief Technology Officer",
-		bio: "Joseph Muvevi, our CTO, orchestrates a symphony of cutting-edge technology, stitching together the fabric of the future where dreams are within grasp, and every business is empowered to make a remarkable impact."
+		bio: "Meet our C.T.O the technological cornerstone of our operations, transforming business challenges into profitable opportunities. With an astute mastery of technological landscapes, he orchestrates effective solutions, enabling businesses to thrive in a digitally charged economy."
 	},
 ]
