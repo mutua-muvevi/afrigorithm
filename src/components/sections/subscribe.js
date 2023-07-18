@@ -5,6 +5,8 @@ import { Formik, Form } from "formik";
 import * as Yup from "yup";
 
 import TextfieldWrapper from "../formui/textfield/textfield";
+import { connect } from "react-redux";
+import { postEmail } from "src/redux/email/action";
 
 const Image = "https://res.cloudinary.com/dbj0t0zym/image/upload/v1687991987/images/tech_imrfwj.jpg";
 const Person ="https://res.cloudinary.com/dbj0t0zym/image/upload/v1687987718/images/whyus_uw0loc.jpg";
@@ -54,9 +56,9 @@ const imageStyle = {
 	position: "relative"
 }
 
-const Subscribe = () => {
+const Subscribe = ({subscibe}) => {
 	const submitHandler = (values, { resetForm }) => {
-		alert(JSON.stringify(values));
+		subscibe(values)
 		resetForm();
 	};
 
@@ -113,4 +115,10 @@ const Subscribe = () => {
 	);
 };
 
-export default Subscribe;
+const mapStateToProps = ({}) => ({})
+
+const mapDispatchToProps = (dispatch) => ({
+	subscibe: (values) => dispatch(postEmail(values))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(Subscribe);
