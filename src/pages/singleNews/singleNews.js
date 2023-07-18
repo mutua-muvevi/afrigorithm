@@ -14,7 +14,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const SingleNews = ({news}) => {
 	return (
-		<Page title={`${news.title} || Afrigorithm News`}>
+		<Page title={`${news.title} || Afrigorithm News || Afrigorithm | Leading Tech Solutions Provider`}>
 			<StyledWrapper>
 				<ReusableBanner
 					title={news.title}

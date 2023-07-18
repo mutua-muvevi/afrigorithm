@@ -17,7 +17,7 @@ const SingleDomain = ({domain}) => {
 	
 
 	return (
-		<Page title={domain.title + " || Afrigorithm Technology Company"}>
+		<Page title={domain.title + " || Afrigorithm Domains || Afrigorithm | Leading Tech Solutions Provider"}>
 			<StyledWrapper>
 				<ReusableBanner
 					title={domain.title}

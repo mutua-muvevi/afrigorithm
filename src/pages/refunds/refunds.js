@@ -15,7 +15,7 @@ const StyledWrapper = styled(Box)(({ theme }) => ({
 
 const RefundsPolicy = () => {
 	return (
-		<Page title="Refunds Policy || Afrigorithm Technbology Company">
+		<Page title="Refunds Policy || Afrigorithm Technology Company">
 			<StyledWrapper>
 				<ReusableBanner
 					title="Refunds Policy"
