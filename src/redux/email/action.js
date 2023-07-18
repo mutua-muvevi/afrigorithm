@@ -19,7 +19,7 @@ export const postEmail = (values) => {
 	return async (dispatch) => {
 		try {
 			const res = axios.post(
-				`http://localhost:8555/api/email/post`,
+				`https://afrigorithm-baur.onrender.com/api/email/post`,
 				values,
 				{
 					headers: {
