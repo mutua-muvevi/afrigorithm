@@ -7,6 +7,8 @@ import * as Yup from "yup";
 import TextfieldWrapper from "../formui/textfield/textfield";
 import TitleSubtitle from "./titlesubtitle";
 import Iconify from "../iconify/iconify";
+import { sendMessage } from "src/redux/contact/action";
+import { connect } from "react-redux";
 
 const INITIAL_FORM_STATE = {
 	fullname: "",
@@ -47,10 +49,10 @@ const StyledButton = styled(Button)(({ theme }) => ({
 	width:"250px"
 }));
 
-const ContactForm = () => {
+const ContactForm = ({ send }) => {
 
 	const submitHandler = (values, { resetForm }) => {
-		alert(JSON.stringify(values));
+		send(values)
 		resetForm();
 	};
 
@@ -77,7 +79,7 @@ const ContactForm = () => {
 								<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
 								<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />
 								<TextfieldWrapper name="message" label="Your Message"  variant="filled" multiline rows={5}/>
-								<StyledButton variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Message</StyledButton>
+								<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Reach to us</StyledButton>
 							</Stack>
 						</Form>
 					</Formik>
@@ -87,4 +89,10 @@ const ContactForm = () => {
 	)
 }
 
-export default ContactForm
+const mapStateToProps = ({}) => ({})
+
+const mapDispatchToProps = (dispatch) => ({
+	send : (values) => dispatch(sendMessage(values))
+})
+
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
