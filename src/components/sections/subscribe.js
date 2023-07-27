@@ -76,11 +76,11 @@ const Subscribe = ({subscibe}) => {
 						>
 							<Form>
 								<Stack direction="column"  spacing={3}>
-									<Typography variant="h2" color="text.primary" textAlign="justify">
+									<Typography variant="h2" style={{ color: "#ffffff" }} textAlign="justify">
 										{emailCapture.title}
 									</Typography>
 
-									<Typography variant="subtitle1" textAlign="justify">
+									<Typography variant="subtitle1" style={{ color: "#ffffff" }} textAlign="justify">
 										{emailCapture.subtitle}
 									</Typography>
 

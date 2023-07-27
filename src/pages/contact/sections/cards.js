@@ -7,6 +7,7 @@ import {
 	Grid,
 	Stack,
 	Typography,
+	useTheme,
 } from "@mui/material";
 import { styled } from "@mui/system";
 import { contactItems, helpList } from "./info";
@@ -25,6 +26,8 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const ContactCards = () => {
+	const theme = useTheme();
+
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
@@ -70,7 +73,14 @@ const ContactCards = () => {
 																</Typography>
 																<Typography
 																	variant="subtitle"
-																	color="text.secondary"
+																	color={
+																		theme
+																			.palette
+																			.mode ===
+																		"light"
+																			? undefined
+																			: "text.secondary"
+																	}
 																>
 																	{el.subtitle}
 																</Typography>
@@ -111,7 +121,14 @@ const ContactCards = () => {
 												</Typography>
 												<Typography
 													variant="body1"
-													color="text.secondary"
+													color={
+														theme
+															.palette
+															.mode ===
+														"light"
+															? undefined
+															: "text.secondary"
+													}
 													textAlign="justify"
 												>
 													{el.mainText}
@@ -136,7 +153,6 @@ const ContactCards = () => {
 																/>
 																<Typography
 																	variant="body1"
-																	color="text.secondary"
 																	textAlign="justify"
 																>
 																	{item.text}

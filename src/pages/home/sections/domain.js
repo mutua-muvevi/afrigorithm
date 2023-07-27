@@ -10,6 +10,7 @@ import {
 	Grid,
 	Stack,
 	Typography,
+	useTheme,
 } from "@mui/material";
 import { styled } from "@mui/system";
 
@@ -35,6 +36,7 @@ const SlicedDomainList = DomainList.slice(0,9)
 
 const HomeDomain = ({selectDomain}) => {
 	const navigate = useNavigate();
+	const theme = useTheme()
 
 	const goToDomain = () => {
 		navigate("/landing/domain")
@@ -89,7 +91,14 @@ const HomeDomain = ({selectDomain}) => {
 															</Typography>
 															<Typography
 																variant="subtitle2"
-																color="text.secondary"
+																color={
+																	theme
+																		.palette
+																		.mode ===
+																	"light"
+																		? undefined
+																		: "text.secondary"
+																}
 															>
 																{domain.subtitle}
 															</Typography>
