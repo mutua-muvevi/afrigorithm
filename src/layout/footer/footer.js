@@ -23,6 +23,7 @@ const StyledFooter = styled(Box)(({ theme }) => ({
 	paddingTop: "70px",
 	paddingBottom: "70px",
 	backgroundColor: theme.palette.primary.main,
+	color: "#ffffff"
 }));
 
 const StyledContainer = styled(Container)(({ theme }) => ({}));
@@ -200,7 +201,7 @@ const Footer = () => {
 				justifyContent="center"
 			>
 				<Typography variant="subtitle1">
-					Afrigorithm Ltd © {currentYear} All rights reserved
+					afrigorithm.com © {currentYear} All rights reserved
 				</Typography>
 			</StyledBottomFooter>
 		</div>

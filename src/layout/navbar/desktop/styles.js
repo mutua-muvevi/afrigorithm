@@ -72,7 +72,10 @@ export const ListItem = styled(ListItemButton, {
 export const StyledMenu = styled(Paper)(({ theme }) => ({
 	...bgBlur({
 		opacity: 0.94,
-		color: theme.palette.background.default,
+		color:
+			theme.palette.mode === "light"
+				? theme.palette.primary.light
+				: theme.palette.background.default,
 	}),
 	top: 70,
 	margin: "auto",
