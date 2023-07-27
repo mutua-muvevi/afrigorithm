@@ -21,7 +21,7 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 }))
 
 const StyledCard = styled(Card)(({ theme }) => ({
-	width: "350px"
+	width: "350px",
 }))
 
 const styledImage ={

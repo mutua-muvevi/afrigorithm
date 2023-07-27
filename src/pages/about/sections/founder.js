@@ -33,31 +33,29 @@ const Founders = () => {
 						founders.map((el, i) => (
 							<Grid item xs={12} sm={12} md={12} lg={4} xl={4} key={i}>
 								<Card>
-									<CardActionArea>
-										<CardMedia
-											component="img"
-											src={el.image}
-											alt={el.fullname}
-											height={400}
-										/>
+									<CardMedia
+										component="img"
+										src={el.image}
+										alt={el.fullname}
+										height={400}
+									/>
 
 
-										<CardContent>
-											<Stack direction="column" spacing={3}>
-												<Stack direction="column" spacing={1}>
-													<Typography variant="h5">
-														{el.fullname}
-													</Typography>
-													<Typography variant="subtitle1" color="text.secondary">
-														{el.profession}
-													</Typography>
-												</Stack>
-												<Typography variant="body1" textAlign="justify" >
-													{el.bio}
+									<CardContent>
+										<Stack direction="column" spacing={3}>
+											<Stack direction="column" spacing={1}>
+												<Typography variant="h5">
+													{el.fullname}
+												</Typography>
+												<Typography variant="subtitle1" color="text.secondary">
+													{el.profession}
 												</Typography>
 											</Stack>
-										</CardContent>
-									</CardActionArea>
+											<Typography variant="body1" textAlign="justify" >
+												{el.bio}
+											</Typography>
+										</Stack>
+									</CardContent>
 								</Card>
 							</Grid>
 						))
