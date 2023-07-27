@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, CardMedia, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Container, Grid, Stack, Typography, useTheme } from "@mui/material";
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
@@ -16,6 +16,8 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const Founders = () => {
+	const theme = useTheme()
+
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
@@ -47,7 +49,7 @@ const Founders = () => {
 												<Typography variant="h5">
 													{el.fullname}
 												</Typography>
-												<Typography variant="subtitle1" color="text.secondary">
+												<Typography variant="subtitle1" color={theme.palette.mode === "light" ? undefined : "text.secondary"}>
 													{el.profession}
 												</Typography>
 											</Stack>

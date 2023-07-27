@@ -8,6 +8,7 @@ import {
 	Grid,
 	Stack,
 	Typography,
+	useTheme,
 } from "@mui/material";
 import { styled } from "@mui/system";
 
@@ -22,8 +23,8 @@ import Varietychildren from "./varietychildren";
 
 import { connect } from "react-redux";
 
-
-const subtitle = "Harness the Power of Innovative Software Solutions. From Building to Maintenance, Debugging to Enhancement, Optimization to Innovation - We Drive Your Success. Experience Growth, Efficiency, and Transformation with Tailor-Made Technologies. Count on Our Expertise in Resolving Complex Issues and Unleashing Performance Potential. Stay Ahead of the Competition and Embrace Digital Transformation with Our Forward-Thinking Approach.";
+const subtitle =
+	"Harness the Power of Innovative Software Solutions. From Building to Maintenance, Debugging to Enhancement, Optimization to Innovation - We Drive Your Success. Experience Growth, Efficiency, and Transformation with Tailor-Made Technologies. Count on Our Expertise in Resolving Complex Issues and Unleashing Performance Potential. Stay Ahead of the Competition and Embrace Digital Transformation with Our Forward-Thinking Approach.";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({}));
 
@@ -33,12 +34,13 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 }));
 
 const Variety = ({ varieties, variety, setVariety }) => {
-	const [ open, setOpen ] = useState(false)
+	const [open, setOpen] = useState(false);
+	const theme = useTheme();
 
 	const handleClick = (variety) => {
-		setVariety(variety)
-		setOpen(true)
-	}
+		setVariety(variety);
+		setOpen(true);
+	};
 
 	return (
 		<>
@@ -65,7 +67,11 @@ const Variety = ({ varieties, variety, setVariety }) => {
 										xl={4}
 									>
 										<Card>
-											<CardActionArea onClick={() => handleClick(variety)}>
+											<CardActionArea
+												onClick={() =>
+													handleClick(variety)
+												}
+											>
 												<CardContent
 													sx={{ minHeight: 240 }}
 												>
@@ -79,18 +85,31 @@ const Variety = ({ varieties, variety, setVariety }) => {
 															spacing={3}
 														>
 															<Iconify
-																icon={variety.icon}
+																icon={
+																	variety.icon
+																}
 																width={50}
 															/>
 															<Stack direction="column">
 																<Typography variant="h5">
-																	{variety.title}
+																	{
+																		variety.title
+																	}
 																</Typography>
 																<Typography
 																	variant="subtitle2"
-																	color="text.secondary"
+																	color={
+																		theme
+																			.palette
+																			.mode ===
+																		"light"
+																			? undefined
+																			: "text.secondary"
+																	}
 																>
-																	{variety.subtitle}
+																	{
+																		variety.subtitle
+																	}
 																</Typography>
 															</Stack>
 														</Stack>
@@ -113,25 +132,25 @@ const Variety = ({ varieties, variety, setVariety }) => {
 			</StyledWrapper>
 
 			<ModalComponent
-				header={ variety ? variety.title : ""}
+				header={variety ? variety.title : ""}
 				open={open}
 				close={() => setOpen(false)}
 				width="75vw"
-				children={<Varietychildren/>}
-				icon={ variety ? variety.icon : "" }
+				children={<Varietychildren />}
+				icon={variety ? variety.icon : ""}
 				iconWidth={30}
 			/>
 		</>
 	);
 };
 
-const mapStateToProps = ({variety}) => ({
+const mapStateToProps = ({ variety }) => ({
 	variety: variety.variety,
-	varieties: variety.allVarieties
-})
+	varieties: variety.allVarieties,
+});
 
 const mapDispatchToProps = (dispatch) => ({
-	setVariety : (variety) => dispatch(selectVariety(variety))
-})
+	setVariety: (variety) => dispatch(selectVariety(variety)),
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(Variety);
