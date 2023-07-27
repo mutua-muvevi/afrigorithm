@@ -1,4 +1,4 @@
-import { Box, Card, CardActionArea, CardContent, CardMedia, Container, Grid, Stack, Typography } from "@mui/material";
+import { Box, Card, CardContent, CardMedia, Container, Grid, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";

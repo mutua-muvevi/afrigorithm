@@ -1,5 +1,5 @@
-import { Box, Button, Container, Stack } from "@mui/material";
-import { styled } from"@mui/system"
+import { Box, Button, Container, Stack, useTheme } from "@mui/material";
+import { styled } from "@mui/system";
 
 import { Formik, Form } from "formik";
 import * as Yup from "yup";
@@ -36,28 +36,29 @@ const FORM_VALIDATION = Yup.object().shape({
 		.required("Your message to us is required"),
 });
 
-
-const subtitle ="Empower your business growth through seamless collaboration, personalized solutions, and exceptional support. Let's embark on a transformative journey together and achieve new heights of success"
+const subtitle =
+	"Empower your business growth through seamless collaboration, personalized solutions, and exceptional support. Let's embark on a transformative journey together and achieve new heights of success";
 
 const StyledWrapper = styled(Box)(({ theme }) => ({
 	paddingTop: "100px",
 	paddingBottom: "100px",
-}))
-
+}));
 
 const StyledButton = styled(Button)(({ theme }) => ({
-	width:"250px"
+	width: "250px",
 }));
 
 const ContactForm = ({ send }) => {
+	const theme = useTheme();
 
 	const submitHandler = (values, { resetForm }) => {
-		send(values)
+		send(values);
 		resetForm();
 	};
 
 	return (
 		<StyledWrapper>
+			{console.log("Dem theme", theme)}
 			<Container maxWidth="xl">
 				<Stack direction="column" spacing={4}>
 					<TitleSubtitle
@@ -74,25 +75,71 @@ const ContactForm = ({ send }) => {
 						onSubmit={submitHandler}
 					>
 						<Form>
-							<Stack direction="column" alignItems="center" spacing={4}>
-								<TextfieldWrapper name="fullname" label="Your name"  variant="filled" />
-								<TextfieldWrapper name="email" label="Your Email"  variant="filled"/>
-								<TextfieldWrapper name="telephone" label="Your Telephone Number"  variant="filled" />
-								<TextfieldWrapper name="message" label="Your Message"  variant="filled" multiline rows={5}/>
-								<StyledButton type="submit" variant="contained" endIcon={<Iconify icon="vaadin:paperplane"/>}>Reach to us</StyledButton>
+							<Stack
+								direction="column"
+								alignItems="center"
+								spacing={4}
+							>
+								<TextfieldWrapper
+									name="fullname"
+									label="Your name"
+									variant={
+										theme.palette.mode === "light"
+											? "standard"
+											: "filled"
+									}
+								/>
+								<TextfieldWrapper
+									name="email"
+									label="Your Email"
+									variant={
+										theme.palette.mode === "light"
+											? "standard"
+											: "filled"
+									}
+								/>
+								<TextfieldWrapper
+									name="telephone"
+									label="Your Telephone Number"
+									variant={
+										theme.palette.mode === "light"
+											? "standard"
+											: "filled"
+									}
+								/>
+								<TextfieldWrapper
+									name="message"
+									label="Your Message"
+									variant={
+										theme.palette.mode === "light"
+											? "standard"
+											: "filled"
+									}
+									multiline
+									rows={5}
+								/>
+								<StyledButton
+									type="submit"
+									variant="contained"
+									endIcon={
+										<Iconify icon="vaadin:paperplane" />
+									}
+								>
+									Reach to us
+								</StyledButton>
 							</Stack>
 						</Form>
 					</Formik>
 				</Stack>
 			</Container>
 		</StyledWrapper>
-	)
-}
+	);
+};
 
-const mapStateToProps = ({}) => ({})
+const mapStateToProps = ({}) => ({});
 
 const mapDispatchToProps = (dispatch) => ({
-	send : (values) => dispatch(sendMessage(values))
-})
+	send: (values) => dispatch(sendMessage(values)),
+});
 
-export default connect(mapStateToProps, mapDispatchToProps)(ContactForm)
+export default connect(mapStateToProps, mapDispatchToProps)(ContactForm);

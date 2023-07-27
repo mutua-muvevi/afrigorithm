@@ -18,11 +18,11 @@ const GREY = {
 	700: "#454F5B",
 	800: "#212B36",
 	900: "#161C24",
-	500_8: alpha("#919EAB", 0.08),
-	500_12: alpha("#919EAB", 0.12),
-	500_16: alpha("#919EAB", 0.16),
-	500_24: alpha("#919EAB", 0.24),
-	500_32: alpha("#919EAB", 0.32),
+	500_8: alpha("rgba(247, 250, 255, 1)", 0.12),
+	500_12: alpha("rgba(245, 247, 255, 1)", 0.16),
+	500_16: alpha("rgba(240, 246, 255, 1)", 0.24),
+	500_24: alpha("rgba(239, 245, 255, 1)", 0.32),
+	500_32: alpha("rgba(238, 244, 255, 1)", 0.40),
 	500_48: alpha("#919EAB", 0.48),
 	500_56: alpha("#919EAB", 0.56),
 	500_80: alpha("#919EAB", 0.8),
@@ -89,14 +89,6 @@ const GRADIENTS = {
 	success: createGradient(SUCCESS.light, SUCCESS.main),
 	warning: createGradient(WARNING.light, WARNING.main),
 	error: createGradient(ERROR.light, ERROR.main),
-};
-
-const CHART_COLORS = {
-	violet: ["#826AF9", "#9E86FF", "#D0AEFF", "#F7D2FF"],
-	blue: ["#2D99FF", "#83CFFF", "#A5F3FF", "#CCFAFF"],
-	green: ["#2CD9C5", "#60F1C8", "#A4F7CC", "#C0F2DC"],
-	yellow: ["#FFE700", "#FFEF5A", "#FFF7AE", "#FFF3D6"],
-	red: ["#FF6C40", "#FF8F6D", "#FFBD98", "#FFF2D4"],
 };
 
 const COMMON = {

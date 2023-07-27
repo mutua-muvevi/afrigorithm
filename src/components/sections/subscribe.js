@@ -90,6 +90,7 @@ const Subscribe = ({subscibe}) => {
 											variant="standard"
 											size="small"
 											placeholder="Enter your email to subscribe"
+											inputColor="#ffffff"
 										/>
 										<StyledButton variant="outlined" type="submit">
 											Join us

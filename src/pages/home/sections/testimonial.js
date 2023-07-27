@@ -1,4 +1,4 @@
-import { Avatar, Box, Card, CardContent, Container, Grid, Rating, Stack, Typography } from "@mui/material";
+import {  Box, Card, CardContent, Container, Grid, Rating, Stack, Typography } from "@mui/material";
 import { styled } from "@mui/system";
 import ReusableCarousel from "src/components/sections/carousel";
 
