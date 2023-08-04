@@ -25,12 +25,13 @@ const FORM_VALIDATION = Yup.object().shape({
 		.required("Please add your name"),
 	telephone: Yup.string()
 		.min(5, "Too short telephone number")
-		.max(50, "Too long telephone number"),
+		.max(50, "Too long telephone number")
+		.required("Please add your telephone number"),
 	email: Yup.string()
 		.email("Please use a valid email")
 		.min(5, "Too short email")
 		.max(80, "Too long email")
-		.required("Please add an email"),
+		.required("Please add your email"),
 	service: Yup.string()
 		.min(5, "Too short service")
 		.max(100, "Too long service")
