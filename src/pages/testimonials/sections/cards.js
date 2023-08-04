@@ -49,7 +49,7 @@ const TestimonialsCards = () => {
 						<Grid container spacing={3}>
 							{
 								TestimonialsList.map((el, i) => (
-									<Grid item xs={12} sm={12} md={12} lg={4} xl={3} key={i}>
+									<Grid item xs={12} sm={12} md={6} lg={4} xl={3} key={i}>
 										<StyledCard>
 											<CardContent>
 												<Stack direction="column" spacing={3}>
