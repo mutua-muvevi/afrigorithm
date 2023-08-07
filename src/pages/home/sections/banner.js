@@ -40,10 +40,10 @@ const Banner = () => {
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
-				<Stack direction="column" spacing={5}>
+				<Stack direction="column" spacing={5} justifyContent="flex-end">
 				
 					<Typography variant="h2" sx={{color: "#ffffff"}}>
-						We develop & maintain : {typing}
+						We Build & Maintain : {typing}
 					</Typography>
 
 					<Typography variant="h6" sx={{ color: "#ffffff" }}>

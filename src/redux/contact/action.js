@@ -17,7 +17,7 @@ export const sendMessageFail = (errMessage) => ({
 
 export const sendMessage = (values) => {
 	return async (dispatch) => {
-		try {console.log("values from action", values)
+		try {
 			const res = axios.post(
 				`https://afrigorithm-baur.onrender.com/api/contact/send`,
 				values,

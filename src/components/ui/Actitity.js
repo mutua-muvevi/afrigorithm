@@ -100,7 +100,7 @@ const ActivityTimeline = ({ title, data, ...other}) => {
 									</Typography>
 									<Typography variant="body2" color="text.secondary" gutterBottom>
 										Date: {fDateTime(activity.createdAt)}
-									</Typography>{console.log("Activity", activity)}
+									</Typography>
 									<StyledImageSection direction="row" spacing={2}>
 										{
 											activity.images ?

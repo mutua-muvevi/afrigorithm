@@ -23,7 +23,6 @@ const SingleServiceEntry = ({service}) => {
 							height={500}
 						/>
 					</Card>
-					{console.log(service)}
 					<Typography variant="h6" textAlign="justify">
 						{service.mainText}
 					</Typography>

@@ -30,7 +30,6 @@ const VarietyChildren = ({ variety }) => {
 						)) : ""
 					}
 				</StyledContentStack>
-			{console.log(variety.paragraphs)}
 			</Container>
 		</StyledWrapper>
 	)
