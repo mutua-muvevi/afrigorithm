@@ -59,7 +59,6 @@ const ContactForm = ({ send }) => {
 
 	return (
 		<StyledWrapper>
-			{console.log("Dem theme", theme)}
 			<Container maxWidth="xl">
 				<Stack direction="column" spacing={4}>
 					<TitleSubtitle
