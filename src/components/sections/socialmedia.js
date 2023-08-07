@@ -17,6 +17,14 @@ const SocialMediaIcons = [
 		icon: <Iconify icon="mdi:linkedin"/>,
 		link: "https://www.linkedin.com/in/afrigorithm-technologies-57266a281/"
 	},
+	{
+		icon: <Iconify icon="basil:reddit-solid"/>,
+		link: "https://www.reddit.com/user/afrigorithm"
+	},
+	{
+		icon: <Iconify icon="ri:youtube-fill"/>,
+		link: "https://www.youtube.com/channel/UCIKvU_qUH8F7JqPaR7u00HQ"
+	},
 ]
 
 export default SocialMediaIcons

@@ -77,7 +77,7 @@ export const footerItems = {
 				icon: <BsFillEnvelopeFill style={styledIcons}/>
 			},
 			{
-				label: "+254 746 432 175",
+				label: "+254 796 788 681",
 				icon: <BsFillTelephoneFill style={styledIcons}/>
 			},
 			{
