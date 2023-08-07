@@ -201,7 +201,7 @@ const Footer = () => {
 				justifyContent="center"
 			>
 				<Typography variant="subtitle1" style={{ color: "#ffffff" }}>
-					afrigorithm.com © {currentYear} All rights reserved
+					™ Afrigorithm {currentYear} All rights reserved
 				</Typography>
 			</StyledBottomFooter>
 		</div>

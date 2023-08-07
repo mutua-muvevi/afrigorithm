@@ -129,10 +129,6 @@ export default function SettingsDrawer() {
 					<Block title="Direction">
 						<DirectionOptions />
 					</Block>
-
-					<Block title="Presets">
-						<ColorPresetsOptions />
-					</Block>
 				</Scrollbar>
 
 				<Box sx={{ p: SPACING, pt: 0 }}>
