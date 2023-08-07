@@ -136,7 +136,7 @@ const ContactForm = ({ send }) => {
 	);
 };
 
-const mapStateToProps = ({}) => ({});
+const mapStateToProps = () => ({});
 
 const mapDispatchToProps = (dispatch) => ({
 	send: (values) => dispatch(sendMessage(values)),

@@ -25,6 +25,5 @@ export function fData(number) {
 
 
 export function fDecimal(number){
-  console.log("Number we get is", number)
   return numeral(number).format("0.0")
 }

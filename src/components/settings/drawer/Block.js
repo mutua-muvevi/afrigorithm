@@ -27,7 +27,6 @@ export default function Block({ title, tooltip, children, sx, ...other }) {
 					color: "text.secondary",
 				}}
 			>
-				{console.log(theme)}
 				<Typography
 					variant="caption"
 					sx={{
