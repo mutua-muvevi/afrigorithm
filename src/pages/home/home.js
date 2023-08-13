@@ -33,7 +33,7 @@ const sortedBlogList = BlogList.slice(0,4)
 
 const Home = () => {
 	return (
-		<Page title="Homepage || Afrigorithm | Leading Tech Solutions Provider">
+		<Page title="Afrigorithm | Leading Tech Solutions Provider">
 			<StyledWrapper>
 				<Banner/>
 				<LeftRightContainered
