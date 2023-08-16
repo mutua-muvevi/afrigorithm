@@ -26,7 +26,6 @@ import ToggleButton from "./ToggleButton";
 import ModeOptions from "./ModeOptions";
 import DirectionOptions from "./DirectionOptions";
 import FullScreenOptions from "./FullScreenOptions";
-import ColorPresetsOptions from "./ColorPresetsOptions";
 
 // ----------------------------------------------------------------------
 

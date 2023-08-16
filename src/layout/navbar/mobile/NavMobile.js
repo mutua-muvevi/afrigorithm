@@ -2,7 +2,7 @@ import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { useLocation } from "react-router-dom";
 // @mui
-import { List, Drawer, IconButton, Stack, Typography, Divider, SwipeableDrawer } from "@mui/material";
+import { List, IconButton, Stack, Typography, Divider, SwipeableDrawer } from "@mui/material";
 // config
 import { NAV } from "../../../config";
 // components
@@ -57,6 +57,7 @@ export default function NavMobile({ isOffset, data }) {
 				open={open}
 				anchor="right"
 				onClose={handleClose}
+				onOpen={handleOpen}
 				PaperProps={{
 					sx: {
 						pb: 5,

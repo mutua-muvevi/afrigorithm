@@ -69,7 +69,7 @@ const Footer = () => {
 							xl={3}
 						>
 							<StyledGridStack
-								spacing={1}
+								spacing={1.5}
 								direction="column"
 								alignItems="flex-start"
 							>
@@ -81,8 +81,8 @@ const Footer = () => {
 								<Typography variant="h3">
 									{footerItems.logoSection.title}
 								</Typography>
-								<Typography variant="body2">
-									{footerItems.logoSection.text}
+								<Typography variant="h6">
+									"{footerItems.logoSection.text}"
 								</Typography>
 
 								<Stack direction="row" alignItems="center" justifyContent="left" spacing={2}>
