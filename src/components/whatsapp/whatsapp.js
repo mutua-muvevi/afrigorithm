@@ -12,17 +12,17 @@ const Whatsapp = ({children}) => {
 	const theme = useTheme();
 
 	const handleWhatsappClick = () => {
-		const phoneNumber = "254796788681";
+		const phoneNumber = "+254796788681";
 		const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
 
 		window.open(whatsappLink, "_blank");
 	};
 
-	const handleWhatsappCall = () => {
-		const phoneNumber = "254796788681";
-		const whatsappCallLink = `tel:${phoneNumber}`;
+	const handleCalls = () => {
+		const phoneNumber = "+254796788681";
+		const callLink = `tel:${phoneNumber}`;
 
-		window.location.href = whatsappCallLink;
+		window.location.href = callLink;
 	}
 
 	return (
@@ -48,11 +48,10 @@ const Whatsapp = ({children}) => {
 			>
 				<Tooltip title="Call on WhatsApp">
 					<IconButtonAnimate
-						color="primary"
-						onClick={handleWhatsappCall}
-						sx={{ p: 1.25 }}
+						onClick={handleCalls}
+						sx={{ p: 1, backgroundColor: theme.palette.primary.main }}
 					>
-						<Iconify icon="flat-color-icons:callback" />
+						<Iconify icon="fluent:call-12-filled" sx={{color: "#ffffff"}} />
 					</IconButtonAnimate>
 				</Tooltip>
 
