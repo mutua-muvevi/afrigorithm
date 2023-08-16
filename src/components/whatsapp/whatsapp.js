@@ -13,7 +13,7 @@ const Whatsapp = ({children}) => {
 
 	const handleWhatsappClick = () => {
 		// Replace the phone number with the desired number
-		const phoneNumber = "0799756331";
+		const phoneNumber = "254799756331";
 		
 		// Create the WhatsApp API link
 		const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
