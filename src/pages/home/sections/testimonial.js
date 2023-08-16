@@ -21,8 +21,8 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 }))
 
 const StyledCard = styled(Card)(({ theme }) => ({
-	minHeight: "400px",
-	width: "350px",
+	minHeight: "450px",
+	width: "380px",
 }))
 
 const styledImage ={
@@ -53,7 +53,7 @@ const HomeTestimonial = () => {
 												<Stack direction="column" spacing={3}>
 													<img src={el.image} alt={el.fullname} style={styledImage}/>
 
-													<Typography variant="body1">
+													<Typography variant="body1" textAlign="justify">
 														{el.description}
 													</Typography>
 													<Stack direction="column" spacing={1.5}>

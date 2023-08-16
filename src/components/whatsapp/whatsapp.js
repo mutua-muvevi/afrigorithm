@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Tooltip } from "@mui/material";
+import { Box, Stack, Tooltip } from "@mui/material";
 import { alpha, useTheme } from "@mui/material/styles";
 
 import { bgBlur } from "src/utils/cssStyles";
@@ -12,28 +12,31 @@ const Whatsapp = ({children}) => {
 	const theme = useTheme();
 
 	const handleWhatsappClick = () => {
-		// Replace the phone number with the desired number
-		const phoneNumber = "254799756331";
-		
-		// Create the WhatsApp API link
+		const phoneNumber = "254796788681";
 		const whatsappLink = `https://api.whatsapp.com/send?phone=${phoneNumber}`;
 
-		// Open the link in a new tab
 		window.open(whatsappLink, "_blank");
+	};
+
+	const handleWhatsappCall = () => {
+		const phoneNumber = "254796788681";
+		const whatsappCallLink = `tel:${phoneNumber}`;
+
+		window.location.href = whatsappCallLink;
 	}
 
 	return (
 		<React.Fragment>
 			{children}
 
-			<Box
+			<Stack
 				sx={{
 					p: 0.5,
 					left: 24,
 					bottom: 24,
 					zIndex: 999,
 					position: "fixed",
-					borderRadius: "50%",
+					borderRadius: "5px",
 					boxShadow: `-12px 12px 32px -4px ${alpha(
 						theme.palette.mode === "light"
 							? theme.palette.grey[600]
@@ -43,6 +46,15 @@ const Whatsapp = ({children}) => {
 					...bgBlur({ color: theme.palette.background.default }),
 				}}
 			>
+				<Tooltip title="Call on WhatsApp">
+					<IconButtonAnimate
+						color="primary"
+						onClick={handleWhatsappCall}
+						sx={{ p: 1.25 }}
+					>
+						<Iconify icon="flat-color-icons:callback" />
+					</IconButtonAnimate>
+				</Tooltip>
 
 				<Tooltip title="Lets chat">
 					<IconButtonAnimate
@@ -53,7 +65,7 @@ const Whatsapp = ({children}) => {
 						<Iconify icon="logos:whatsapp-icon"/>
 					</IconButtonAnimate>
 				</Tooltip>
-			</Box>
+			</Stack>
 		</React.Fragment>
 	)
 }
