@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Box, Stack, Tooltip } from "@mui/material";
+import {Stack, Tooltip } from "@mui/material";
 import { alpha, useTheme } from "@mui/material/styles";
 
 import { bgBlur } from "src/utils/cssStyles";
