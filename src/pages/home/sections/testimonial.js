@@ -21,6 +21,7 @@ const StyledGridItem = styled(Grid)(({ theme }) => ({
 }))
 
 const StyledCard = styled(Card)(({ theme }) => ({
+	minHeight: "400px",
 	width: "350px",
 }))
 

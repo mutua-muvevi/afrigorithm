@@ -86,7 +86,8 @@ const ReusableCarousel = ({ children, visibleItems, speed }) => {
 				breakpoint: 480,
 				settings: {
 					slidesToShow: 1,
-					slidesToScroll: 1
+					slidesToScroll: 1,
+					centerMode: false,
 				}
 			}
 		]

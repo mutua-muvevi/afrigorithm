@@ -6,7 +6,7 @@ const SocialMediaIcons = [
 		link: "https://www.facebook.com/afrigorithm"
 	},
 	{
-		icon: <Iconify icon="bi:twitter"/>,
+		icon: <Iconify icon="simple-icons:x"/>,
 		link: "https://twitter.com/afrigorithm"
 	},
 	{

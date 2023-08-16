@@ -21,6 +21,7 @@ import { ThemeSettings, SettingsProvider } from './components/settings';
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { store, persistor } from "./redux/store";
+import Whatsapp from './components/whatsapp/whatsapp';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,15 +36,17 @@ root.render(
 								<MotionLazyContainer>
 									<ThemeProvider>
 										<ThemeSettings>
-											<ThemeLocalization>
-												<SnackbarProvider>
-													<Suspense fallback="Loading...">
-														<ErrorBoundary>
-															<App />
-														</ErrorBoundary>
-													</Suspense>
-												</SnackbarProvider>
-											</ThemeLocalization>
+											<Whatsapp>
+												<ThemeLocalization>
+													<SnackbarProvider>
+														<Suspense fallback="Loading...">
+															<ErrorBoundary>
+																<App />
+															</ErrorBoundary>
+														</Suspense>
+													</SnackbarProvider>
+												</ThemeLocalization>
+											</Whatsapp>
 										</ThemeSettings>
 									</ThemeProvider>
 								</MotionLazyContainer>
