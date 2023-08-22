@@ -52,6 +52,7 @@ const Whatsapp = ({children}) => {
 				<Tooltip title="Call us now">
 					<IconButtonAnimate
 						onClick={handleCalls}
+						sx={{color: theme.palette.primary.main}}
 					>
 						<Iconify icon="solar:phone-calling-rounded-bold" width={30} />
 					</IconButtonAnimate>
