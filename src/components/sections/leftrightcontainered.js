@@ -92,7 +92,7 @@ const LeftRightContainered = ({
 									</StyledListIconBox>
 								)}
 								<Stack direction="column" spacing={1}>
-									<Typography variant="h5"  textAlign="justify">
+									<Typography variant="h5" >
 										{el.title}
 									</Typography>
 									<Typography variant="body1"  textAlign="justify">

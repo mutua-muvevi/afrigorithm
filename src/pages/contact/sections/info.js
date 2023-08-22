@@ -8,7 +8,7 @@ export const contactItems = [
 	{
 		icon: "game-icons:old-microphone",
 		title: "Call us",
-		subtitle: "+254 799 756 331, +254 746 432 175",
+		subtitle: "+254 796 788 681, +254 799 756 331",
 		text:  "A call away from orchestrating your unique symphony of success."
 	},
 	{

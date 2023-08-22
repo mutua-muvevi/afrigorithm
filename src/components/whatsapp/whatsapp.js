@@ -34,6 +34,7 @@ const Whatsapp = ({children}) => {
 					p: 0.5,
 					left: 24,
 					bottom: 24,
+					width: 60,
 					zIndex: 999,
 					position: "fixed",
 					borderRadius: "5px",
@@ -45,13 +46,14 @@ const Whatsapp = ({children}) => {
 					)}`,
 					...bgBlur({ color: theme.palette.background.default }),
 				}}
+				direction="column"
+				justifyContent="center"
 			>
-				<Tooltip title="Call on WhatsApp">
+				<Tooltip title="Call us now">
 					<IconButtonAnimate
 						onClick={handleCalls}
-						sx={{ p: 1, backgroundColor: theme.palette.primary.main }}
 					>
-						<Iconify icon="fluent:call-12-filled" sx={{color: "#ffffff"}} />
+						<Iconify icon="solar:phone-calling-rounded-bold" width={30} />
 					</IconButtonAnimate>
 				</Tooltip>
 
@@ -59,9 +61,8 @@ const Whatsapp = ({children}) => {
 					<IconButtonAnimate
 						color="primary"
 						onClick={handleWhatsappClick}
-						sx={{ p: 1.25 }}
 					>
-						<Iconify icon="logos:whatsapp-icon"/>
+						<Iconify icon="logos:whatsapp-icon" width={30} />
 					</IconButtonAnimate>
 				</Tooltip>
 			</Stack>
