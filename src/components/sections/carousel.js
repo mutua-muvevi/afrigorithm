@@ -14,11 +14,11 @@ import { useTheme } from "@emotion/react";
 
 // Custom arrows for the carousel
 function SampleNextArrow(props) {
-	const { onClick } = props;
+	const { onClick, color } = props;
 	return (
 		<IconButton
 			onClick={onClick}
-			sx={{ position: "absolute", top: "50%", right: "2%", zIndex: 1, marginLeft: "20px"}}
+			sx={{ position: "absolute", top: "50%", right: "2%", zIndex: 1, marginLeft: "20px", color: color, }}
 		>
 			<ArrowRight />
 		</IconButton>
@@ -26,11 +26,11 @@ function SampleNextArrow(props) {
 }
 
 function SamplePrevArrow(props) {
-	const { onClick } = props;
+	const { onClick, color } = props;
 	return (
 		<IconButton
 			onClick={onClick}
-			sx={{ position: "absolute", top: "50%", left: "2%", zIndex: 1, marginRight: "20px"}}
+			sx={{ position: "absolute", top: "50%", left: "2%", zIndex: 1, marginRight: "20px", color: color, }}
 		>
 			<ArrowLeft />
 		</IconButton>
@@ -52,8 +52,8 @@ const ReusableCarousel = ({ children, visibleItems, speed }) => {
 		autoplaySpeed: 5000,
 		pauseOnHover: true,
 		arrows: true,
-		prevArrow: <SamplePrevArrow color={theme.palette.primary.main} backgroundColor={theme.palette.primary.halfOpacity}/>,
-		nextArrow: <SampleNextArrow color={theme.palette.primary.main} backgroundColor={theme.palette.primary.halfOpacity}/>,
+		prevArrow: <SamplePrevArrow color={theme.palette.text.primary}/>,
+		nextArrow: <SampleNextArrow color={theme.palette.text.primary}/>,
 		responsive: [
 			{
 				breakpoint: 1024,
