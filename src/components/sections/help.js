@@ -1,4 +1,13 @@
-import { Box, Card, CardContent, Container, Grid, Stack, Typography, useTheme } from "@mui/material";
+import {
+	Box,
+	Card,
+	CardContent,
+	Container,
+	Grid,
+	Stack,
+	Typography,
+	useTheme,
+} from "@mui/material";
 import { styled } from "@mui/system";
 
 import TitleSubtitle from "src/components/sections/titlesubtitle";
@@ -15,7 +24,7 @@ const StyledContainer = styled(Container)(({ theme }) => ({
 
 const Help = () => {
 	const theme = useTheme();
-	
+
 	return (
 		<StyledWrapper>
 			<StyledContainer maxWidth="xl">
@@ -41,26 +50,63 @@ const Help = () => {
 								>
 									<Card>
 										<CardContent>
-											<Stack direction="column" spacing={2}>
-												<Iconify icon={help.icon} width={50}/>
+											<Stack
+												direction="column"
+												spacing={2}
+											>
+												<Iconify
+													icon={help.icon}
+													width={50}
+												/>
 												<Typography variant="h5">
 													{help.title}
 												</Typography>
-												<Typography variant="body1" color={theme.palette.mode === "light" ? undefined : "text.secondary"} textAlign="justify">
+												<Typography
+													variant="body1"
+													color={
+														theme.palette.mode ===
+														"light"
+															? undefined
+															: "text.secondary"
+													}
+												>
 													{help.mainText}
 												</Typography>
 
-												<Stack direction="column" spacing={1.5}>
-													{
-														help.items.map((item, index) => (
-															<Stack direction="row" spacing={3} justifyContent="left" key={index}>
-																<Iconify icon={item.icon}/>
-																<Typography variant="body1" color={theme.palette.mode === "light" ? undefined : "text.secondary"} textAlign="justify">
+												<Stack
+													direction="column"
+													spacing={1.5}
+												>
+													{help.items.map(
+														(item, index) => (
+															<Stack
+																direction="row"
+																spacing={3}
+																justifyContent="left"
+																key={index}
+															>
+																<Iconify
+																	icon={
+																		item.icon
+																	}
+																/>
+																<Typography
+																	variant="body1"
+																	color={
+																		theme
+																			.palette
+																			.mode ===
+																		"light"
+																			? undefined
+																			: "text.secondary"
+																	}
+																	textAlign="justify"
+																>
 																	{item.text}
 																</Typography>
 															</Stack>
-														))
-													}
+														)
+													)}
 												</Stack>
 											</Stack>
 										</CardContent>

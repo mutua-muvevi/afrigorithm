@@ -24,7 +24,7 @@ const SingleDomainEntry = ({domain}) => {
 						/>
 					</Card>
 					
-					<Typography variant="h6" textAlign="justify">
+					<Typography variant="h6" >
 						{domain.mainText}
 					</Typography>
 				</Stack>

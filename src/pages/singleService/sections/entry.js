@@ -23,7 +23,7 @@ const SingleServiceEntry = ({service}) => {
 							height={500}
 						/>
 					</Card>
-					<Typography variant="h6" textAlign="justify">
+					<Typography variant="h6">
 						{service.mainText}
 					</Typography>
 				</Stack>
